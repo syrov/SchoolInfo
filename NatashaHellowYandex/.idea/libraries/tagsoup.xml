@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="tagsoup">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/tagsoup-1.2.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/libs/tagsoup-1.2.1/src/java" />
+      <root url="file://$PROJECT_DIR$/libs/tagsoup-1.2.1/src/templates" />
+    </SOURCES>
+  </library>
+</component>
