@@ -38,7 +38,7 @@ public class Indexer {
         String indexDir = args[0];
 
         long start = System.currentTimeMillis();
-        Indexer indexer = new Indexer(indexDir, "firstdb", "my_user", "my_pass", "temp");
+        Indexer indexer = new Indexer(indexDir, "UNIINFO", "root", "mysql_1", "univercity");
         int numIndexed;
         try {
             numIndexed = indexer.index();
@@ -69,8 +69,7 @@ public class Indexer {
     }
 
     public int index() throws Exception {
-        // установка соединения с индексируемой базой данных
-        Class.forName("com.mysql.jdbc.Driver").newInstance();
+         // установка соединения с индексируемой базой данных
         Connection conn = DriverManager.getConnection(
                 "jdbc:mysql://localhost/" + DBName, user, pass);
         if (conn == null) {
@@ -81,21 +80,15 @@ public class Indexer {
         ResultSet rs = stmt.executeQuery("SELECT * FROM " + tableName);
 
         // добавление данных из базы в индекс
-        System.out.println("Indexing...");
         while (rs.next()) {
             Document doc = new Document();
             doc.add(new Field("id", rs.getString("id"), Field.Store.YES, Field.Index.NO));
-            doc.add(new Field("name", rs.getString("name"), Field.Store.YES, Field.Index.NO));
-            doc.add(new Field("about", rs.getString("about"), Field.Store.YES, Field.Index.NO));
-            // индексировать будем только составное поле "contents". Доставать информацию можно будет
-            // из разных полей, но для индексации удобнее сделать одно со "стандартным именем".
-            doc.add(new Field("contents", rs.getString("name") + " " + rs.getString("about"),
-                    Field.Store.YES, Field.Index.ANALYZED));
-            System.out.println(rs.getString("id") + " " + rs.getString("name") + " was indexed");
+            doc.add(new Field("name", rs.getString("name"), Field.Store.YES, Field.Index.NOT_ANALYZED));
+            doc.add(new Field("about", rs.getString("about"), Field.Store.YES, Field.Index.ANALYZED));
+            System.out.println(rs.getString("about"));
             writer.addDocument(doc);
         }
         stmt.close();
-        System.out.println(writer.numDocs() + " documents (rows of table) were indexed");
         return writer.numDocs();
     }
 }
