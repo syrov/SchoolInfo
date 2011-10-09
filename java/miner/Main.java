@@ -1,6 +1,6 @@
 package miner;
 
-import ru.amse.agregator.miner.MyScarper;
+import miner.MyScarper;
 import ru.amse.agregator.storage.Database;
 import ru.amse.agregator.utils.XmlFileFilter;
 
