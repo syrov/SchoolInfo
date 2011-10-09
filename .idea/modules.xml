@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/indexer/Indexer.iml" filepath="$PROJECT_DIR$/indexer/Indexer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SchoolInfo2.iml" filepath="$PROJECT_DIR$/SchoolInfo2.iml" />
     </modules>
   </component>
 </project>

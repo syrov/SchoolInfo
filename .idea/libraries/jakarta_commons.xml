@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="jakarta-commons">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/jakarta-commons/commons-lang.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jakarta-commons/commons-logging.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
