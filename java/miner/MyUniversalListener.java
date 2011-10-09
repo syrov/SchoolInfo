@@ -1,4 +1,4 @@
-package ru.amse.agregator.miner;
+package miner;
 
 import org.htmlcleaner.CompactXmlSerializer;
 import org.htmlcleaner.HtmlCleaner;

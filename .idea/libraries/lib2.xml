@@ -1,10 +1,35 @@
 <component name="libraryTable">
-  <library name="lib">
+  <library name="lib2">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/lib/junit-4.0.jar!/" />
-      <root url="jar://$PROJECT_DIR$/lib/log4j-1.2.15.jar!/" />
+      <root url="file://$PROJECT_DIR$/lib/httpclient" />
+      <root url="file://$PROJECT_DIR$/lib/jakarta-commons" />
+      <root url="file://$PROJECT_DIR$/lib/xalan" />
+      <root url="file://$PROJECT_DIR$/lib/jetty" />
+      <root url="file://$PROJECT_DIR$/lib/spring" />
+      <root url="file://$PROJECT_DIR$/lib/rhino" />
+      <root url="file://$PROJECT_DIR$/lib/jetbrains" />
+      <root url="file://$PROJECT_DIR$/lib/xfresh" />
+      <root url="file://$PROJECT_DIR$/lib/saxon" />
+      <root url="file://$PROJECT_DIR$/lib/httpclient" />
+      <root url="file://$PROJECT_DIR$/lib/jakarta-commons" />
+      <root url="file://$PROJECT_DIR$/lib/xalan" />
+      <root url="file://$PROJECT_DIR$/lib/jetty" />
+      <root url="file://$PROJECT_DIR$/lib/spring" />
+      <root url="file://$PROJECT_DIR$/lib/rhino" />
+      <root url="file://$PROJECT_DIR$/lib/jetbrains" />
+      <root url="file://$PROJECT_DIR$/lib/xfresh" />
+      <root url="file://$PROJECT_DIR$/lib/saxon" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/lib/httpclient" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/lib/jakarta-commons" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/lib/jetbrains" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/lib/jetty" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/lib/rhino" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/lib/saxon" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/lib/spring" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/lib/xalan" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/lib/xfresh" recursive="false" />
   </library>
 </component>

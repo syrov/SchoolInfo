@@ -6,8 +6,10 @@
       <root url="jar://$PROJECT_DIR$/lib/httpclient/httpcore-nio-4.0.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/httpclient/commons-logging-1.0.4.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/httpclient/httpcore-4.0.jar!/" />
+      <root url="file://$PROJECT_DIR$/lib" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/lib" recursive="false" />
   </library>
 </component>
