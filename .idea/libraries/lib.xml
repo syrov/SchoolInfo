@@ -13,7 +13,10 @@
       <root url="file://$PROJECT_DIR$/lib/xfresh" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/lib/xfresh/src/core" />
+      <root url="file://$PROJECT_DIR$/lib/xfresh/src/db" />
+    </SOURCES>
     <jarDirectory url="file://$PROJECT_DIR$/lib" recursive="false" />
     <jarDirectory url="file://$PROJECT_DIR$/lib/httpclient" recursive="false" />
     <jarDirectory url="file://$PROJECT_DIR$/lib/jakarta-commons" recursive="false" />
