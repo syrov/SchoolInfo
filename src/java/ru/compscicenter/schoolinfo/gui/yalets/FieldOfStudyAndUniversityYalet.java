@@ -1,4 +1,4 @@
-package java.ru.compscicenter.schoolinfo.gui.yalets;
+package ru.compscicenter.schoolinfo.gui.yalets;
 
 /**
  * Created by IntelliJ IDEA.

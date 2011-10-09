@@ -1,4 +1,4 @@
-package java.ru.compscicenter.schoolinfo.indexer;
+package ru.compscicenter.schoolinfo.indexer;
 
 import org.apache.lucene.analysis.ru.RussianAnalyzer;
 import org.apache.lucene.document.Document;

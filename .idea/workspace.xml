@@ -2,56 +2,56 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4b76eae-a61a-46cc-8854-7426a3e706f2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/webharvester/.svn/all-wcprops" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/webharvester/.svn/entries" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/httpclient/commons-logging-1.0.4.jar" afterPath="$PROJECT_DIR$/libs/httpclient/commons-logging-1.0.4.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/httpclient/httpclient-4.0-beta2.jar" afterPath="$PROJECT_DIR$/libs/httpclient/httpclient-4.0-beta2.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/httpclient/httpcore-4.0.jar" afterPath="$PROJECT_DIR$/libs/httpclient/httpcore-4.0.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/httpclient/httpcore-nio-4.0.jar" afterPath="$PROJECT_DIR$/libs/httpclient/httpcore-nio-4.0.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/httpclient/httpmime-4.0-beta2.jar" afterPath="$PROJECT_DIR$/libs/httpclient/httpmime-4.0-beta2.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/jakarta-commons/commons-lang.jar" afterPath="$PROJECT_DIR$/libs/jakarta-commons/commons-lang.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/jakarta-commons/commons-logging.jar" afterPath="$PROJECT_DIR$/libs/jakarta-commons/commons-logging.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/jetbrains/annotations.jar" afterPath="$PROJECT_DIR$/libs/jetbrains/annotations.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/jetty/jetty-6.1.22.jar" afterPath="$PROJECT_DIR$/libs/jetty/jetty-6.1.22.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/jetty/jetty-util-6.1.22.jar" afterPath="$PROJECT_DIR$/libs/jetty/jetty-util-6.1.22.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/jetty/servlet-api-2.5-20081211.jar" afterPath="$PROJECT_DIR$/libs/jetty/servlet-api-2.5-20081211.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/junit-4.0.jar" afterPath="$PROJECT_DIR$/libs/junit-4.0.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/log4j-1.2.15.jar" afterPath="$PROJECT_DIR$/libs/log4j-1.2.15.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/lucene/lucene-analyzers-3.4.0.jar" afterPath="$PROJECT_DIR$/libs/lucene/lucene-analyzers-3.4.0.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/lucene/lucene-core-3.4.0.jar" afterPath="$PROJECT_DIR$/libs/lucene/lucene-core-3.4.0.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/mysql-connector-java-5.1.17-bin.jar" afterPath="$PROJECT_DIR$/libs/mysql-connector-java-5.1.17-bin.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/rhino/js.jar" afterPath="$PROJECT_DIR$/libs/rhino/js.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/saxon/saxon9he.jar" afterPath="$PROJECT_DIR$/libs/saxon/saxon9he.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/spring/spring-beans.jar" afterPath="$PROJECT_DIR$/libs/spring/spring-beans.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/spring/spring-context.jar" afterPath="$PROJECT_DIR$/libs/spring/spring-context.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/spring/spring-core.jar" afterPath="$PROJECT_DIR$/libs/spring/spring-core.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/spring/spring-mock.jar" afterPath="$PROJECT_DIR$/libs/spring/spring-mock.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/spring/spring-web.jar" afterPath="$PROJECT_DIR$/libs/spring/spring-web.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/webharvester/activation.jar" afterPath="$PROJECT_DIR$/libs/webharvester/activation.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/webharvester/bsh.jar" afterPath="$PROJECT_DIR$/libs/webharvester/bsh.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/webharvester/commons-cli-1.1.jar" afterPath="$PROJECT_DIR$/libs/webharvester/commons-cli-1.1.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/webharvester/commons-codec-1.3.jar" afterPath="$PROJECT_DIR$/libs/webharvester/commons-codec-1.3.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/webharvester/commons-collections-3.1.jar" afterPath="$PROJECT_DIR$/libs/webharvester/commons-collections-3.1.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/webharvester/commons-email-1.1.jar" afterPath="$PROJECT_DIR$/libs/webharvester/commons-email-1.1.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/webharvester/commons-httpclient-3.1.jar" afterPath="$PROJECT_DIR$/libs/webharvester/commons-httpclient-3.1.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/webharvester/commons-logging.jar" afterPath="$PROJECT_DIR$/libs/webharvester/commons-logging.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/webharvester/commons-net-ftp-2.0.jar" afterPath="$PROJECT_DIR$/libs/webharvester/commons-net-ftp-2.0.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/webharvester/groovy-all-1.0.jar" afterPath="$PROJECT_DIR$/libs/webharvester/groovy-all-1.0.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/webharvester/htmlcleaner.jar" afterPath="$PROJECT_DIR$/libs/webharvester/htmlcleaner.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/webharvester/htmlcleaner2_1.jar" afterPath="$PROJECT_DIR$/libs/webharvester/htmlcleaner2_1.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/webharvester/js.jar" afterPath="$PROJECT_DIR$/libs/webharvester/js.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/webharvester/log4j-1.2.13.jar" afterPath="$PROJECT_DIR$/libs/webharvester/log4j-1.2.13.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/webharvester/mail.jar" afterPath="$PROJECT_DIR$/libs/webharvester/mail.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/webharvester/saxon9-dom.jar" afterPath="$PROJECT_DIR$/libs/webharvester/saxon9-dom.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/webharvester/saxon9.jar" afterPath="$PROJECT_DIR$/libs/webharvester/saxon9.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/webharvester/webharvest_2.jar" afterPath="$PROJECT_DIR$/libs/webharvester/webharvest_2.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/xalan/serializer.jar" afterPath="$PROJECT_DIR$/libs/xalan/serializer.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/xalan/xalan.jar" afterPath="$PROJECT_DIR$/libs/xalan/xalan.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/xalan/xercesImpl.jar" afterPath="$PROJECT_DIR$/libs/xalan/xercesImpl.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/xfresh/xfresh-core.jar" afterPath="$PROJECT_DIR$/libs/xfresh/xfresh-core.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/xfresh/xfresh-db.jar" afterPath="$PROJECT_DIR$/libs/xfresh/xfresh-db.jar" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/webharvester/.svn/prop-base/activation.jar.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/webharvester/.svn/prop-base/bsh.jar.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/webharvester/.svn/prop-base/commons-cli-1.1.jar.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/webharvester/.svn/prop-base/commons-codec-1.3.jar.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/webharvester/.svn/prop-base/commons-collections-3.1.jar.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/webharvester/.svn/prop-base/commons-email-1.1.jar.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/webharvester/.svn/prop-base/commons-httpclient-3.1.jar.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/webharvester/.svn/prop-base/commons-logging.jar.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/webharvester/.svn/prop-base/commons-net-ftp-2.0.jar.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/webharvester/.svn/prop-base/groovy-all-1.0.jar.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/webharvester/.svn/prop-base/htmlcleaner.jar.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/webharvester/.svn/prop-base/htmlcleaner2_1.jar.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/webharvester/.svn/prop-base/js.jar.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/webharvester/.svn/prop-base/log4j-1.2.13.jar.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/webharvester/.svn/prop-base/mail.jar.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/webharvester/.svn/prop-base/saxon9-dom.jar.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/webharvester/.svn/prop-base/saxon9.jar.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/webharvester/.svn/prop-base/webharvest_2.jar.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/webharvester/.svn/text-base/activation.jar.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/webharvester/.svn/text-base/bsh.jar.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/webharvester/.svn/text-base/commons-cli-1.1.jar.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/webharvester/.svn/text-base/commons-codec-1.3.jar.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/webharvester/.svn/text-base/commons-collections-3.1.jar.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/webharvester/.svn/text-base/commons-email-1.1.jar.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/webharvester/.svn/text-base/commons-httpclient-3.1.jar.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/webharvester/.svn/text-base/commons-logging.jar.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/webharvester/.svn/text-base/commons-net-ftp-2.0.jar.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/webharvester/.svn/text-base/groovy-all-1.0.jar.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/webharvester/.svn/text-base/htmlcleaner.jar.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/webharvester/.svn/text-base/htmlcleaner2_1.jar.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/webharvester/.svn/text-base/js.jar.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/webharvester/.svn/text-base/log4j-1.2.13.jar.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/webharvester/.svn/text-base/mail.jar.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/webharvester/.svn/text-base/saxon9-dom.jar.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/webharvester/.svn/text-base/saxon9.jar.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/webharvester/.svn/text-base/webharvest_2.jar.svn-base" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolInfo.iml" afterPath="$PROJECT_DIR$/SchoolInfo.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/yalets/FieldOfStudyAndCityYalet.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/yalets/FieldOfStudyAndCityYalet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/yalets/FieldOfStudyAndUniversityYalet.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/yalets/FieldOfStudyAndUniversityYalet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/yalets/FieldOfStudyYalet.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/yalets/FieldOfStudyYalet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/Indexer.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/Indexer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/TestSearchAndIndex.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/TestSearchAndIndex.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/DataCleaner.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/DataCleaner.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/Main.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/MyScarper.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/MyScarper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/MyUniversalListener.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/MyUniversalListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/Searcher.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/Searcher.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/UnivRecord.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/UnivRecord.java" />
     </list>
     <ignored path="SchoolInfo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -115,17 +115,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="beans.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/script/beans.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="126" selection-start="1709" selection-end="1709" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="tag#bean#1;tag#beans#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="build.properties" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.properties">
           <provider selected="true" editor-type-id="text-editor">
@@ -135,10 +124,84 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="build.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="26" selection-start="1106" selection-end="1106" vertical-scroll-proportion="0.36395758">
+            <state line="32" column="54" selection-start="1283" selection-end="1283" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyUniversalListener.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/MyUniversalListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="13" selection-start="363" selection-end="363" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Indexer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/Indexer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="20" selection-start="375" selection-end="375" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestSearchAndIndex.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/TestSearchAndIndex.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="43" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FieldOfStudyAndCityYalet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/yalets/FieldOfStudyAndCityYalet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="0" selection-start="378" selection-end="901" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Searcher.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/Searcher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="0" selection-start="695" selection-end="695" vertical-scroll-proportion="0.7258065">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FieldOfStudyAndUniversityYalet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/yalets/FieldOfStudyAndUniversityYalet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="13" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FieldOfStudyYalet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/yalets/FieldOfStudyYalet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="13" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -158,10 +221,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/indexer/UnivRecord.java" />
-        <option value="$PROJECT_DIR$/indexer/testDB.sql" />
-        <option value="$PROJECT_DIR$/indexer/TestSearchAndIndex.java" />
-        <option value="$PROJECT_DIR$/indexer/Indexer.java" />
         <option value="$PROJECT_DIR$/indexer/Searcher.java" />
         <option value="$PROJECT_DIR$/.idea/libraries/lib.xml" />
         <option value="$PROJECT_DIR$/java/indexer/TestSearchAndIndex.java" />
@@ -174,6 +233,10 @@
         <option value="$PROJECT_DIR$/java/ru/compscicenter/schoolinfo/indexer/TestSearchAndIndex.java" />
         <option value="$PROJECT_DIR$/script/beans.xml" />
         <option value="$PROJECT_DIR$/build.properties" />
+        <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/TestSearchAndIndex.java" />
+        <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/yalets/FieldOfStudyAndCityYalet.java" />
+        <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/Main.java" />
+        <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/Searcher.java" />
       </list>
     </option>
   </component>
@@ -221,6 +284,14 @@
               <option name="myItemId" value="SchoolInfo2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; 1.7 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -243,6 +314,110 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="script" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SchoolInfo2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SchoolInfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="schoolinfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SchoolInfo2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SchoolInfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="schoolinfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yalets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SchoolInfo2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SchoolInfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="schoolinfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SchoolInfo2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SchoolInfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="schoolinfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -438,20 +613,20 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294893" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24923077" sideWeight="0.6891304" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.6891304" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923076" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34118602" sideWeight="0.6717391" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3395445" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31086957" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32784185" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923076" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.6891304" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34118602" sideWeight="0.6721582" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3395445" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32826087" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -519,56 +694,14 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/MyUniversalListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="13" selection-start="667" selection-end="667" vertical-scroll-proportion="0.1875" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/libraries/lib.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="50" selection-start="208" selection-end="208" vertical-scroll-proportion="0.1736111" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="44" selection-end="44" vertical-scroll-proportion="0.075" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/Indexer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="38" selection-start="1087" selection-end="1087" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/Searcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="13" selection-start="784" selection-end="784" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/TestSearchAndIndex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="350" selection-end="350" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/UnivRecord.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="13" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/yalets/FieldOfStudyAndUniversityYalet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="43" selection-start="241" selection-end="241" vertical-scroll-proportion="0.3426396" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/yalets/FieldOfStudyAndCityYalet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="37" selection-start="235" selection-end="235" vertical-scroll-proportion="0.3426396" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/yalets/FieldOfStudyYalet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="30" selection-start="228" selection-end="228" vertical-scroll-proportion="0.32687652" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/script/beans.xml">
@@ -589,7 +722,65 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="26" selection-start="1106" selection-end="1106" vertical-scroll-proportion="0.36395758">
+        <state line="32" column="54" selection-start="1283" selection-end="1283" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/MyUniversalListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="363" selection-end="363" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/yalets/FieldOfStudyAndUniversityYalet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/yalets/FieldOfStudyYalet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/Indexer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="20" selection-start="375" selection-end="375" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/TestSearchAndIndex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="43" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/yalets/FieldOfStudyAndCityYalet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="0" selection-start="378" selection-end="901" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/Searcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="695" selection-end="695" vertical-scroll-proportion="0.7258065">
           <folding />
         </state>
       </provider>
@@ -651,6 +842,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

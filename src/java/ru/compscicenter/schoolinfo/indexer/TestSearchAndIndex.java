@@ -1,4 +1,4 @@
-package java.ru.compscicenter.schoolinfo.indexer;
+package ru.compscicenter.schoolinfo.indexer;
 
 import ru.compscicenter.schoolinfo.searcher.UnivRecord;
 import ru.compscicenter.schoolinfo.searcher.Searcher;
