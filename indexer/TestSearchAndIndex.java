@@ -27,7 +27,7 @@ public class TestSearchAndIndex {
         ArrayList<UnivRecord> res = Searcher.search(INDEX_DIR, "университет");
         for(int i = 0 ; i < res.size() ; i++) {
             UnivRecord univ = res.get(i);
-            System.out.println("id=" + univ.getId() + "; Name=" + univ.getName() + "; About:\n" + univ.getInfo());
+            System.out.println("id=" + univ.getId() + "; Name=" + univ.getName() + "; About:\n" + univ.getInfo() + "\n");
         }
 
     }

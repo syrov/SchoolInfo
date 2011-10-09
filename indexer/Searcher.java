@@ -30,8 +30,8 @@ public class Searcher {
             throw new IllegalArgumentException("Usage: java " + Searcher.class.getName()
             + " <index dir> <query>");
         }
-        String indexDir = args[0];
-        String q = args[1];
+        String indexDir = "/home/dzeta/index";
+        String q = "университет";
         search(indexDir, q);
     }
 
@@ -40,7 +40,7 @@ public class Searcher {
         Directory dir = FSDirectory.open(new File(indexDir));
         IndexSearcher is = new IndexSearcher(dir);
         QueryParser parser = new QueryParser(Version.LUCENE_34,
-                "contents", new RussianAnalyzer(Version.LUCENE_34));
+                "about", new RussianAnalyzer(Version.LUCENE_34));
         Query query = parser.parse(q);
         long start = System.currentTimeMillis();
         TopDocs hits = is.search(query, 10);
@@ -49,13 +49,15 @@ public class Searcher {
         System.err.println("Found " + hits.totalHits + " document(s) (in " +
                 (end - start) + " milliseconds) that matched query '" + q + "':");
 
-        ArrayList<UnivRecord> result = new ArrayList<UnivRecord>();
+        ArrayList<UnivRecord> res = new ArrayList<UnivRecord>();
         for(ScoreDoc scoreDoc : hits.scoreDocs) {
             Document doc = is.doc(scoreDoc.doc);
+            //System.out.println(doc.get("name") + " " + doc.get("about"));
             UnivRecord univ = new UnivRecord(Integer.parseInt(doc.get("id")), doc.get("name"), doc.get("about"));
-            result.add(univ);
+            res.add(univ);
         }
+
         is.close();
-        return result;
+        return res;
     }
 }
