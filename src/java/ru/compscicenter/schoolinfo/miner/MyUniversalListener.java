@@ -1,4 +1,4 @@
-package ru.compscicenter.schoolinfo.miner;
+package java.ru.compscicenter.schoolinfo.miner;
 
 import org.htmlcleaner.CompactXmlSerializer;
 import org.htmlcleaner.HtmlCleaner;

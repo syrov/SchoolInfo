@@ -1,4 +1,4 @@
-package ru.compscicenter.schoolinfo.miner;
+package java.ru.compscicenter.schoolinfo.miner;
 
 import org.xml.sax.Attributes;
 import org.xml.sax.helpers.DefaultHandler;

@@ -1,4 +1,4 @@
-package ru.compscicenter.schoolinfo.gui.yalets;
+package java.ru.compscicenter.schoolinfo.gui.yalets;
 
 /**
  * Created by IntelliJ IDEA.
@@ -7,5 +7,5 @@ package ru.compscicenter.schoolinfo.gui.yalets;
  * Time: 20:13
  * To change this template use File | Settings | File Templates.
  */
-public class FieldOfStudyYalet {
+public class FieldOfStudyAndCityYalet {
 }
