@@ -2,26 +2,56 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4b76eae-a61a-46cc-8854-7426a3e706f2" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/java/ru/compscicenter/schoolinfo/backend/backend.iml" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/backend/backend.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/java/ru/compscicenter/schoolinfo/frontend/frontend.iml" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/frontend/frontend.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/java/ru/compscicenter/schoolinfo/gui/yalets/FieldOfStudyAndCityYalet.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/yalets/FieldOfStudyAndCityYalet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/java/ru/compscicenter/schoolinfo/gui/yalets/FieldOfStudyAndUniversityYalet.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/yalets/FieldOfStudyAndUniversityYalet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/java/ru/compscicenter/schoolinfo/gui/yalets/FieldOfStudyYalet.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/yalets/FieldOfStudyYalet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/java/ru/compscicenter/schoolinfo/indexer/Indexer.iml" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/Indexer.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/java/ru/compscicenter/schoolinfo/indexer/Indexer.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/Indexer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/java/ru/compscicenter/schoolinfo/indexer/TestSearchAndIndex.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/TestSearchAndIndex.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/java/ru/compscicenter/schoolinfo/indexer/testDB.sql" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/testDB.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/java/ru/compscicenter/schoolinfo/miner/DataCleaner.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/DataCleaner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/java/ru/compscicenter/schoolinfo/miner/Main.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/Main.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/java/ru/compscicenter/schoolinfo/miner/MyScarper.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/MyScarper.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/java/ru/compscicenter/schoolinfo/miner/MyUniversalListener.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/MyUniversalListener.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/java/ru/compscicenter/schoolinfo/miner/miner.iml" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/miner.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/java/ru/compscicenter/schoolinfo/searcher/Searcher.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/Searcher.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/java/ru/compscicenter/schoolinfo/searcher/UnivRecord.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/UnivRecord.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/script/beans.xml" afterPath="$PROJECT_DIR$/src/script/beans.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/script/start.sh" afterPath="$PROJECT_DIR$/src/script/start.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolInfo.iml" afterPath="$PROJECT_DIR$/SchoolInfo.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/webharvester/.svn/all-wcprops" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/webharvester/.svn/entries" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/httpclient/commons-logging-1.0.4.jar" afterPath="$PROJECT_DIR$/libs/httpclient/commons-logging-1.0.4.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/httpclient/httpclient-4.0-beta2.jar" afterPath="$PROJECT_DIR$/libs/httpclient/httpclient-4.0-beta2.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/httpclient/httpcore-4.0.jar" afterPath="$PROJECT_DIR$/libs/httpclient/httpcore-4.0.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/httpclient/httpcore-nio-4.0.jar" afterPath="$PROJECT_DIR$/libs/httpclient/httpcore-nio-4.0.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/httpclient/httpmime-4.0-beta2.jar" afterPath="$PROJECT_DIR$/libs/httpclient/httpmime-4.0-beta2.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/jakarta-commons/commons-lang.jar" afterPath="$PROJECT_DIR$/libs/jakarta-commons/commons-lang.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/jakarta-commons/commons-logging.jar" afterPath="$PROJECT_DIR$/libs/jakarta-commons/commons-logging.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/jetbrains/annotations.jar" afterPath="$PROJECT_DIR$/libs/jetbrains/annotations.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/jetty/jetty-6.1.22.jar" afterPath="$PROJECT_DIR$/libs/jetty/jetty-6.1.22.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/jetty/jetty-util-6.1.22.jar" afterPath="$PROJECT_DIR$/libs/jetty/jetty-util-6.1.22.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/jetty/servlet-api-2.5-20081211.jar" afterPath="$PROJECT_DIR$/libs/jetty/servlet-api-2.5-20081211.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/junit-4.0.jar" afterPath="$PROJECT_DIR$/libs/junit-4.0.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/log4j-1.2.15.jar" afterPath="$PROJECT_DIR$/libs/log4j-1.2.15.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/lucene/lucene-analyzers-3.4.0.jar" afterPath="$PROJECT_DIR$/libs/lucene/lucene-analyzers-3.4.0.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/lucene/lucene-core-3.4.0.jar" afterPath="$PROJECT_DIR$/libs/lucene/lucene-core-3.4.0.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/mysql-connector-java-5.1.17-bin.jar" afterPath="$PROJECT_DIR$/libs/mysql-connector-java-5.1.17-bin.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/rhino/js.jar" afterPath="$PROJECT_DIR$/libs/rhino/js.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/saxon/saxon9he.jar" afterPath="$PROJECT_DIR$/libs/saxon/saxon9he.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/spring/spring-beans.jar" afterPath="$PROJECT_DIR$/libs/spring/spring-beans.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/spring/spring-context.jar" afterPath="$PROJECT_DIR$/libs/spring/spring-context.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/spring/spring-core.jar" afterPath="$PROJECT_DIR$/libs/spring/spring-core.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/spring/spring-mock.jar" afterPath="$PROJECT_DIR$/libs/spring/spring-mock.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/spring/spring-web.jar" afterPath="$PROJECT_DIR$/libs/spring/spring-web.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/webharvester/activation.jar" afterPath="$PROJECT_DIR$/libs/webharvester/activation.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/webharvester/bsh.jar" afterPath="$PROJECT_DIR$/libs/webharvester/bsh.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/webharvester/commons-cli-1.1.jar" afterPath="$PROJECT_DIR$/libs/webharvester/commons-cli-1.1.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/webharvester/commons-codec-1.3.jar" afterPath="$PROJECT_DIR$/libs/webharvester/commons-codec-1.3.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/webharvester/commons-collections-3.1.jar" afterPath="$PROJECT_DIR$/libs/webharvester/commons-collections-3.1.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/webharvester/commons-email-1.1.jar" afterPath="$PROJECT_DIR$/libs/webharvester/commons-email-1.1.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/webharvester/commons-httpclient-3.1.jar" afterPath="$PROJECT_DIR$/libs/webharvester/commons-httpclient-3.1.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/webharvester/commons-logging.jar" afterPath="$PROJECT_DIR$/libs/webharvester/commons-logging.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/webharvester/commons-net-ftp-2.0.jar" afterPath="$PROJECT_DIR$/libs/webharvester/commons-net-ftp-2.0.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/webharvester/groovy-all-1.0.jar" afterPath="$PROJECT_DIR$/libs/webharvester/groovy-all-1.0.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/webharvester/htmlcleaner.jar" afterPath="$PROJECT_DIR$/libs/webharvester/htmlcleaner.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/webharvester/htmlcleaner2_1.jar" afterPath="$PROJECT_DIR$/libs/webharvester/htmlcleaner2_1.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/webharvester/js.jar" afterPath="$PROJECT_DIR$/libs/webharvester/js.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/webharvester/log4j-1.2.13.jar" afterPath="$PROJECT_DIR$/libs/webharvester/log4j-1.2.13.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/webharvester/mail.jar" afterPath="$PROJECT_DIR$/libs/webharvester/mail.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/webharvester/saxon9-dom.jar" afterPath="$PROJECT_DIR$/libs/webharvester/saxon9-dom.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/webharvester/saxon9.jar" afterPath="$PROJECT_DIR$/libs/webharvester/saxon9.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/webharvester/webharvest_2.jar" afterPath="$PROJECT_DIR$/libs/webharvester/webharvest_2.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/xalan/serializer.jar" afterPath="$PROJECT_DIR$/libs/xalan/serializer.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/xalan/xalan.jar" afterPath="$PROJECT_DIR$/libs/xalan/xalan.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/xalan/xercesImpl.jar" afterPath="$PROJECT_DIR$/libs/xalan/xercesImpl.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/xfresh/xfresh-core.jar" afterPath="$PROJECT_DIR$/libs/xfresh/xfresh-core.jar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/xfresh/xfresh-db.jar" afterPath="$PROJECT_DIR$/libs/xfresh/xfresh-db.jar" />
     </list>
     <ignored path="SchoolInfo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -85,13 +115,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="beans.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="beans.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/script/beans.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="126" selection-start="1709" selection-end="1709" vertical-scroll-proportion="0.68904597">
+            <state line="39" column="126" selection-start="1709" selection-end="1709" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="tag#bean#1;tag#beans#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="29" selection-start="43" selection-end="43" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/build.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="26" selection-start="1106" selection-end="1106" vertical-scroll-proportion="0.36395758">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -110,7 +158,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/first.sql" />
         <option value="$PROJECT_DIR$/indexer/UnivRecord.java" />
         <option value="$PROJECT_DIR$/indexer/testDB.sql" />
         <option value="$PROJECT_DIR$/indexer/TestSearchAndIndex.java" />
@@ -126,6 +173,7 @@
         <option value="$PROJECT_DIR$/java/ru/compscicenter/schoolinfo/searcher/Searcher.java" />
         <option value="$PROJECT_DIR$/java/ru/compscicenter/schoolinfo/indexer/TestSearchAndIndex.java" />
         <option value="$PROJECT_DIR$/script/beans.xml" />
+        <option value="$PROJECT_DIR$/build.properties" />
       </list>
     </option>
   </component>
@@ -205,7 +253,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -456,11 +504,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/first.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="31" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/testDB.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="12" selection-start="171" selection-end="171" vertical-scroll-proportion="0.29182878" />
@@ -530,10 +573,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/script/beans.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="126" selection-start="1709" selection-end="1709" vertical-scroll-proportion="0.68904597">
+        <state line="39" column="126" selection-start="1709" selection-end="1709" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="tag#bean#1;tag#beans#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="29" selection-start="43" selection-end="43" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="26" selection-start="1106" selection-end="1106" vertical-scroll-proportion="0.36395758">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -594,7 +651,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

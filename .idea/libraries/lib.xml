@@ -1,18 +1,18 @@
 <component name="libraryTable">
   <library name="lib">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/lib/jakarta-commons" />
-      <root url="file://$PROJECT_DIR$/lib/saxon" />
-      <root url="file://$PROJECT_DIR$/lib/webharvester" />
-      <root url="file://$PROJECT_DIR$/lib/spring" />
-      <root url="file://$PROJECT_DIR$/lib/jetty" />
-      <root url="file://$PROJECT_DIR$/lib/jetbrains" />
-      <root url="file://$PROJECT_DIR$/lib/rhino" />
-      <root url="file://$PROJECT_DIR$/lib/xalan" />
-      <root url="file://$PROJECT_DIR$/lib/lucene" />
-      <root url="file://$PROJECT_DIR$/lib/xfresh" />
-      <root url="file://$PROJECT_DIR$/lib/httpclient" />
-      <root url="file://$PROJECT_DIR$/lib" />
+      <root url="file://$PROJECT_DIR$/libs/jakarta-commons" />
+      <root url="file://$PROJECT_DIR$/libs/saxon" />
+      <root url="file://$PROJECT_DIR$/libs/webharvester" />
+      <root url="file://$PROJECT_DIR$/libs/spring" />
+      <root url="file://$PROJECT_DIR$/libs/jetty" />
+      <root url="file://$PROJECT_DIR$/libs/jetbrains" />
+      <root url="file://$PROJECT_DIR$/libs/rhino" />
+      <root url="file://$PROJECT_DIR$/libs/xalan" />
+      <root url="file://$PROJECT_DIR$/libs/lucene" />
+      <root url="file://$PROJECT_DIR$/libs/xfresh" />
+      <root url="file://$PROJECT_DIR$/libs/httpclient" />
+      <root url="file://$PROJECT_DIR$/libs" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

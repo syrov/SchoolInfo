@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Agregator" default="install" basedir=".">
+    <description>
+        Amse Agregator!
+    </description>
+
+    <!-- set global properties for this build -->
+
+    <!-- User's properties from file 'build.properties' -->
+    <property file="build.properties"/>
+    
+    <property name="src.dir" location="${project.dir}/src"/>
+    <property name="src.java.dir" location="${src.dir}/java"/>
+    <property name="src.view.dir" location="${src.dir}/web"/>
+    <property name="src.script.dir" location="${src.dir}/script"/>
+    
+    <property name="dist.dir.name" value="dist"/>
+    <property name="dist.dir" location="${project.dir}/${dist.dir.name}"/>
+
+    <property name="build.dir" location="${project.dir}/build"/>
+    <property name="build.classes.dir" location="${build.dir}/classes"/>
+    <property name="build.view.dir" location="${build.dir}/view"/>
+    <property name="build.lib.dir" location="${build.dir}/lib"/>
+    
+    <property name="index.dir" location="${build.dir}/index"/>
+
+    <!-- Libs -->
+    <path id="libs.all">
+        <fileset dir="libs" includes="**/*.jar"/>
+    </path>
+    <path id="libs.miner">
+        <fileset dir="libs" includes="webharvester/**/*.jar"/>
+        <fileset dir="libs" includes="mongo*.jar"/>
+    </path>
+    <path id="libs.indexer">
+        <fileset dir="libs" includes="lucene*.jar"/>
+        <fileset dir="libs" includes="mongo*.jar"/>
+    </path>
+    <path id="libs.quality">
+        <fileset dir="libs" includes="mongo*.jar"/>
+    </path>
+    <path id="libs.storage">
+        <fileset dir="libs" includes="mongo*.jar"/>
+    </path>
+    <path id="libs.gui">
+        <fileset dir="${xfresh-core.dir}" includes="**/*.jar"/>
+        <fileset dir="libs" includes="lucene*.jar"/>
+        <fileset dir="libs" includes="mongo*.jar"/>
+    </path>
+
+    <property name="all_libs" refid="libs.all"/>
+    <property name="gui_libs" refid="libs.gui"/>
+
+    <pathconvert pathsep=" " property="all_libs_manifest" refid="libs.all"/>
+    <pathconvert pathsep=" " property="miner_libs_manifest" refid="libs.miner"/>
+    <pathconvert pathsep=" " property="indexer_libs_manifest" refid="libs.indexer"/>
+    <pathconvert pathsep=" " property="quality_libs_manifest" refid="libs.quality"/>
+    <pathconvert pathsep=" " property="storage_libs_manifest" refid="libs.storage"/>
+
+    <!-- Targets -->
+
+    <target name="init">
+        <!-- Create the time stamp -->
+        <tstamp/>
+        <!-- Create the build directory structure used by compile -->
+
+        <!--это куда класть все что мы уже сбилдили?-->
+        <mkdir dir="${build.dir}"/>
+        <mkdir dir="${build.classes.dir}"/>
+        <mkdir dir="${build.view.dir}"/>
+        <mkdir dir="${build.lib.dir}"/>
+        <mkdir dir="${index.dir}"/>
+    </target>
+
+    <target name="compile" depends="init"
+            description="compile the source ">
+
+        <!-- Compile the java code from ${src.dir} into ${build.dir} -->
+        <javac srcdir="${src.java.dir}"
+               destdir="${build.classes.dir}"
+               debug="false"
+               deprecation="true"
+               optimize="true"
+               includeAntRuntime="false">
+            <classpath refid="libs.all"/>
+        </javac>
+
+        <!-- Копирование необходимых файлов -->
+        <!-- Зачем?-->
+        <copy todir="${build.classes.dir}" overwrite="true">
+            <fileset dir="${src.java.dir}" includes="**/*.*" excludes="**/*.java"/>
+        </copy>
+    </target>
+
+    <target name="dist" depends="compile"
+            description="generate the distribution">
+        <!-- Create the distribution directory -->
+        <mkdir dir="${dist.dir}"/>
+
+        <jar jarfile="${dist.dir}/miner.jar" basedir="${build.classes.dir}" ГДЕ бидженье>
+            <include name="ru/amse/agregator/miner/**/*.*"/ ЧТО (только класс файлы) >
+            <manifest>
+                <attribute name="Built-By" value="Agregator's build.xml"/>
+                <attribute name="Main-Class" value="ru.amse.agregator.miner.Main"/>
+                <attribute name="Class-Path" value="${miner_libs_manifest} ${build.classes.dir}/"/ где работа jarnika>
+            </manifest>
+        </jar>
+        <jar jarfile="${dist.dir}/indexer.jar" basedir="${build.classes.dir}">
+            <include name="ru/amse/agregator/indexer/**/*.*"/>
+            <manifest>
+                <attribute name="Built-By" value="Agregator's build.xml"/>
+                <attribute name="Main-Class" value="ru.amse.agregator.indexer.IndexMain"/>
+                <attribute name="Class-Path" value="${indexer_libs_manifest} ${build.classes.dir}/"/>
+            </manifest>
+        </jar>
+        <jar jarfile="${dist.dir}/clusterizer.jar" basedir="${build.classes.dir}"
+             includes="ru/amse/agregator/quality/**/*.*">
+            <manifest>
+                <attribute name="Built-By" value="Agregator's build.xml"/>
+                <attribute name="Main-Class" value="ru.amse.agregator.quality.clusterization.ClusterizationProcess"/>
+                <attribute name="Class-Path" value="${quality_libs_manifest} ${build.classes.dir}/"/>
+            </manifest>
+        </jar>
+        
+        <jar jarfile="${dist.dir}/mongoIndexer.jar" basedir="${build.classes.dir}"
+             includes="ru/amse/agregator/storage/**/*.*">
+            <manifest>
+                <attribute name="Built-By" value="Agregator's build.xml"/>
+                <attribute name="Main-Class" value="ru.amse.agregator.storage.MongoIndexMaker"/>
+                <attribute name="Class-Path" value="${storage_libs_manifest} ${build.classes.dir}/"/>
+            </manifest>
+        </jar>
+
+        <!-- Даём права на выполнение, созданным джарникам -->
+        <chmod dir="${dist.dir}" perm="744" includes="**/*.jar"/>
+    </target>
+
+    <target name="gui" depends="compile"
+            description="install gui">
+
+        <!-- Copy view -->
+
+        <copy todir="${build.view.dir}" overwrite="true">
+            <fileset dir="${src.view.dir}"/> 
+        </copy>
+
+
+        <!-- Copy config -->
+
+        <copy todir="${build.dir}" overwrite="true">
+            <fileset dir="${src.script.dir}"/>
+        </copy>
+        <chmod file="${build.dir}/start.sh" perm="+x"/>
+
+        <!-- Copy gui libs -->
+        <copy todir="${build.lib.dir}" flatten="true">
+            <path>
+                <pathelement path="${gui_libs}" />
+            </path>
+        </copy>
+        
+    </target>
+
+    <target name="install" depends="dist, gui"
+            description="install project">
+    </target>
+    
+    <target name="run_miner" depends="dist"
+        description="run mining from sites, which config-files in resources/miner">
+        <java dir="${project.dir}" jar="${dist.dir}/miner.jar" fork="true">
+            <jvmarg value="-Xms64m"/>
+            <jvmarg value="-Xmx1750m"/>
+            <arg value="resources/miner/" / как параметры командной строки для miner.jar>
+        </java>
+    </target>
+    
+    <target name="run_clusterizer" depends="dist"
+        description="run clusterization on dirtyDB, and creating mainDB">
+        <java dir="${project.dir}" jar="${dist.dir}/clusterizer.jar" fork="true">
+            <jvmarg value="-Xms64m"/>
+            <jvmarg value="-Xmx750m"/>
+        </java>
+   </target>
+    
+    <target name="run_mongoIndexer" depends="dist"
+        description="run mongo-indexation on dirty and mainDB">
+        <java dir="${project.dir}" jar="${dist.dir}/mongoIndexer.jar" fork="true">
+            <jvmarg value="-Xms64m"/>
+            <jvmarg value="-Xmx750m"/>
+        </java>
+   </target>
+    
+    <target name="run_indexer" depends="dist"
+        description="run indexation on mainDB, and creating index-files in build/index">
+        <java dir="${project.dir}" jar="${dist.dir}/indexer.jar" fork="true">
+            <jvmarg value="-Xms64m"/>
+            <jvmarg value="-Xmx750m"/>
+            <arg value="-n" />
+            <arg value="--dir" />
+            <arg value="${index.dir}" />
+        </java>
+    </target>
+    
+    <target name="run_gui" depends="gui"
+        description="run gui server on port 8080">
+        <exec dir="${build.dir}" executable="${build.dir}/start.sh" />
+    </target>
+
+    <target name="clean"
+            description="clean up">
+        <!-- Delete the ${build.dir} and ${dist.dir} directory trees -->
+        <delete dir="${build.dir}"/>
+        <delete dir="${dist.dir}"/>
+    </target>
+    
+    <target name="help"
+        description="write help">
+        <!-- Как пользоваться. -->
+        <echo level="info">ant run_miner
+| Run mining from sites, which config-files in resources/miner
+        </echo>
+        <echo level="info">ant run_clusterizer 
+| Run clusterization on dirtyDB, and creating mainDB
+        </echo>
+        <echo level="info">ant run_indexer
+| Run indexation on mainDB, and creating index-files in build/index
+        </echo>
+        <echo level="info">ant run_gui
+| Run gui server on port 8080
+        </echo>
+    </target>
+
+
+</project>
+
