@@ -5,7 +5,6 @@
     </description>
 
     <!-- set global properties for this build -->
-
     <!-- User's properties from file 'build.properties' -->
     <property file="build.properties"/>
     
