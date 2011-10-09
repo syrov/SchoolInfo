@@ -35,9 +35,7 @@
 
     <!--Yalets-->
 
-    <bean id="FieldOfStudyYalet" class=" ru.compscicenter.schoolinfo.gui.yalets.FieldOfStudyYalet"/>
-    <bean id="FieldOfStudyAndCityYalet" class=" ru.compscicenter.schoolinfo.gui.yalets.FieldOfStudyAndCityYalet"/>
-    <bean id="FieldOfStudyAndUniversityYalet" class=" ru.compscicenter.schoolinfo.gui.yalets.FieldOfStudyAndUniversityYalet"/>
+    <bean id="UserQueryYalet" class=" ru.compscicenter.schoolinfo.gui.yalets.UserQueryYalet"/>
 
 </beans>
 
