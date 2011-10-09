@@ -2,21 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4b76eae-a61a-46cc-8854-7426a3e706f2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/java/indexer/Searcher.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/java/backend/backend.iml" afterPath="$PROJECT_DIR$/java/ru/compscicenter/schoolinfo/backend/backend.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/java/frontend/frontend.iml" afterPath="$PROJECT_DIR$/java/ru/compscicenter/schoolinfo/frontend/frontend.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/java/indexer/Indexer.iml" afterPath="$PROJECT_DIR$/java/ru/compscicenter/schoolinfo/indexer/Indexer.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/java/indexer/Indexer.java" afterPath="$PROJECT_DIR$/java/ru/compscicenter/schoolinfo/indexer/Indexer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/java/indexer/Searcher.java" afterPath="$PROJECT_DIR$/java/ru/compscicenter/schoolinfo/searcher/Searcher.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/java/indexer/TestSearchAndIndex.java" afterPath="$PROJECT_DIR$/java/ru/compscicenter/schoolinfo/indexer/TestSearchAndIndex.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/java/indexer/UnivRecord.java" afterPath="$PROJECT_DIR$/java/ru/compscicenter/schoolinfo/searcher/UnivRecord.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/java/indexer/testDB.sql" afterPath="$PROJECT_DIR$/java/ru/compscicenter/schoolinfo/indexer/testDB.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/java/miner/DataCleaner.java" afterPath="$PROJECT_DIR$/java/ru/compscicenter/schoolinfo/miner/DataCleaner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/java/miner/Main.java" afterPath="$PROJECT_DIR$/java/ru/compscicenter/schoolinfo/miner/Main.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/java/miner/MyScarper.java" afterPath="$PROJECT_DIR$/java/ru/compscicenter/schoolinfo/miner/MyScarper.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/java/miner/MyUniversalListener.java" afterPath="$PROJECT_DIR$/java/ru/compscicenter/schoolinfo/miner/MyUniversalListener.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/java/miner/miner.iml" afterPath="$PROJECT_DIR$/java/ru/compscicenter/schoolinfo/miner/miner.iml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SchoolInfo2.iml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolInfo.iml" afterPath="$PROJECT_DIR$/SchoolInfo.iml" />
     </list>
     <ignored path="SchoolInfo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -83,7 +72,7 @@
       <file leaf-file-name="Indexer.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/java/ru/compscicenter/schoolinfo/indexer/Indexer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="36" selection-start="713" selection-end="713" vertical-scroll-proportion="0.336">
+            <state line="40" column="38" selection-start="1087" selection-end="1087" vertical-scroll-proportion="0.336">
               <folding />
             </state>
           </provider>
@@ -92,10 +81,8 @@
       <file leaf-file-name="Searcher.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/java/ru/compscicenter/schoolinfo/searcher/Searcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="13" selection-start="787" selection-end="787" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="26" column="13" selection-start="784" selection-end="784" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -104,9 +91,7 @@
         <entry file="file://$PROJECT_DIR$/java/ru/compscicenter/schoolinfo/indexer/TestSearchAndIndex.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="13" column="13" selection-start="350" selection-end="350" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -188,7 +173,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Favorites" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -208,22 +193,40 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SchoolInfo2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SchoolInfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="schoolinfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Modules" />
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="recentsLimit" value="5" />
-    <property name="MemberChooser.sorted" value="false" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="recentsLimit" value="5" />
     <property name="MemberChooser.showClasses" value="true" />
-    <property name="project.structure.side.proportion" value="0.2" />
     <property name="GoToClass.includeLibraries" value="false" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
   <component name="RecentsManager">
@@ -395,7 +398,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-5" width="1376" height="745" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -405,7 +408,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.6891304" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923076" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32877752" sideWeight="0.6891304" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32877752" sideWeight="0.6891304" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3395445" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31086957" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -494,21 +497,17 @@
         <state line="5" column="50" selection-start="208" selection-end="208" vertical-scroll-proportion="0.1736111" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/ru/compscicenter/schoolinfo/indexer/TestSearchAndIndex.java">
+    <entry file="file://$PROJECT_DIR$/java/ru/compscicenter/schoolinfo/searcher/Searcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="350" selection-end="350" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="26" column="13" selection-start="784" selection-end="784" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/ru/compscicenter/schoolinfo/searcher/Searcher.java">
+    <entry file="file://$PROJECT_DIR$/java/ru/compscicenter/schoolinfo/indexer/TestSearchAndIndex.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="13" selection-start="787" selection-end="787" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="13" column="13" selection-start="350" selection-end="350" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -521,7 +520,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/java/ru/compscicenter/schoolinfo/indexer/Indexer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="36" selection-start="713" selection-end="713" vertical-scroll-proportion="0.336">
+        <state line="40" column="38" selection-start="1087" selection-end="1087" vertical-scroll-proportion="0.336">
           <folding />
         </state>
       </provider>
@@ -578,11 +577,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>SchoolInfo2</last-edited>
+          <last-edited>SchoolInfo</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
