@@ -1,4 +1,4 @@
-package miner;
+package ru.compscicenter.schoolinfo.miner;
 
 import miner.MyScarper;
 import ru.amse.agregator.storage.Database;

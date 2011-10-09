@@ -1,14 +1,6 @@
-/**
- * Created by IntelliJ IDEA.
- * User: Evgeniy
- * Date: 05.10.11
- * Time: 21:10
- * To change this template use File | Settings | File Templates.
- */
-
+package ru.compscicenter.schoolinfo.indexer;
 
 import org.apache.lucene.analysis.ru.RussianAnalyzer;
-import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
 import org.apache.lucene.index.IndexWriter;
@@ -22,6 +14,15 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
+
+/**
+ * Created by IntelliJ IDEA.
+ * User: Evgeniy
+ * Date: 05.10.11
+ * Time: 21:10
+ * To change this template use File | Settings | File Templates.
+ */
+
 
 public class Indexer {
     String DBName;

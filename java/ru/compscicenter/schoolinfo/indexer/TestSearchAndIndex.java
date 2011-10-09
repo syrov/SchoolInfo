@@ -1,3 +1,7 @@
+package ru.compscicenter.schoolinfo.indexer;
+
+import ru.compscicenter.schoolinfo.searcher.UnivRecord;
+import ru.compscicenter.schoolinfo.searcher.Searcher;
 import java.util.ArrayList;
 
 /**

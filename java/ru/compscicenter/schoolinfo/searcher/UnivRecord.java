@@ -1,3 +1,5 @@
+package ru.compscicenter.schoolinfo.searcher;
+
 /**
  * Created by IntelliJ IDEA.
  * User: Evgeniy
