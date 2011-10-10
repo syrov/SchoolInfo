@@ -8,6 +8,9 @@ package ru.compscicenter.schoolinfo.searcher;
  * To change this template use File | Settings | File Templates.
  */
 
+/**
+ * Класс, представляющий запись в базе.
+ */
 public class UnivRecord {
     private int id;
     private String name;

@@ -10,6 +10,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="WebHarvester" level="project" />
     <orderEntry type="library" name="lib" level="project" />
+    <orderEntry type="library" name="lucene" level="project" />
   </component>
 </module>
 

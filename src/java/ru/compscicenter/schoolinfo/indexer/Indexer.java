@@ -25,11 +25,10 @@ import java.sql.Statement;
 
 
 public class Indexer {
-    String DBName;
-    String user;
-    String pass;
-    String tableName;
-    Directory dir;
+    private String DBName;
+    private String user;
+    private String pass;
+    private String tableName;
 
     public static void main(String[] args) throws Exception {
         if (args.length != 1) {
@@ -53,7 +52,7 @@ public class Indexer {
     private IndexWriter writer;
 
     public Indexer(String indexDir, String DBName, String user, String pass, String tableName) throws IOException {
-        dir = FSDirectory.open(new File(indexDir));
+        Directory dir = FSDirectory.open(new File(indexDir));
         writer = new IndexWriter(dir, new RussianAnalyzer(Version.LUCENE_34),
                 true, IndexWriter.MaxFieldLength.UNLIMITED);
         writer.commit();
@@ -69,6 +68,7 @@ public class Indexer {
         writer.close();
     }
 
+    /** Индексация базы данных, с параметрами указанными при создании */
     public int index() throws Exception {
          // установка соединения с индексируемой базой данных
         Connection conn = DriverManager.getConnection(
