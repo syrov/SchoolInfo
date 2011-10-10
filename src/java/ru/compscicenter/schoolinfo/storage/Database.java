@@ -20,6 +20,12 @@ public class Database {
         }
     }
 
+    public void performQuery(String query) throws SQLException {
+        Statement stmt = connection.createStatement();
+        stmt.execute(query);
+        stmt.close();
+    }
+
     public void add(University university) throws SQLException {
         Statement stmt = connection.createStatement();
         stmt.executeUpdate("INSERT INTO UNIVERSITIES (NAME) VALUES ('" + university.getName() + "')", Statement.RETURN_GENERATED_KEYS);
