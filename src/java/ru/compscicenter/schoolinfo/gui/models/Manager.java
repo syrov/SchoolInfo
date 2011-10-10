@@ -34,7 +34,7 @@ public class Manager {
             Database.connectToMainBase();
         }     */
 
-        Database.connectToDB();
+ //       Database.connectToDB();
     }
 
     //Получение данных из базы
