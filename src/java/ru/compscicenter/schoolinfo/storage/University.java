@@ -1,4 +1,4 @@
-package storage;
+package ru.compscicenter.schoolinfo.storage;
 
 /**
  * User: pritykovskaya

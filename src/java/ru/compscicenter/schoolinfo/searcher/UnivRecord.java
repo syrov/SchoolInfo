@@ -13,7 +13,7 @@ public class UnivRecord {
     private String name;
     private String about;
 
-    UnivRecord(int id, String name, String about) {
+    public UnivRecord(int id, String name, String about) {
         this.id = id;
         this.name = name;
         this.about = about;

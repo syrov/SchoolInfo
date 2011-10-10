@@ -1,9 +1,7 @@
-package storage;
+package ru.compscicenter.schoolinfo.storage;
 
 import java.sql.*;
 import java.util.*;
-
-
 
 import java.net.UnknownHostException;
 import java.util.*;
