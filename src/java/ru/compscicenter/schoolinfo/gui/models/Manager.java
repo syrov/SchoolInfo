@@ -26,17 +26,19 @@ public class Manager {
     public ArrayList<UnivRecord> getSearchResult(String dir, String city, String uni) {
         ArrayList<UnivRecord> result = new ArrayList<UnivRecord>();
 // обращение к searcher'у
-        if(dir == null)
+        if(dir == null && city == null && uni == null)
             return result;
 
    //     Searcher.setIndexDir(new File("index"));
 
         String IndexDir = "/home/index"; // пождлежит корректировке
 
-        if(uni != null)
+        if (uni != null)
             result = Searcher.search(IndexDir, new UserQuery(uni));
-        else
+        else if (city != null)
             result = Searcher.search(IndexDir, new UserQuery(city));
+        else
+            result = Searcher.search(IndexDir, new UserQuery(dir));
 
         if (result.size() == 0) {
             UnivRecord rec = new UnivRecord(0, "Error", "No information found");

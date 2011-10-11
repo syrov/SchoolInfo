@@ -41,7 +41,7 @@ public class UserQueryYalet extends AbstractDbYalet {
         else if (uni == null)  {
             ArrayList<UnivRecord> rec = new ArrayList<UnivRecord>(5);
 
-// тут надо ещё отсортировать result
+// тут надо ещё отсортировать result, позже следует удалить Comparator и сортировать данные при выборке из базы (searcher)
             Collections.sort(result, new UnivRecordComparator());
 
             for(int i = 0; i < 5; i ++)
