@@ -6,8 +6,10 @@ import net.sf.xfresh.db.AbstractDbYalet;
 
 import ru.compscicenter.schoolinfo.gui.models.Manager;
 import ru.compscicenter.schoolinfo.searcher.UnivRecord;
+import ru.compscicenter.schoolinfo.searcher.UnivRecordComparator;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 /**
  * Created by IntelliJ IDEA.
@@ -32,8 +34,20 @@ public class UserQueryYalet extends AbstractDbYalet {
         ArrayList<UnivRecord> result = manager.getSearchResult(dir, city, uni);
 //      log.error(result + "RESULT");
         if (result.size() == 0) {
-            UnivRecord rec = new UnivRecord(0, "Error", "Error");
+            UnivRecord rec = new UnivRecord(0, "Error", "No information found");
             result.add(rec);
+        }
+
+        else if (uni == null)  {
+            ArrayList<UnivRecord> rec = new ArrayList<UnivRecord>(5);
+
+// тут надо ещё отсортировать result
+            Collections.sort(result, new UnivRecordComparator());
+
+            for(int i = 0; i < 5; i ++)
+                rec.add(result.get(i));
+
+            result = rec;
         }
 
         res.add(result);

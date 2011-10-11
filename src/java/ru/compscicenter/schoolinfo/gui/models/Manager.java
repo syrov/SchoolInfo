@@ -10,37 +10,39 @@ package ru.compscicenter.schoolinfo.gui.models;
 
 import org.apache.log4j.Logger;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.*;
 
 
+import org.apache.lucene.queryParser.ParseException;
 import ru.compscicenter.schoolinfo.searcher.*;
 import ru.compscicenter.schoolinfo.storage.*;
 
 public class Manager {
-    Logger log = Logger.getLogger(Manager.class);
+//    Logger log = Logger.getLogger(Manager.class);
 
- /*   public static enum DatabaseEnum {
-        mainDB,
-        dirtyDB
-    }
-
-    public static DatabaseEnum databaseName = DatabaseEnum.mainDB; */
-
-    public void connectToDatabase() {
-
-  /*      if (Manager.databaseName == DatabaseEnum.dirtyDB) {
-            Database.connectToDirtyBase();
-        } else {
-            Database.connectToMainBase();
-        }     */
-
- //       Database.connectToDB();
-    }
-
-    //Получение данных из базы
-    public ArrayList<UnivRecord> getSearchResult(String div, String city, String uni) {
+    //Получение данных из базы (обращение к searcher'у)
+    public ArrayList<UnivRecord> getSearchResult(String dir, String city, String uni) {
         ArrayList<UnivRecord> result = new ArrayList<UnivRecord>();
-// обращение к searcher'у, код будет добавлен позже
+// обращение к searcher'у
+        if(dir == null)
+            return result;
+
+   //     Searcher.setIndexDir(new File("index"));
+
+        String IndexDir = "/home/index"; // пождлежит корректировке
+
+        if(uni != null)
+            result = Searcher.search(IndexDir, new UserQuery(uni));
+        else
+            result = Searcher.search(IndexDir, new UserQuery(city));
+
+        if (result.size() == 0) {
+            UnivRecord rec = new UnivRecord(0, "Error", "No information found");
+            result.add(rec);
+        }
+
         return result;
     }
 }

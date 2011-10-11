@@ -8,11 +8,14 @@ package ru.compscicenter.schoolinfo.searcher;
  * To change this template use File | Settings | File Templates.
  */
 
+import java.util.Comparator;
+
 /**
  * Класс, представляющий запись в базе.
  */
 public class UnivRecord {
     private int id;
+    private int rating;
     private String name;
     private String about;
 
@@ -32,5 +35,9 @@ public class UnivRecord {
 
     public String getInfo() {
         return about;
+    }
+
+    public int getRating() {
+        return rating;
     }
 }
