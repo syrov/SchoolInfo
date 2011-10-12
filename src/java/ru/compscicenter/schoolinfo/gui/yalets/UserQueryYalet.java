@@ -20,7 +20,7 @@ import java.util.Collections;
  */
 public class UserQueryYalet extends AbstractDbYalet {
 
-    protected UserQueryManager manager = new UserQueryManager(); // добавить потом модель UserQueryManager
+    protected UserQueryManager manager = new UserQueryManager();
 
     public void setManager(UserQueryManager manager) {
         this.manager = manager;
