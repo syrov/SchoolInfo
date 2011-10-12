@@ -37,6 +37,7 @@
 
     <bean id="UserQueryYalet" class=" ru.compscicenter.schoolinfo.gui.yalets.UserQueryYalet"/>
 
+    <bean id="manager" class = " ru.compscicenter.schoolinfo.gui.models.Manager"/>
 </beans>
 
 
