@@ -4,7 +4,7 @@ import net.sf.xfresh.core.InternalRequest;
 import net.sf.xfresh.core.InternalResponse;
 import net.sf.xfresh.db.AbstractDbYalet;
 
-import ru.compscicenter.schoolinfo.gui.models.Manager;
+import ru.compscicenter.schoolinfo.gui.models.UserQueryManager;
 import ru.compscicenter.schoolinfo.searcher.UnivRecord;
 import ru.compscicenter.schoolinfo.searcher.UnivRecordComparator;
 
@@ -20,9 +20,9 @@ import java.util.Collections;
  */
 public class UserQueryYalet extends AbstractDbYalet {
 
-    protected Manager manager = new Manager(); // добавить потом модель Manager
+    protected UserQueryManager manager = new UserQueryManager(); // добавить потом модель UserQueryManager
 
-    public void setManager(Manager manager) {
+    public void setManager(UserQueryManager manager) {
         this.manager = manager;
     }
 

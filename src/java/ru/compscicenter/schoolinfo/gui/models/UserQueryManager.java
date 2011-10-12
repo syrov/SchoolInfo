@@ -19,8 +19,8 @@ import org.apache.lucene.queryParser.ParseException;
 import ru.compscicenter.schoolinfo.searcher.*;
 import ru.compscicenter.schoolinfo.storage.*;
 
-public class Manager {
-//    Logger log = Logger.getLogger(Manager.class);
+public class UserQueryManager {
+//    Logger log = Logger.getLogger(UserQueryManager.class);
 
     //Получение данных из базы (обращение к searcher'у)
     public ArrayList<UnivRecord> getSearchResult(String dir, String city, String uni) {
