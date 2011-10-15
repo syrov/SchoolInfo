@@ -1,6 +1,6 @@
 package ru.compscicenter.schoolinfo.indexer;
 
-import ru.compscicenter.schoolinfo.searcher.UnivRecord;
+import ru.compscicenter.schoolinfo.searcher.DBRecord;
 import ru.compscicenter.schoolinfo.searcher.Searcher;
 import ru.compscicenter.schoolinfo.searcher.UserQuery;
 
@@ -31,9 +31,9 @@ public class TestSearchAndIndex {
         } finally {
             ind.close();
         }
-        ArrayList<UnivRecord> res = Searcher.search(INDEX_DIR, new UserQuery("университет"));
-        for(int i = 0 ; i < res.size() ; i++) {
-            UnivRecord univ = res.get(i);
+        ArrayList<DBRecord> res = Searcher.search(INDEX_DIR, new UserQuery("университет"));
+        for (int i = 0; i < res.size(); i++) {
+            DBRecord univ = res.get(i);
             System.out.println("id=" + univ.getId() + "; Name=" + univ.getName() + "; About:\n" + univ.getInfo() + "\n");
         }
 

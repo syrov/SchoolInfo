@@ -8,18 +8,16 @@ package ru.compscicenter.schoolinfo.searcher;
  * To change this template use File | Settings | File Templates.
  */
 
-import java.util.Comparator;
-
 /**
  * Класс, представляющий запись в базе.
  */
-public class UnivRecord {
+public class DBRecord {
     private int id;
     private int rating;
     private String name;
     private String about;
 
-    public UnivRecord(int id, String name, String about) {
+    public DBRecord(int id, String name, String about) {
         this.id = id;
         this.name = name;
         this.about = about;

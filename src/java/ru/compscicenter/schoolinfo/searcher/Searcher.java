@@ -22,31 +22,25 @@ import org.apache.lucene.store.FSDirectory;
 import org.apache.lucene.util.Version;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.nio.file.DirectoryIteratorException;
 import java.util.ArrayList;
 
 public class Searcher {
 
-    public static void main(String[] args) throws IllegalArgumentException,
+    /*public static void main(String[] args) throws IllegalArgumentException,
             IOException, ParseException {
-        /*
-        if (args.length != 2) {
-            throw new IllegalArgumentException("Usage: java " + Searcher.class.getName()
-            + " <index dir> <query>");
-        }
-        */
         String indexDir = "/home/dzeta/index"; // папка для хранения индекса
         UserQuery q = new UserQuery("университет"); // запрос
         search(indexDir, q);
     }
+    */
 
-    public static ArrayList<UnivRecord> search(String indexDir, UserQuery q)
-        throws IOException, ParseException {
+    public static ArrayList<DBRecord> search(String indexDir, UserQuery q)
+            throws IOException, ParseException {
         // первичная подготовка
         Directory dir = FSDirectory.open(new File(indexDir));
         IndexSearcher is = new IndexSearcher(dir);
+
         QueryParser parser = new QueryParser(Version.LUCENE_34,
                 "about", new RussianAnalyzer(Version.LUCENE_34));
 
@@ -61,15 +55,16 @@ public class Searcher {
         System.err.println("Found " + hits.totalHits + " document(s) (in " +
                 (end - start) + " milliseconds) that matched query '" + q + "':");
 
-        ArrayList<UnivRecord> res = new ArrayList<UnivRecord>();
-        for(ScoreDoc scoreDoc : hits.scoreDocs) {
+        ArrayList<DBRecord> res = new ArrayList<DBRecord>();
+        for (ScoreDoc scoreDoc : hits.scoreDocs) {
             Document doc = is.doc(scoreDoc.doc);
             //System.out.println(doc.get("name") + " " + doc.get("about"));
-            UnivRecord univ = new UnivRecord(Integer.parseInt(doc.get("id")), doc.get("name"), doc.get("about"));
+            DBRecord univ = new DBRecord(Integer.parseInt(doc.get("id")), doc.get("name"), doc.get("about"));
             res.add(univ);
         }
 
         is.close();
+
         return res;
     }
 }

@@ -30,7 +30,7 @@ public class Indexer {
     private String pass;
     private String tableName;
 
-    public static void main(String[] args) throws Exception {
+    /*public static void main(String[] args) throws Exception {
         if (args.length != 1) {
             throw new IllegalArgumentException("Usage: java " + Indexer.class.getName() +
             " <index dir>");
@@ -47,7 +47,7 @@ public class Indexer {
         }
         long end = System.currentTimeMillis();
         System.out.println("Indexing " + numIndexed + " files took " + (end - start) + " milliseconds");
-    }
+    }  */
 
     private IndexWriter writer;
 
@@ -68,9 +68,11 @@ public class Indexer {
         writer.close();
     }
 
-    /** Индексация базы данных, с параметрами указанными при создании */
+    /**
+     * Индексация базы данных, с параметрами указанными при создании
+     */
     public int index() throws Exception {
-         // установка соединения с индексируемой базой данных
+        // установка соединения с индексируемой базой данных
         Connection conn = DriverManager.getConnection(
                 "jdbc:mysql://localhost/" + DBName, user, pass);
         if (conn == null) {
