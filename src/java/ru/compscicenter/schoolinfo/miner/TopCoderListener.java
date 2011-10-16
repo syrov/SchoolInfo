@@ -34,12 +34,14 @@ public class TopCoderListener implements ScraperRuntimeListener {
 
     public void onNewProcessorExecution(Scraper scraper, BaseProcessor baseProcessor) {
         if ("empty".equalsIgnoreCase(scraper.getRunningProcessor().getElementDef().getShortElementName())) {
-            /*           Variable universityName = (Variable) scraper.getContext().get("universityName");
+                      Variable universityName = (Variable) scraper.getContext().get("universityName");
 
 
      String sUniversityName = clearString(universityName);
-     System.out.println(sUniversityName);       */
+     System.out.println(sUniversityName);
 
+
+      /*
             Variable countryName = (Variable) scraper.getContext().get("universityCountry");
             if (countryName.equals("Russian Federation")) {
                 try {
@@ -52,7 +54,7 @@ public class TopCoderListener implements ScraperRuntimeListener {
                     e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
                 }
             }
-
+        */
         }
     }
 

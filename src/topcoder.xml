@@ -46,7 +46,6 @@
                         <var name="university"/>
                     </xpath>
                 </var-def>
-
             </empty>
         </body>
     </loop>
@@ -54,4 +53,3 @@
 
 
 </config>
-

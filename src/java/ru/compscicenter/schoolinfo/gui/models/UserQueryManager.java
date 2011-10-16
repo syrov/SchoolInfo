@@ -8,17 +8,19 @@ package ru.compscicenter.schoolinfo.gui.models;
  * To change this template use File | Settings | File Templates.
  */
 
+import org.apache.lucene.queryParser.ParseException;
 import ru.compscicenter.schoolinfo.searcher.Searcher;
 import ru.compscicenter.schoolinfo.util.DBRecord;
 import ru.compscicenter.schoolinfo.util.UserQuery;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class UserQueryManager {
 //    Logger log = Logger.getLogger(UserQueryManager.class);
 
     //Получение данных из базы (обращение к searcher'у)
-    public ArrayList<DBRecord> getSearchResult(String dir, String city, String uni) {
+    public ArrayList<DBRecord> getSearchResult(String dir, String city, String uni) throws IOException, ParseException {
         ArrayList<DBRecord> result = new ArrayList<DBRecord>();
 // обращение к searcher'у
         if (dir == null && city == null && uni == null)

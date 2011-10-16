@@ -11,7 +11,7 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        String mainDirectory;
+    /*    String mainDirectory;
 
         if (args.length == 1) {
             mainDirectory = args[0].toString();
@@ -25,7 +25,7 @@ public class Main {
             Database.connectToDB();
         } catch (SQLException e) {
             e.printStackTrace();
-        }
+        }*/
 //
 //		//System.out.println(Database.getAllCities().size());
 //		//System.in.read();
@@ -42,7 +42,7 @@ public class Main {
 //
 //		 }
 
-        String configFilePath = " /Users/alex/SchoolInfo/src/topcoder.xml";
+        String configFilePath = "/home/natasha/SchoolInfo/src/topcoder.xml";
         ScraperConfiguration config = new ScraperConfiguration(configFilePath);
         TopCoderListener listener = new TopCoderListener();
         Scraper scraper = new Scraper(config, ".");
