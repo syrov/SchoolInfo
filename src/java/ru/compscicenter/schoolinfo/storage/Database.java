@@ -1,16 +1,13 @@
 package ru.compscicenter.schoolinfo.storage;
 
 import java.sql.*;
-import java.util.*;
-
-import java.net.UnknownHostException;
-import java.util.*;
-import java.util.regex.Pattern;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Database {
-    private Connection connection;
+    private static Connection connection;
 
-    public void connectToDB() throws SQLException {
+    public static void connectToDB() throws SQLException {
         connection = DriverManager.getConnection(
                 "jdbc:mysql://localhost:3306/SchoolInfo",
                 "user", "");
@@ -26,7 +23,7 @@ public class Database {
         stmt.close();
     }
 
-    public void add(University university) throws SQLException {
+    public static void add(University university) throws SQLException {
         Statement stmt = connection.createStatement();
         stmt.executeUpdate("INSERT INTO UNIVERSITIES (NAME) VALUES ('" + university.getName() + "')", Statement.RETURN_GENERATED_KEYS);
         stmt.close();
@@ -39,7 +36,8 @@ public class Database {
 
         List<University> universities = new ArrayList<University>();
         while (resultSet.next()) {
-            universities.add(new University(resultSet.getInt(1), resultSet.getString(2)));
+            // ????????? подлежит исправлению
+            universities.add(resultSet.getInt(1), (University) resultSet.getObject(2));
         }
 
         return universities;

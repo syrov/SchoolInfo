@@ -2,8 +2,10 @@ package ru.compscicenter.schoolinfo.miner;
 
 import org.webharvest.definition.ScraperConfiguration;
 import org.webharvest.runtime.Scraper;
+import ru.compscicenter.schoolinfo.storage.Database;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 public class Main {
 
@@ -19,7 +21,11 @@ public class Main {
         }
 
         //Connect to DB
-//		Database.connectToDirtyBase();
+        try {
+            Database.connectToDB();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
 //
 //		//System.out.println(Database.getAllCities().size());
 //		//System.in.read();

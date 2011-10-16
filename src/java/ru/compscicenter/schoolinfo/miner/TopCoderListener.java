@@ -4,7 +4,11 @@ import org.webharvest.runtime.Scraper;
 import org.webharvest.runtime.ScraperRuntimeListener;
 import org.webharvest.runtime.processors.BaseProcessor;
 import org.webharvest.runtime.variables.Variable;
+import ru.compscicenter.schoolinfo.storage.Database;
+import ru.compscicenter.schoolinfo.storage.University;
+import ru.compscicenter.schoolinfo.util.GetUniversityCity;
 
+import java.sql.SQLException;
 import java.util.Map;
 
 /**
@@ -35,6 +39,20 @@ public class TopCoderListener implements ScraperRuntimeListener {
 
      String sUniversityName = clearString(universityName);
      System.out.println(sUniversityName);       */
+
+            Variable countryName = (Variable) scraper.getContext().get("universityCountry");
+            if (countryName.equals("Russian Federation")) {
+                try {
+                    String universityName = (String) scraper.getContext().get("universityName");
+                    Database.add(new University(
+                            universityName,
+                            new GetUniversityCity().getCity(universityName)
+                    ));
+                } catch (SQLException e) {
+                    e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+                }
+            }
+
         }
     }
 
