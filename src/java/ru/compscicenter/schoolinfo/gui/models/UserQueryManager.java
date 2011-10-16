@@ -8,9 +8,9 @@ package ru.compscicenter.schoolinfo.gui.models;
  * To change this template use File | Settings | File Templates.
  */
 
-import ru.compscicenter.schoolinfo.searcher.DBRecord;
 import ru.compscicenter.schoolinfo.searcher.Searcher;
-import ru.compscicenter.schoolinfo.searcher.UserQuery;
+import ru.compscicenter.schoolinfo.util.DBRecord;
+import ru.compscicenter.schoolinfo.util.UserQuery;
 
 import java.util.ArrayList;
 

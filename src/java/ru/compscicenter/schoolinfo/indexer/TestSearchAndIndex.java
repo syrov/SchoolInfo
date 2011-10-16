@@ -1,8 +1,8 @@
 package ru.compscicenter.schoolinfo.indexer;
 
-import ru.compscicenter.schoolinfo.searcher.DBRecord;
 import ru.compscicenter.schoolinfo.searcher.Searcher;
-import ru.compscicenter.schoolinfo.searcher.UserQuery;
+import ru.compscicenter.schoolinfo.util.DBRecord;
+import ru.compscicenter.schoolinfo.util.UserQuery;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package ru.compscicenter.schoolinfo.searcher;
+package ru.compscicenter.schoolinfo.util;
 
 /**
  * Created by IntelliJ IDEA.

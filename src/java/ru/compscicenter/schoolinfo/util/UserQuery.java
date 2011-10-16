@@ -1,4 +1,4 @@
-package ru.compscicenter.schoolinfo.searcher;
+package ru.compscicenter.schoolinfo.util;
 
 /**
  * Created by IntelliJ IDEA.
@@ -11,24 +11,29 @@ package ru.compscicenter.schoolinfo.searcher;
 /**
  * Класс, представляющий пользовательские запросы,
  * как простые, так и сложные.
- *
  */
 public class UserQuery {
 //  это всякие разные пункты, потом добавим ещё, можно в один список
 
-    /** Пользовательский запрос */
+    /**
+     * Пользовательский запрос
+     */
     private String query;
 
     private String direction;
     private String city;
     private String university;
 
-    /** Простейший конструктор */
+    /**
+     * Простейший конструктор
+     */
     public UserQuery(String queryExpression) {
         query = queryExpression;
     }
 
-    /** Возвращает текст пользовательского запроса */
+    /**
+     * Возвращает текст пользовательского запроса
+     */
     public String getQueryExpression() {
         return query;
     }

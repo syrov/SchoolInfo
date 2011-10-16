@@ -4,8 +4,8 @@ import net.sf.xfresh.core.InternalRequest;
 import net.sf.xfresh.core.InternalResponse;
 import net.sf.xfresh.db.AbstractDbYalet;
 import ru.compscicenter.schoolinfo.gui.models.UserQueryManager;
-import ru.compscicenter.schoolinfo.searcher.DBRecord;
-import ru.compscicenter.schoolinfo.searcher.DBRecordComparator;
+import ru.compscicenter.schoolinfo.util.DBRecord;
+import ru.compscicenter.schoolinfo.util.DBRecordComparator;
 
 import java.util.ArrayList;
 import java.util.Collections;
