@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config scriptlang="default_script_lang">
+
+    <var-def name="universityList">
+        <xpath expression="//table[1]/tbody/tr/td[3]/table[2]/tbody/tr[1]/td/table/tbody/tr[*]">
+            <html-to-xml>
+                <http url="http://community.topcoder.com/stat?c=school_avg_rating"/>
+            </html-to-xml>
+        </xpath>
+    </var-def>
+
+    <!-- target: build all cities with their coordinates and description -->
+    <loop item="university" index="i" empty="yes" filter="7-">
+        <list>
+            <var name="universityList"/>
+        </list>
+        <body>
+            <empty>
+                <var-def name="universityRank">
+                    <xpath expression="//td[2]">
+                        <var name="university"/>
+                    </xpath>
+                </var-def>
+
+                <var-def name="universityName">
+                    <xpath expression="//td[3]">
+                        <var name="university"/>
+                    </xpath>
+                </var-def>
+
+                <var-def name="universityCountry">
+                    <xpath expression="//td[4]">
+                        <var name="university"/>
+                    </xpath>
+                </var-def>
+
+                <var-def name="universityMembersCount">
+                    <xpath expression="//td[5]">
+                        <var name="university"/>
+                    </xpath>
+                </var-def>
+
+                <var-def name="universityRating">
+                    <xpath expression="//td[6]">
+                        <var name="university"/>
+                    </xpath>
+                </var-def>
+
+            </empty>
+        </body>
+    </loop>
+    <!--/ target: build all cities with their coordinates and description -->
+
+
+</config>
+
