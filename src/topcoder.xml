@@ -18,31 +18,31 @@
         <body>
             <empty>
                 <var-def name="universityRank">
-                    <xpath expression="//td[2]">
+                    <xpath expression="//td[2]/text()">
                         <var name="university"/>
                     </xpath>
                 </var-def>
 
                 <var-def name="universityName">
-                    <xpath expression="//td[3]">
+                    <xpath expression="//td[3]/text()">
                         <var name="university"/>
                     </xpath>
                 </var-def>
 
                 <var-def name="universityCountry">
-                    <xpath expression="//td[4]">
+                    <xpath expression="//td[4]/text()">
                         <var name="university"/>
                     </xpath>
                 </var-def>
 
                 <var-def name="universityMembersCount">
-                    <xpath expression="//td[5]">
+                    <xpath expression="//td[5]/text()">
                         <var name="university"/>
                     </xpath>
                 </var-def>
 
                 <var-def name="universityRating">
-                    <xpath expression="//td[6]">
+                    <xpath expression="//td[6]/text()">
                         <var name="university"/>
                     </xpath>
                 </var-def>

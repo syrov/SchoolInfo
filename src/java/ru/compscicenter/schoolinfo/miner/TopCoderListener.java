@@ -20,6 +20,11 @@ import java.util.Map;
  */
 public class TopCoderListener implements ScraperRuntimeListener {
 
+    Database database;
+
+    public TopCoderListener(Database database) {
+        this.database = database;
+    }
     public void onExecutionStart(Scraper scraper) {
         //To change body of implemented methods use File | Settings | File Templates.
     }
@@ -63,6 +68,7 @@ public class TopCoderListener implements ScraperRuntimeListener {
     }
 
     public void onProcessorExecutionFinished(Scraper scraper, BaseProcessor baseProcessor, Map map) {
+        System.out.println(map);
         //To change body of implemented methods use File | Settings | File Templates.
     }
 

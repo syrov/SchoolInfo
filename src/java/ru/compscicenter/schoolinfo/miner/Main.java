@@ -9,7 +9,7 @@ import java.sql.SQLException;
 
 public class Main {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, SQLException {
 
     /*    String mainDirectory;
 
@@ -44,10 +44,20 @@ public class Main {
 
         String configFilePath = "/home/natasha/SchoolInfo/src/topcoder.xml";
         ScraperConfiguration config = new ScraperConfiguration(configFilePath);
-        TopCoderListener listener = new TopCoderListener();
+        Database database = new Database();
+
+        try {
+            database.connectToDB();
+        } catch (SQLException e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        }
+
+        TopCoderListener listener = new TopCoderListener(database);
         Scraper scraper = new Scraper(config, ".");
         scraper.addRuntimeListener(listener);
         scraper.execute();
+
+        database.closeConnection();
     }
 }
 	

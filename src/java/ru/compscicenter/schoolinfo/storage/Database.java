@@ -5,9 +5,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Database {
-    private static Connection connection;
+    private Connection connection;
 
-    public static void connectToDB() throws SQLException {
+    public void connectToDB() throws SQLException {
         connection = DriverManager.getConnection(
                 "jdbc:mysql://localhost:3306/SchoolInfo",
                 "user", "");
@@ -23,7 +23,7 @@ public class Database {
         stmt.close();
     }
 
-    public static void add(University university) throws SQLException {
+    public void add(University university) throws SQLException {
         Statement stmt = connection.createStatement();
         stmt.executeUpdate("INSERT INTO UNIVERSITIES (NAME) VALUES ('" + university.getName() + "')", Statement.RETURN_GENERATED_KEYS);
         stmt.close();
