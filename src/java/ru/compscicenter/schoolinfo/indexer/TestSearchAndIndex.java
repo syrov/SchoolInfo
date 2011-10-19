@@ -1,11 +1,5 @@
 package ru.compscicenter.schoolinfo.indexer;
 
-import ru.compscicenter.schoolinfo.searcher.Searcher;
-import ru.compscicenter.schoolinfo.util.DBRecord;
-import ru.compscicenter.schoolinfo.util.UserQuery;
-
-import java.util.ArrayList;
-
 /**
  * Created by IntelliJ IDEA.
  * User: Evgeniy
@@ -15,7 +9,7 @@ import java.util.ArrayList;
  */
 public class TestSearchAndIndex {
     // Параметры базы и индекса. Необходимо изменить
-    public static String DBName = "UNIINFO";
+    /*public static String DBName = "UNIINFO";
     public static String user = "root";
     public static String pass = "mysql_1";
     public static String tableName = "univercity";
@@ -37,5 +31,5 @@ public class TestSearchAndIndex {
             System.out.println("id=" + univ.getId() + "; Name=" + univ.getName() + "; About:\n" + univ.getInfo() + "\n");
         }
 
-    }
+    }*/
 }

@@ -1,5 +1,6 @@
 package ru.compscicenter.schoolinfo.indexer;
 
+import com.google.gson.Gson;
 import org.apache.lucene.analysis.ru.RussianAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
@@ -7,6 +8,9 @@ import org.apache.lucene.index.IndexWriter;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 import org.apache.lucene.util.Version;
+import ru.compscicenter.schoolinfo.util.FacultyDescription;
+import ru.compscicenter.schoolinfo.util.UnivDescription;
+import ru.compscicenter.schoolinfo.util.UserQuery;
 
 import java.io.File;
 import java.io.IOException;
@@ -25,6 +29,8 @@ import java.sql.Statement;
 
 
 public class Indexer {
+    public static final String INDEX_DIR = "/home/dzeta/Projects/index";
+
     private String DBName;
     private String user;
     private String pass;
@@ -82,14 +88,37 @@ public class Indexer {
         Statement stmt = conn.createStatement();
         ResultSet rs = stmt.executeQuery("SELECT * FROM " + tableName);
 
-        // добавление данных из базы в индекс
-        while (rs.next()) {
-            Document doc = new Document();
-            doc.add(new Field("id", rs.getString("id"), Field.Store.YES, Field.Index.NO));
-            doc.add(new Field("name", rs.getString("name"), Field.Store.YES, Field.Index.NOT_ANALYZED));
-            doc.add(new Field("about", rs.getString("about"), Field.Store.YES, Field.Index.ANALYZED));
-            System.out.println(rs.getString("about"));
-            writer.addDocument(doc);
+        // добавление данных из базы в индекс, в зависимости от типа индексируемой таблицы
+        // одинакового кода много, наверное можно это сократить. Просто пока всё предельно понятно
+        if (tableName == UserQuery.QTYPE_UNIV) {
+            while (rs.next()) {
+                Document doc = new Document();
+                doc.add(new Field("id", rs.getString("id"), Field.Store.YES, Field.Index.NO));
+                doc.add(new Field("name", rs.getString("name"), Field.Store.YES, Field.Index.NOT_ANALYZED));
+                doc.add(new Field("city", rs.getString("city"), Field.Store.YES, Field.Index.ANALYZED));
+
+                Gson gson = new Gson();
+                UnivDescription u = gson.fromJson(rs.getString("description"), UnivDescription.class);
+                doc.add(new Field("type", Byte.toString(u.getType()), Field.Store.YES, Field.Index.ANALYZED));
+                doc.add(new Field("campus", Byte.toString(u.getCampus()), Field.Store.YES, Field.Index.ANALYZED));
+
+                System.out.println(rs.getString("about"));
+                writer.addDocument(doc);
+            }
+        } else if (tableName == UserQuery.QTYPE_FACULTY) {
+            while (rs.next()) {
+                Document doc = new Document();
+                doc.add(new Field("id", rs.getString("id"), Field.Store.YES, Field.Index.NO));
+                doc.add(new Field("name", rs.getString("name"), Field.Store.YES, Field.Index.NOT_ANALYZED));
+                doc.add(new Field("city", rs.getString("city"), Field.Store.YES, Field.Index.ANALYZED));
+
+                Gson gson = new Gson();
+                FacultyDescription u = gson.fromJson(rs.getString("description"), FacultyDescription.class);
+                // todo: вписать необходимый код
+
+                System.out.println(rs.getString("about"));
+                writer.addDocument(doc);
+            }
         }
         stmt.close();
         return writer.numDocs();

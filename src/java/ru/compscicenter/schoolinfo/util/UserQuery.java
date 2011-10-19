@@ -15,44 +15,64 @@ package ru.compscicenter.schoolinfo.util;
 public class UserQuery {
 //  это всякие разные пункты, потом добавим ещё, можно в один список
 
-    /**
-     * Пользовательский запрос
-     */
-    private String query;
+    public static final String QTYPE_FACULTY = "faculty";
+    public static final String QTYPE_UNIV = "univercity";
+    public static final String FIELD_CITY = "city";
+    public static final String FIELD_NAME = "name";
+    public static final String FIELD_DESCRIPTION = "description";
 
-    private String direction;
+    private String queryType;
+    private String query = "";
+
+    private int id;
+    private String name;
     private String city;
-    private String university;
+    private UnivDescription description;
 
     /**
      * Простейший конструктор
      */
-    public UserQuery(String queryExpression) {
-        query = queryExpression;
+    public UserQuery(String qType) {
+        this.queryType = qType;
+        id = 0;
+        name = city = "";
+        description = null;
+    }
+
+    public String getQueryType() {
+        return queryType;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public void setDesc(UnivDescription desc) {
+        this.description = desc;
     }
 
     /**
-     * Возвращает текст пользовательского запроса
+     * Конструирует и возвращает строку запроса
      */
-    public String getQueryExpression() {
+    public String getQuery() {
+        if (query == "") {
+            if (name != "") {
+                query += FIELD_NAME + ":" + name;
+            }
+
+            if (city != "") {
+                query += FIELD_CITY + ":" + city;
+            }
+        }
         return query;
-    }
 
-    public UserQuery(String dir, String cit, String uni) {
-        direction = dir;
-        city = cit;
-        university = uni;
-    }
-
-    public String getDirection() {
-        return this.direction;
-    }
-
-    public String getCity() {
-        return this.city;
-    }
-
-    public String getUniversity() {
-        return this.university;
     }
 }

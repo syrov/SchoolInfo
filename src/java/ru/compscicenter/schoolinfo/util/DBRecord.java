@@ -16,6 +16,10 @@ public class DBRecord {
     private int rating;
     private String name;
     private String about;
+    private UnivDescription univ;
+    private FacultyDescription fac;
+
+    private UnivDescription desc;
 
     public DBRecord(int id, String name, String about) {
         this.id = id;
