@@ -25,6 +25,7 @@ public class TopCoderListener implements ScraperRuntimeListener {
     public TopCoderListener(Database database) {
         this.database = database;
     }
+
     public void onExecutionStart(Scraper scraper) {
         //To change body of implemented methods use File | Settings | File Templates.
     }
@@ -39,27 +40,26 @@ public class TopCoderListener implements ScraperRuntimeListener {
 
     public void onNewProcessorExecution(Scraper scraper, BaseProcessor baseProcessor) {
         if ("empty".equalsIgnoreCase(scraper.getRunningProcessor().getElementDef().getShortElementName())) {
-                      Variable universityName = (Variable) scraper.getContext().get("universityName");
+//                      Variable universityName = (Variable) scraper.getContext().get("universityName");
 
 
-     String sUniversityName = clearString(universityName);
-     System.out.println(sUniversityName);
+            /*   String sUniversityName = clearString(universityName);
+  System.out.println(sUniversityName);          */
 
 
-      /*
-            Variable countryName = (Variable) scraper.getContext().get("universityCountry");
+            String countryName = (String) scraper.getContext().get("universityCountry");
             if (countryName.equals("Russian Federation")) {
                 try {
                     String universityName = (String) scraper.getContext().get("universityName");
-                    Database.add(new University(
+                    database.addUniversity(new University(
                             universityName,
-                            new GetUniversityCity().getCity(universityName)
+                            new GetUniversityCity().getCity(universityName),
+                            "No description"
                     ));
                 } catch (SQLException e) {
                     e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
                 }
             }
-        */
         }
     }
 

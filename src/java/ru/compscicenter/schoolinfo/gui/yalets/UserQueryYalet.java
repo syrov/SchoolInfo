@@ -3,10 +3,12 @@ package ru.compscicenter.schoolinfo.gui.yalets;
 import net.sf.xfresh.core.InternalRequest;
 import net.sf.xfresh.core.InternalResponse;
 import net.sf.xfresh.db.AbstractDbYalet;
+import org.apache.lucene.queryParser.ParseException;
 import ru.compscicenter.schoolinfo.gui.models.UserQueryManager;
 import ru.compscicenter.schoolinfo.util.DBRecord;
 import ru.compscicenter.schoolinfo.util.DBRecordComparator;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -30,7 +32,14 @@ public class UserQueryYalet extends AbstractDbYalet {
         final String city = req.getParameter("city");
         final String uni = req.getParameter("uni");
 
-        ArrayList<DBRecord> result = manager.getSearchResult(dir, city, uni);
+        ArrayList<DBRecord> result = null;
+        try {
+            result = manager.getSearchResult(dir, city, uni);
+        } catch (IOException e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        } catch (ParseException e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        }
 //      log.error(result + "RESULT");
         if (result.size() == 0) {
             DBRecord rec = new DBRecord(0, "Error", "No information found");
