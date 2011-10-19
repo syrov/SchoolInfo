@@ -11,6 +11,7 @@ public class GetUniversityCity {
     public String getCity(String universityName) {
         String cityName = null;
         // тут из названия университета вырезается имя города
-        return cityName;
+        //       return cityName;
+        return "Krizhopol";
     }
 }
