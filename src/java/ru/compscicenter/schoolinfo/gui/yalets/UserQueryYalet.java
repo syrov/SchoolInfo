@@ -5,8 +5,8 @@ import net.sf.xfresh.core.InternalResponse;
 import net.sf.xfresh.db.AbstractDbYalet;
 import org.apache.lucene.queryParser.ParseException;
 import ru.compscicenter.schoolinfo.gui.models.UserQueryManager;
-import ru.compscicenter.schoolinfo.util.DBRecord;
 import ru.compscicenter.schoolinfo.util.DBRecordComparator;
+import ru.compscicenter.schoolinfo.util.DBResponse;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -32,7 +32,7 @@ public class UserQueryYalet extends AbstractDbYalet {
         final String city = req.getParameter("city");
         final String uni = req.getParameter("uni");
 
-        ArrayList<DBRecord> result = null;
+        ArrayList<DBResponse> result = null;
         try {
             result = manager.getSearchResult(dir, city, uni);
         } catch (IOException e) {
@@ -42,10 +42,10 @@ public class UserQueryYalet extends AbstractDbYalet {
         }
 //      log.error(result + "RESULT");
         if (result.size() == 0) {
-            DBRecord rec = new DBRecord(0, "Error", "No information found");
+            DBResponse rec = new DBResponse(0, "Error", "No information found");
             result.add(rec);
         } else if (uni == null) {
-            ArrayList<DBRecord> rec = new ArrayList<DBRecord>(5);
+            ArrayList<DBResponse> rec = new ArrayList<DBResponse>(5);
 
 // тут надо ещё отсортировать result, позже следует удалить Comparator и сортировать данные при выборке из базы (searcher)
             Collections.sort(result, new DBRecordComparator());

@@ -25,9 +25,9 @@ public class TestSearchAndIndex {
         } finally {
             ind.close();
         }
-        ArrayList<DBRecord> res = Searcher.search(INDEX_DIR, new UserQuery("университет"));
+        ArrayList<DBResponse> res = Searcher.search(INDEX_DIR, new UserQuery("университет"));
         for (int i = 0; i < res.size(); i++) {
-            DBRecord univ = res.get(i);
+            DBResponse univ = res.get(i);
             System.out.println("id=" + univ.getId() + "; Name=" + univ.getName() + "; About:\n" + univ.getInfo() + "\n");
         }
 

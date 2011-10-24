@@ -5,23 +5,24 @@ package ru.compscicenter.schoolinfo.util;
  * User: Evgeniy
  * Date: 08.10.11
  * Time: 21:32
- * To change this template use File | Settings | File Templates.
  */
 
 /**
  * Класс, представляющий запись в базе.
  */
-public class DBRecord {
+public class DBResponse {
     private int id;
     private int rating;
     private String name;
+    private String city;
+    private int univercityId;
     private String about;
     private UnivDescription univ;
     private FacultyDescription fac;
 
     private UnivDescription desc;
 
-    public DBRecord(int id, String name, String about) {
+    public DBResponse(int id, String name, String about) {
         this.id = id;
         this.name = name;
         this.about = about;

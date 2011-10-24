@@ -21,7 +21,7 @@ import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 import org.apache.lucene.util.Version;
 import ru.compscicenter.schoolinfo.indexer.Indexer;
-import ru.compscicenter.schoolinfo.util.DBRecord;
+import ru.compscicenter.schoolinfo.util.DBResponse;
 import ru.compscicenter.schoolinfo.util.UserQuery;
 
 import java.io.File;
@@ -38,7 +38,7 @@ public class Searcher {
     }
     */
 
-    public static ArrayList<DBRecord> search(UserQuery q)
+    public static ArrayList<DBResponse> search(UserQuery q)
             throws IOException, ParseException {
         // первичная подготовка
         Directory dir = FSDirectory.open(new File(Indexer.INDEX_DIR + "/" + q.getQueryType()));
@@ -58,12 +58,12 @@ public class Searcher {
         System.err.println("Found " + hits.totalHits + " document(s) (in " +
                 (end - start) + " milliseconds) that matched query '" + q + "':");
 
-        ArrayList<DBRecord> res = new ArrayList<DBRecord>();
+        ArrayList<DBResponse> res = new ArrayList<DBResponse>();
         if (q.getQueryType() == UserQuery.QTYPE_UNIV) {
             for (ScoreDoc scoreDoc : hits.scoreDocs) {
                 Document doc = is.doc(scoreDoc.doc);
                 //System.out.println(doc.get("name") + " " + doc.get("about"));
-                DBRecord univ = new DBRecord(Integer.parseInt(doc.get("id")), doc.get("name"), doc.get("city"));
+                DBResponse univ = new DBResponse(Integer.parseInt(doc.get("id")), doc.get("name"), doc.get("city"));
                 res.add(univ);
             }
         }

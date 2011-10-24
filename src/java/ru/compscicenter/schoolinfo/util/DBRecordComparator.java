@@ -13,8 +13,8 @@ public class DBRecordComparator implements Comparator {
 
     public int compare(Object urec1, Object urec2) {
 
-        DBRecord rec1 = (DBRecord) urec1;
-        DBRecord rec2 = (DBRecord) urec2;
+        DBResponse rec1 = (DBResponse) urec1;
+        DBResponse rec2 = (DBResponse) urec2;
 
         int ratingComp;
 

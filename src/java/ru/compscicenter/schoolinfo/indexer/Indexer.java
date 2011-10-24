@@ -24,7 +24,6 @@ import java.sql.Statement;
  * User: Evgeniy
  * Date: 05.10.11
  * Time: 21:10
- * To change this template use File | Settings | File Templates.
  */
 
 
@@ -94,13 +93,15 @@ public class Indexer {
             while (rs.next()) {
                 Document doc = new Document();
                 doc.add(new Field("id", rs.getString("id"), Field.Store.YES, Field.Index.NO));
-                doc.add(new Field("name", rs.getString("name"), Field.Store.YES, Field.Index.NOT_ANALYZED));
-                doc.add(new Field("city", rs.getString("city"), Field.Store.YES, Field.Index.ANALYZED));
+                doc.add(new Field(UserQuery.FIELD_NAME, rs.getString("name"), Field.Store.YES, Field.Index.NOT_ANALYZED));
+                doc.add(new Field(UserQuery.FIELD_CITY, rs.getString("city"), Field.Store.YES, Field.Index.ANALYZED));
 
                 Gson gson = new Gson();
                 UnivDescription u = gson.fromJson(rs.getString("description"), UnivDescription.class);
-                doc.add(new Field("type", Byte.toString(u.getType()), Field.Store.YES, Field.Index.ANALYZED));
-                doc.add(new Field("campus", Byte.toString(u.getCampus()), Field.Store.YES, Field.Index.ANALYZED));
+                doc.add(new Field(UserQuery.UNIV_PREF + UserQuery.FIELD_TYPE, u.getType(),
+                        Field.Store.YES, Field.Index.ANALYZED));
+                doc.add(new Field(UserQuery.UNIV_PREF + UserQuery.FIELD_CAMPUS, u.getCampus(),
+                        Field.Store.YES, Field.Index.ANALYZED));
 
                 System.out.println(rs.getString("about"));
                 writer.addDocument(doc);
@@ -109,14 +110,23 @@ public class Indexer {
             while (rs.next()) {
                 Document doc = new Document();
                 doc.add(new Field("id", rs.getString("id"), Field.Store.YES, Field.Index.NO));
-                doc.add(new Field("name", rs.getString("name"), Field.Store.YES, Field.Index.NOT_ANALYZED));
-                doc.add(new Field("city", rs.getString("city"), Field.Store.YES, Field.Index.ANALYZED));
+                doc.add(new Field(UserQuery.FIELD_NAME, rs.getString("name"), Field.Store.YES, Field.Index.NOT_ANALYZED));
+                doc.add(new Field(UserQuery.FIELD_CITY, rs.getString("city"), Field.Store.YES, Field.Index.ANALYZED));
 
                 Gson gson = new Gson();
                 FacultyDescription u = gson.fromJson(rs.getString("description"), FacultyDescription.class);
-                // todo: вписать необходимый код
+                doc.add(new Field(UserQuery.FAC_PREF + UserQuery.FIELD_FORM, u.getForm(), Field.Store.YES,
+                        Field.Index.ANALYZED));
 
-                System.out.println(rs.getString("about"));
+                doc.add(new Field(UserQuery.FAC_PREF + UserQuery.FIELD_PHD, u.getPhd(), Field.Store.YES,
+                        Field.Index.ANALYZED));
+
+                doc.add(new Field(UserQuery.FAC_PREF + UserQuery.FIELD_DIP_TYPE, u.getDiplomaType(),
+                        Field.Store.YES, Field.Index.ANALYZED));
+
+                doc.add(new Field(UserQuery.FAC_PREF + UserQuery.FIELD_MILITARY, u.getMilitary(),
+                        Field.Store.YES, Field.Index.ANALYZED));
+
                 writer.addDocument(doc);
             }
         }

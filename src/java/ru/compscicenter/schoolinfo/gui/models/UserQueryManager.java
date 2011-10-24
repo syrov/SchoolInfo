@@ -10,7 +10,7 @@ package ru.compscicenter.schoolinfo.gui.models;
 
 import org.apache.lucene.queryParser.ParseException;
 import ru.compscicenter.schoolinfo.searcher.Searcher;
-import ru.compscicenter.schoolinfo.util.DBRecord;
+import ru.compscicenter.schoolinfo.util.DBResponse;
 import ru.compscicenter.schoolinfo.util.UserQuery;
 
 import java.io.IOException;
@@ -20,8 +20,8 @@ public class UserQueryManager {
 //    Logger log = Logger.getLogger(UserQueryManager.class);
 
     //Получение данных из базы (обращение к searcher'у)
-    public ArrayList<DBRecord> getSearchResult(String dir, String city, String uni) throws IOException, ParseException {
-        ArrayList<DBRecord> result = new ArrayList<DBRecord>();
+    public ArrayList<DBResponse> getSearchResult(String dir, String city, String uni) throws IOException, ParseException {
+        ArrayList<DBResponse> result = new ArrayList<DBResponse>();
 // обращение к searcher'у
         if (dir == null && city == null && uni == null)
             return result;
@@ -38,7 +38,7 @@ public class UserQueryManager {
             result = Searcher.search(IndexDir, new UserQuery(dir));
 
         if (result.size() == 0) {
-            DBRecord rec = new DBRecord(0, "Error", "No information found");
+            DBResponse rec = new DBResponse(0, "Error", "No information found");
             result.add(rec);
         }
 
