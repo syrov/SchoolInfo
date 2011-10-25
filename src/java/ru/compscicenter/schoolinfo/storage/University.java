@@ -1,5 +1,7 @@
 package ru.compscicenter.schoolinfo.storage;
 
+import org.webharvest.runtime.variables.Variable;
+
 /**
  * User: pritykovskaya
  * Date: 26.09.11
@@ -11,12 +13,12 @@ public class University {
     private String city;
     private String description;
 
-    public University(String name, String city, String description)
+    public University(String name)
     {
 
         this.name = name;
-        this.city = city;
-        this.description = description;
+      //  this.city = city;
+       // this.description = description;
     }
     public String getName()
     {

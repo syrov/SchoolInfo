@@ -42,13 +42,19 @@ public class Main {
 //
 //		 }
 
-        String configFilePath = "/home/natasha/SchoolInfo/src/topcoder.xml";
+        String configFilePath = "./src/topcoder.xml";
         ScraperConfiguration config = new ScraperConfiguration(configFilePath);
         Database database = new Database();
 
         try {
             database.connectToDB();
         } catch (SQLException e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        } catch (InstantiationException e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        } catch (IllegalAccessException e) {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
         }
 
