@@ -15,7 +15,7 @@ public class DBResponse {
     private int rating;
     private String name;
     private String city;
-    private int univercityId;
+    private int universityId;
     private String about;
     private UnivDescription univ;
     private FacultyDescription fac;

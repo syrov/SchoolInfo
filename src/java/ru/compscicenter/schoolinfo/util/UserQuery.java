@@ -15,13 +15,14 @@ public class UserQuery {
 
     // Названия полей в индексе
     public static final String QTYPE_FACULTY = "faculty";
-    public static final String QTYPE_UNIV = "univercity";
+    public static final String QTYPE_UNIV = "university";
+    public static final String FIELD_DIRECTION = "direction";
     public static final String FIELD_CITY = "city";
     public static final String FIELD_NAME = "name";
     public static final String FIELD_DESCRIPTION = "description";
     public static final String FIELD_TYPE = "type";
     public static final String FIELD_CAMPUS = "campus";
-    public static final String FIELD_UNIV_ID = "univercity_id";
+    public static final String FIELD_UNIV_ID = "university_id";
     public static final String FIELD_FORM = "form";
     public static final String FIELD_PHD = "phd";
     public static final String FIELD_DIP_TYPE = "diploma_type";
@@ -35,9 +36,11 @@ public class UserQuery {
     private int id;
     private String name;
     private String city;
-    private int univercityId;
+    private int universityId;
     private UnivDescription univDesc;
     private FacultyDescription facultyDesc;
+    private String direction;
+    private String universityName;
 
     /**
      * Простейший конструктор
@@ -58,12 +61,20 @@ public class UserQuery {
         this.id = id;
     }
 
+    public void setDirection(String direction) {
+        this.direction = direction;
+    }
+
     public void setName(String name) {
         this.name = name;
     }
 
     public void setCity(String city) {
         this.city = city;
+    }
+
+    public void setUniversityName(String univName) {
+        this.universityName = univName;
     }
 
     public void setUnivDesc(UnivDescription desc) {
@@ -89,6 +100,7 @@ public class UserQuery {
 
     /**
      * Конструирует и возвращает строку запроса
+     * добавить в строку запроса universityName и direction
      */
     public String getQuery() {
         if (queryType == QTYPE_UNIV) {
@@ -99,7 +111,7 @@ public class UserQuery {
             add(UNIV_PREF + FIELD_CAMPUS, univDesc.getCampus());
         } else if (queryType == QTYPE_FACULTY) {
             clear();
-            add(FIELD_UNIV_ID, String.valueOf(univercityId));
+            add(FIELD_UNIV_ID, String.valueOf(universityId));
             add(FIELD_NAME, name);
             add(FAC_PREF + FIELD_FORM, facultyDesc.getForm());
             add(FAC_PREF + FIELD_PHD, facultyDesc.getPhd());

@@ -5,7 +5,7 @@ import net.sf.xfresh.core.InternalResponse;
 import net.sf.xfresh.db.AbstractDbYalet;
 import org.apache.lucene.queryParser.ParseException;
 import ru.compscicenter.schoolinfo.gui.models.UserQueryManager;
-import ru.compscicenter.schoolinfo.util.DBRecordComparator;
+import ru.compscicenter.schoolinfo.util.DBResponseComparator;
 import ru.compscicenter.schoolinfo.util.DBResponse;
 
 import java.io.IOException;
@@ -17,7 +17,6 @@ import java.util.Collections;
  * User: alex
  * Date: 09.10.11
  * Time: 20:13
- * To change this template use File | Settings | File Templates.
  */
 public class UserQueryYalet extends AbstractDbYalet {
 
@@ -47,8 +46,7 @@ public class UserQueryYalet extends AbstractDbYalet {
         } else if (uni == null) {
             ArrayList<DBResponse> rec = new ArrayList<DBResponse>(5);
 
-// тут надо ещё отсортировать result, позже следует удалить Comparator и сортировать данные при выборке из базы (searcher)
-            Collections.sort(result, new DBRecordComparator());
+            Collections.sort(result, new DBResponseComparator());
 
             for (int i = 0; i < 5; i++)
                 rec.add(result.get(i));

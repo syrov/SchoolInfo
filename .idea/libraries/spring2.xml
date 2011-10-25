@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="spring">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/spring/spring-mock.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/spring/spring-core.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/spring/spring-web.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/spring/spring-beans.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/spring/spring-context.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

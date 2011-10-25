@@ -5,7 +5,6 @@ package ru.compscicenter.schoolinfo.gui.models;
  * User: alex
  * Date: 10.10.11
  * Time: 14:21
- * To change this template use File | Settings | File Templates.
  */
 
 import org.apache.lucene.queryParser.ParseException;
@@ -28,14 +27,14 @@ public class UserQueryManager {
 
         //     Searcher.setIndexDir(new File("index"));
 
-        String IndexDir = "/home/index"; // пождлежит корректировке
+     //   String IndexDir = "/home/index"; // подлежит корректировке
 
-        if (uni != null)
-            result = Searcher.search(IndexDir, new UserQuery(uni));
-        else if (city != null)
-            result = Searcher.search(IndexDir, new UserQuery(city));
-        else
-            result = Searcher.search(IndexDir, new UserQuery(dir));
+        UserQuery q = new UserQuery("university");
+        q.setDirection(dir);
+        q.setCity(city);
+        q.setUniversityName(uni);
+
+        Searcher.search(q);
 
         if (result.size() == 0) {
             DBResponse rec = new DBResponse(0, "Error", "No information found");

@@ -184,5 +184,20 @@
     <option name="FORCE_UPDATE" value="false" />
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
   </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
 </project>
 

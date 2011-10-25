@@ -7,9 +7,8 @@ import java.util.Comparator;
  * User: alex
  * Date: 11.10.11
  * Time: 10:45
- * To change this template use File | Settings | File Templates.
  */
-public class DBRecordComparator implements Comparator {
+public class DBResponseComparator implements Comparator {
 
     public int compare(Object urec1, Object urec2) {
 
