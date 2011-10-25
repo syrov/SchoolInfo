@@ -17,6 +17,7 @@ public class UserQuery {
     public static final String QTYPE_FACULTY = "faculty";
     public static final String QTYPE_UNIV = "university";
     public static final String FIELD_DIRECTION = "direction";
+    public static final String FIELD_SPECIALITY = "speciality";
     public static final String FIELD_CITY = "city";
     public static final String FIELD_NAME = "name";
     public static final String FIELD_DESCRIPTION = "description";
@@ -40,6 +41,7 @@ public class UserQuery {
     private UnivDescription univDesc;
     private FacultyDescription facultyDesc;
     private String direction;
+    private String speciality;
     private String universityName;
 
     /**
@@ -63,6 +65,10 @@ public class UserQuery {
 
     public void setDirection(String direction) {
         this.direction = direction;
+    }
+
+    public void setSpeciality(String speciality) {
+        this.speciality = speciality;
     }
 
     public void setName(String name) {
@@ -100,7 +106,7 @@ public class UserQuery {
 
     /**
      * Конструирует и возвращает строку запроса
-     * добавить в строку запроса universityName и direction
+     * @todo: добавить в строку запроса universityName, speciality и direction
      */
     public String getQuery() {
         if (queryType == QTYPE_UNIV) {

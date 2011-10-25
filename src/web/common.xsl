@@ -89,6 +89,14 @@
         </select>
     </xsl:template>
 
+    <xsl:template name="_spec">
+        <select name="ComboBox">
+            <option>
+                <xsl:apply-template name="spec"/>
+            </option>
+        </select>
+    </xsl:template>
+
     <xsl:template name="_uni">
         <select name="ComboBox">
             <xsl:apply-template name="uni"/>

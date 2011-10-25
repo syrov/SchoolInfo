@@ -19,10 +19,10 @@ public class UserQueryManager {
 //    Logger log = Logger.getLogger(UserQueryManager.class);
 
     //Получение данных из базы (обращение к searcher'у)
-    public ArrayList<DBResponse> getSearchResult(String dir, String city, String uni) throws IOException, ParseException {
+    public ArrayList<DBResponse> getSearchResult(String dir, String spec, String city, String uni) throws IOException, ParseException {
         ArrayList<DBResponse> result = new ArrayList<DBResponse>();
 // обращение к searcher'у
-        if (dir == null && city == null && uni == null)
+        if (dir == null && city == null && uni == null && spec == null)
             return result;
 
         //     Searcher.setIndexDir(new File("index"));

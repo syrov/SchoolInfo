@@ -28,12 +28,13 @@ public class UserQueryYalet extends AbstractDbYalet {
 
     public void process(InternalRequest req, InternalResponse res) {
         final String dir = req.getParameter("dir");   // названия текстовых полей в скобках, см. хсл
+        final String spec = req.getParameter("spec");
         final String city = req.getParameter("city");
         final String uni = req.getParameter("uni");
 
         ArrayList<DBResponse> result = null;
         try {
-            result = manager.getSearchResult(dir, city, uni);
+            result = manager.getSearchResult(dir, spec, city, uni);
         } catch (IOException e) {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
         } catch (ParseException e) {
