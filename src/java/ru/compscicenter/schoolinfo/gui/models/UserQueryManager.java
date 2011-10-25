@@ -34,7 +34,7 @@ public class UserQueryManager {
         q.setCity(city);
         q.setUniversityName(uni);
 
-        Searcher.search(q);
+        result = Searcher.search(q);
 
         if (result.size() == 0) {
             DBResponse rec = new DBResponse(0, "Error", "No information found");

@@ -2,64 +2,154 @@ package ru.compscicenter.schoolinfo.storage;
 
 import org.springframework.jdbc.core.simple.SimpleJdbcTemplate;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 // закачать библиотеку !!!
 
 public class Database {
 
-    private SimpleJdbcTemplate jdbcTemplate;
+    private Connection connection = null;
 
-    private Connection connection;
-
-    public void connectToDB() throws SQLException {
-        connection = DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/SchoolInfo",
-                "user", "");
-
+    public void connectToDB() throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException {
+         try{
+            String userName = "root";
+            String password = " ";
+            String url = "jdbc:mysql://localhost/uniinfo";
+            Class.forName ("com.mysql.jdbc.Driver").newInstance ();
+            connection = DriverManager.getConnection (url, userName, password);
         if (connection == null) {
             throw new SQLException();
         }
-    }
-
-    public void performQuery(String query) throws SQLException {
-        Statement stmt = connection.createStatement();
-        stmt.execute(query);
-        stmt.close();
+        }
+         catch(Exception e){}
     }
 
     public void addUniversity(University university) throws SQLException {
-        /*
-        Statement stmt = connection.createStatement();
-        stmt.executeUpdate("INSERT INTO UNIVERSITIES (NAME) VALUES ('" + university.getName() + "')", Statement.RETURN_GENERATED_KEYS);
-        stmt.close();
-        */
-
-        try {
-            jdbcTemplate.update("INSERT INTO university (name, city, description) VALUES(?, ?, ?);", university.getName(), university.getCity(), university.getDescription());
-        } catch (Exception e) {
-            e.printStackTrace();
+        try{
+        Statement st = connection.createStatement();
+        ResultSet rs=st.executeQuery("SELECT ID FROM UNIVERSITY");
+        int id=0,flag=0;;
+        while(rs.next())
+            id = rs.getInt("ID");
+        id++;
+        rs = st.executeQuery("SELECT * FROM UNIVERSITY");
+        while(rs.next())
+            if(rs.getString("Name").equals(university.getName())) flag=1;
+        if (flag==0)
+        st.executeUpdate("INSERT INTO UNIVERSITY VALUES ('"+id+"','"+university.getName()+"','"+university.getCity()+"','"+university.getDescription()+"')");
+        st.close();
         }
+        catch(Exception e){}
     }
 
-    /*
- public List<University> getAll() throws SQLException {
-     Statement stmt = connection.createStatement();
-     ResultSet resultSet = stmt.executeQuery("SELECT ID, NAME FROM UNIVERSITIES");
+    public void addDirection(Direction direct) throws SQLException {
+        try{
+        Statement st = connection.createStatement();
+        ResultSet rs=st.executeQuery("SELECT ID FROM DIRECTION");
+        int id=0,flag=0;
+        while(rs.next())
+            id = rs.getInt("ID");
+        id++;
+        rs = st.executeQuery("SELECT * FROM DIRECTION");
+        while(rs.next())
+            if(rs.getString("Name").equals(direct.getName())) flag=1;
+        if (flag==0)
+        st.executeUpdate("INSERT INTO DIRECTION VALUES ('"+id+"','"+direct.getName()+"')");
+        st.close();
+        }
+        catch(Exception e){}
+    }
 
-     List<University> universities = new ArrayList<University>();
-     while (resultSet.next()) {
-         // ????????? подлежит исправлению
-         universities.add(resultSet.getInt(1), (University) resultSet.getObject(2));
-     }
+        public void addFaculty(Faculty facult) throws SQLException {
+        try{
+        Statement st = connection.createStatement();
+        ResultSet rs=st.executeQuery("SELECT ID FROM FACULTY");
+        int id=0,flag=0;
+        while(rs.next())
+            id = rs.getInt("ID");
+        id++;
+        rs = st.executeQuery("SELECT * FROM UNIVERSITY");
+        while(rs.next())
+            if(rs.getString("Name").equals(facult.getName()) && rs.getString("University_id").equals(facult.getUniversity_id())) flag=1;
+        if (flag==0)
+        st.executeUpdate("INSERT INTO FACULTY VALUES ('"+id+"','"+facult.getUniversity_id()+"','"+facult.getName()+"','"+facult.getDescription()+"')");
+        st.close();
+        }
+        catch(Exception e){}
+    }
 
-     return universities;
- }   */
+    public void addRanking_method(Ranking_method rank) throws SQLException {
+        try{
+        Statement st = connection.createStatement();
+        ResultSet rs=st.executeQuery("SELECT ID FROM Ranking_method");
+        int id=0;
+        while(rs.next())
+            id = rs.getInt("ID");
+        id++;
+        st.executeUpdate("INSERT INTO Ranking_method VALUES ('"+id+"','"+rank.getDerection_id()+"','"+rank.getCoeff()+"','"+rank.getImplement_class()+"')");
+        st.close();
+        }
+        catch(Exception e){}
+    }
+
+        public void addRanking_raw_info_description(Ranking_raw_info_description rank) throws SQLException {
+        try{
+        Statement st = connection.createStatement();
+        ResultSet rs=st.executeQuery("SELECT ID FROM Ranking_raw_info_description");
+        int id=0;
+        while(rs.next())
+            id = rs.getInt("ID");
+        id++;
+        st.executeUpdate("INSERT INTO Ranking_raw_info_description VALUES ('"+id+"','"+rank.getMethod_id()+"','"+rank.getDescription()+"')");
+        st.close();
+        }
+        catch(Exception e){}
+    }
+
+    public void addRanking_raw_info_result(Ranking_raw_info_result rank) throws SQLException {
+        try{
+        Statement st = connection.createStatement();
+        ResultSet rs=st.executeQuery("SELECT ID FROM Ranking_raw_info_result");
+        int id=0;
+        while(rs.next())
+            id = rs.getInt("ID");
+        id++;
+        st.executeUpdate("INSERT INTO Ranking_raw_info_result VALUES ('"+id+"','"+rank.getFaculty_id()+"','"+rank.getRanking_raw_info_description_id()+"','"+rank.getValue()+"')");
+        st.close();
+        }
+        catch(Exception e){}
+    }
+
+    public void addSpeciality(Speciality spec) throws SQLException {
+        try{
+        Statement st = connection.createStatement();
+        ResultSet rs=st.executeQuery("SELECT ID FROM Speciality");
+        int id=0,flag=0;
+        while(rs.next())
+            id = rs.getInt("ID");
+        id++;
+        rs = st.executeQuery("SELECT * FROM UNIVERSITY");
+        while(rs.next())
+            if(rs.getString("Name").equals(spec.getName()) && rs.getString("Direction_id").equals(spec.getDirection_id())) flag=1;
+        if (flag==0)
+        st.executeUpdate("INSERT INTO Speciality VALUES ('"+id+"','"+spec.getDirection_id()+"','"+spec.getName()+"')");
+        st.close();
+        }
+        catch(Exception e){}
+    }
+
+        public void addSpeciality_faculty(Speciality_faculty spec) throws SQLException {
+        try{
+        Statement st = connection.createStatement();
+        st.executeUpdate("INSERT INTO Speciality_faculty VALUES ('"+spec.getSpeciality_id()+"','"+spec.getFaculty_id()+"')");
+        st.close();
+        }
+        catch(Exception e){}
+    }
 
     public void closeConnection() throws SQLException {
         connection.close();
     }
+
+
 }
