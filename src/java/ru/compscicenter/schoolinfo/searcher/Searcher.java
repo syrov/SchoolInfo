@@ -38,10 +38,14 @@ public class Searcher {
     }
     */
 
-    public static ArrayList<DBResponse> search(UserQuery q)
+    public static ArrayList<DBResponse> search(UserQuery q) throws IOException, ParseException {
+        return search("/home/natasha/index", q);
+    }
+
+    public static ArrayList<DBResponse> search(String directory, UserQuery q)
             throws IOException, ParseException {
         // первичная подготовка
-        Directory dir = FSDirectory.open(new File(Indexer.INDEX_DIR + "/" + q.getQueryType()));
+        Directory dir = FSDirectory.open(new File(directory));
         IndexSearcher is = new IndexSearcher(dir);
 
         QueryParser parser = new QueryParser(Version.LUCENE_34,
@@ -59,7 +63,7 @@ public class Searcher {
                 (end - start) + " milliseconds) that matched query '" + q + "':");
 
         ArrayList<DBResponse> res = new ArrayList<DBResponse>();
-        if (q.getQueryType() == UserQuery.QTYPE_UNIV) {
+        if (q.getQueryType().equals(UserQuery.QTYPE_UNIV)) {
             for (ScoreDoc scoreDoc : hits.scoreDocs) {
                 Document doc = is.doc(scoreDoc.doc);
                 //System.out.println(doc.get("name") + " " + doc.get("about"));

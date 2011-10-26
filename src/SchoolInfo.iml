@@ -11,6 +11,7 @@
     <orderEntry type="library" name="xfresh" level="project" />
     <orderEntry type="library" name="webharvester" level="project" />
     <orderEntry type="library" name="libs" level="project" />
+    <orderEntry type="library" name="main_lib" level="project" />
   </component>
 </module>
 

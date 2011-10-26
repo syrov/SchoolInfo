@@ -2,31 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4b76eae-a61a-46cc-8854-7426a3e706f2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/httpclient.xml" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/main_lib.xml" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/httpclient2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/jakarta_commons.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/jakarta_commons2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/jetty.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/jetty2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/libs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/libs2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/lucene.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/lucene2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/spring.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/spring2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/webharvester.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/webharvester2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/xalan.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/xalan2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/xfresh.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/xfresh2.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/Main.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/TopCoderListener.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/TopCoderListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/storage/Database.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/storage/Database.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/storage/University.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/storage/University.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SchoolInfo.iml" afterPath="$PROJECT_DIR$/src/SchoolInfo.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/yalets/UserQueryYalet.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/yalets/UserQueryYalet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/Indexer.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/Indexer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/TestSearchAndIndex.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/TestSearchAndIndex.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/Searcher.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/Searcher.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/util/UnivDescription.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/util/UnivDescription.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/script/beans.xml" afterPath="$PROJECT_DIR$/src/script/beans.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/script/start.sh" afterPath="$PROJECT_DIR$/src/script/start.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/web/index.xml" afterPath="$PROJECT_DIR$/src/web/index.xml" />
     </list>
     <ignored path="SchoolInfo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -90,10 +80,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="start.sh" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/script/start.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="32" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="beans.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/script/beans.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="57" selection-start="861" selection-end="861" vertical-scroll-proportion="-0.8630573">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/web/index.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="11" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="UserQueryYalet.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/yalets/UserQueryYalet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="55" selection-start="1240" selection-end="1240" vertical-scroll-proportion="0.0">
+            <state line="21" column="39" selection-start="652" selection-end="652" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractDbYalet.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/libs/xfresh/xfresh-db.jar!/net/sf/xfresh/db/AbstractDbYalet.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="72" selection-start="213" selection-end="213" vertical-scroll-proportion="-2.4">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Yalet.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/libs/xfresh/xfresh-core.jar!/net/sf/xfresh/core/Yalet.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="17" selection-start="160" selection-end="160" vertical-scroll-proportion="-2.4">
               <folding />
             </state>
           </provider>
@@ -102,81 +137,34 @@
       <file leaf-file-name="UserQueryManager.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/models/UserQueryManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="77" selection-start="1148" selection-end="1148" vertical-scroll-proportion="0.0">
+            <state line="36" column="29" selection-start="1178" selection-end="1178" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/Main.java">
+      <file leaf-file-name="Searcher.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/Searcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="34" selection-start="1258" selection-end="1258" vertical-scroll-proportion="0.0">
+            <state line="5" column="40" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TopCoderListener.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/TopCoderListener.java">
+      <file leaf-file-name="YaletProcessor.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/libs/xfresh/xfresh-core.jar!/net/sf/xfresh/core/YaletProcessor.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="13" selection-start="1590" selection-end="1590" vertical-scroll-proportion="0.0">
+            <state line="5" column="13" selection-start="156" selection-end="156" vertical-scroll-proportion="-2.4">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="University.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/storage/University.java">
+      <file leaf-file-name="build.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="56" selection-start="601" selection-end="601" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="common.xsl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/web/common.xsl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="46" selection-start="3779" selection-end="3779" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Database.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/storage/Database.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="46" selection-end="46" vertical-scroll-proportion="0.054945055">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/web/index.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="79" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StatementImpl.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/libs/mysql-connector-java-5.1.17-bin.jar!/com/mysql/jdbc/StatementImpl.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="109" column="43" selection-start="5761" selection-end="5761" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConnectionImpl.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/libs/mysql-connector-java-5.1.17-bin.jar!/com/mysql/jdbc/ConnectionImpl.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="278" column="30" selection-start="15584" selection-end="15584" vertical-scroll-proportion="0.0">
+            <state line="171" column="48" selection-start="7105" selection-end="7105" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -196,22 +184,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/storage/Faculty.java" />
-        <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/storage/Ranking_method.java" />
-        <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/storage/Ranking_raw_info_description.java" />
-        <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/storage/Ranking_raw_info_result.java" />
-        <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/storage/Speciality.java" />
-        <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/storage/Speciality_faculty.java" />
-        <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/storage/Ranking_result.java" />
         <option value="$PROJECT_DIR$/src/web/common.xsl" />
-        <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/yalets/UserQueryYalet.java" />
         <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/models/UserQueryManager.java" />
         <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/util/UserQuery.java" />
-        <option value="$PROJECT_DIR$/src/web/index.xml" />
         <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/Main.java" />
         <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/storage/University.java" />
         <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/TopCoderListener.java" />
         <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/storage/Database.java" />
+        <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/util/UnivDescription.java" />
+        <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/Searcher.java" />
+        <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/Indexer.java" />
+        <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/TestSearchAndIndex.java" />
+        <option value="$PROJECT_DIR$/build.xml" />
+        <option value="$PROJECT_DIR$/src/script/start.sh" />
+        <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/yalets/UserQueryYalet.java" />
+        <option value="$PROJECT_DIR$/src/script/beans.xml" />
+        <option value="$PROJECT_DIR$/src/web/index.xml" />
       </list>
     </option>
   </component>
@@ -251,7 +239,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -307,11 +295,37 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="schoolinfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SchoolInfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="schoolinfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Favorites" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -360,7 +374,7 @@
       <recent name="ru.compscicenter.schoolinfo.gui" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.TestSearchAndIndex">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="ru.compscicenter.schoolinfo.miner.Main" />
       <option name="VM_PARAMETERS" />
@@ -375,6 +389,28 @@
       <envs />
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="33549" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestSearchAndIndex" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="ru.compscicenter.schoolinfo.indexer.TestSearchAndIndex" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="SchoolInfo" />
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="55388" />
         <option name="TRANSPORT" value="0" />
         <option name="LOCAL" value="true" />
       </RunnerSettings>
@@ -457,8 +493,9 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+      <item index="1" class="java.lang.String" itemvalue="Application.TestSearchAndIndex" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -513,25 +550,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="28" y="24" width="1280" height="752" extended-state="0" />
-    <editor active="true" />
+    <frame x="7" y="24" width="1280" height="752" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3280255" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32643312" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24923077" sideWeight="0.6891304" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953683" sideWeight="0.21496816" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39897436" sideWeight="0.6971831" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32737613" sideWeight="0.66392094" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32872254" sideWeight="0.7013201" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3970346" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5947282" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.08868999" sideWeight="0.679868" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32673267" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3960396" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29867986" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32013202" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32643312" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953683" sideWeight="0.21496816" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32737613" sideWeight="0.66392094" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39869812" sideWeight="0.6971831" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32790887" sideWeight="0.679868" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5940594" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3280255" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32013202" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -583,89 +620,121 @@
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
+    <buildFile url="file://$PROJECT_DIR$/build.xml">
+      <antCommandLine value="" />
+      <runInBackground value="true" />
+      <targetFilters />
+      <treeView value="true" />
+      <verbose value="true" />
+      <viewClosedWhenNoErrors value="false" />
+      <expanded value="true" />
+    </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/storage/Ranking_method.java">
+    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/TestSearchAndIndex.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="3" selection-start="96" selection-end="96" vertical-scroll-proportion="0.18796992" />
+        <state line="18" column="55" selection-start="556" selection-end="556" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/Indexer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="127" column="0" selection-start="5316" selection-end="5316" vertical-scroll-proportion="0.41709843" />
+        <state line="81" column="99" selection-start="2630" selection-end="2630" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/storage/Direction.java">
+    <entry file="jar://$PROJECT_DIR$/libs/xfresh/xfresh-core.jar!/net/sf/xfresh/core/InternalResponse.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0" />
+        <state line="5" column="17" selection-start="160" selection-end="160" vertical-scroll-proportion="-2.4">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/storage/Ranking_result.java">
+    <entry file="file://$PROJECT_DIR$/src/web/index.xsl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="3" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/storage/Faculty.java">
+    <entry file="file://$PROJECT_DIR$/build.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="67" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0" />
+        <state line="1" column="0" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/util/UserQuery.java">
+    <entry file="jar://$PROJECT_DIR$/libs/xfresh/xfresh-core.jar!/net/sf/xfresh/core/YaletProcessor.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="13" selection-start="2838" selection-end="2838" vertical-scroll-proportion="0.0" />
+        <state line="5" column="13" selection-start="156" selection-end="156" vertical-scroll-proportion="-2.4">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/yalets/UserQueryYalet.java">
+    <entry file="file://$PROJECT_DIR$/build.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="55" selection-start="1240" selection-end="1240" vertical-scroll-proportion="0.0" />
+        <state line="171" column="48" selection-start="7105" selection-end="7105" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/models/UserQueryManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="77" selection-start="1148" selection-end="1148" vertical-scroll-proportion="0.0" />
+        <state line="36" column="29" selection-start="1178" selection-end="1178" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/Searcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="34" selection-start="1258" selection-end="1258" vertical-scroll-proportion="0.0" />
+        <state line="5" column="40" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/TopCoderListener.java">
+    <entry file="jar://$PROJECT_DIR$/libs/xfresh/xfresh-db.jar!/net/sf/xfresh/db/AbstractDbYalet.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="13" selection-start="1590" selection-end="1590" vertical-scroll-proportion="0.0" />
+        <state line="5" column="72" selection-start="213" selection-end="213" vertical-scroll-proportion="-2.4">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/storage/University.java">
+    <entry file="jar://$PROJECT_DIR$/libs/xfresh/xfresh-core.jar!/net/sf/xfresh/core/Yalet.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="56" selection-start="601" selection-end="601" vertical-scroll-proportion="0.0" />
+        <state line="5" column="17" selection-start="160" selection-end="160" vertical-scroll-proportion="-2.4">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/web/common.xsl">
+    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/yalets/UserQueryYalet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="46" selection-start="3779" selection-end="3779" vertical-scroll-proportion="0.0" />
+        <state line="21" column="39" selection-start="652" selection-end="652" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/web/index.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="79" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0" />
+        <state line="3" column="11" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/mysql-connector-java-5.1.17-bin.jar!/com/mysql/jdbc/StatementImpl.class">
+    <entry file="file://$PROJECT_DIR$/src/script/start.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="43" selection-start="5761" selection-end="5761" vertical-scroll-proportion="0.0" />
+        <state line="4" column="32" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/mysql-connector-java-5.1.17-bin.jar!/com/mysql/jdbc/ConnectionImpl.class">
+    <entry file="file://$PROJECT_DIR$/src/script/beans.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="278" column="30" selection-start="15584" selection-end="15584" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/storage/Database.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="46" selection-end="46" vertical-scroll-proportion="0.054945055">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="18" column="57" selection-start="861" selection-end="861" vertical-scroll-proportion="-0.8630573">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -745,7 +814,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Unnamed</last-edited>
+          <last-edited>main_lib</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

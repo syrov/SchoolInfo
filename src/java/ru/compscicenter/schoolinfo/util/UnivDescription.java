@@ -18,7 +18,8 @@ public class UnivDescription {
     private byte campus;
 
     public UnivDescription() {
-        type = campus = 0;
+        type = 0;
+        campus = 0;
     }
 
     public UnivDescription(byte type, byte campus) {

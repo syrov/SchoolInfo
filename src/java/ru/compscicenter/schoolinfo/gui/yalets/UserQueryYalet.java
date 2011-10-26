@@ -2,6 +2,7 @@ package ru.compscicenter.schoolinfo.gui.yalets;
 
 import net.sf.xfresh.core.InternalRequest;
 import net.sf.xfresh.core.InternalResponse;
+import net.sf.xfresh.core.Yalet;
 import net.sf.xfresh.db.AbstractDbYalet;
 import org.apache.lucene.queryParser.ParseException;
 import ru.compscicenter.schoolinfo.gui.models.UserQueryManager;
@@ -18,7 +19,7 @@ import java.util.Collections;
  * Date: 09.10.11
  * Time: 20:13
  */
-public class UserQueryYalet extends AbstractDbYalet {
+public class UserQueryYalet implements Yalet {
 
     protected UserQueryManager manager = new UserQueryManager();
 

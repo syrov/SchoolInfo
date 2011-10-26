@@ -28,7 +28,6 @@ import java.sql.Statement;
 
 
 public class Indexer {
-    public static final String INDEX_DIR = "/home/dzeta/Projects/index";
 
     private String DBName;
     private String user;
@@ -60,7 +59,7 @@ public class Indexer {
         Directory dir = FSDirectory.open(new File(indexDir));
         writer = new IndexWriter(dir, new RussianAnalyzer(Version.LUCENE_34),
                 true, IndexWriter.MaxFieldLength.UNLIMITED);
-        writer.commit();
+        writer.commit();          //do we really need this?
         // инициализация необходимых полей
         this.DBName = DBName;
         this.user = user;
@@ -73,7 +72,7 @@ public class Indexer {
         writer.close();
     }
 
-    /**
+    /*
      * Индексация базы данных, с параметрами указанными при создании
      */
     public int index() throws Exception {
@@ -89,7 +88,7 @@ public class Indexer {
 
         // добавление данных из базы в индекс, в зависимости от типа индексируемой таблицы
         // одинакового кода много, наверное можно это сократить. Просто пока всё предельно понятно
-        if (tableName == UserQuery.QTYPE_UNIV) {
+        if (tableName.equals(UserQuery.QTYPE_UNIV)) {
             while (rs.next()) {
                 Document doc = new Document();
                 doc.add(new Field("id", rs.getString("id"), Field.Store.YES, Field.Index.NO));
@@ -97,16 +96,17 @@ public class Indexer {
                 doc.add(new Field(UserQuery.FIELD_CITY, rs.getString("city"), Field.Store.YES, Field.Index.ANALYZED));
 
                 Gson gson = new Gson();
-                UnivDescription u = gson.fromJson(rs.getString("description"), UnivDescription.class);
-                doc.add(new Field(UserQuery.UNIV_PREF + UserQuery.FIELD_TYPE, u.getType(),
-                        Field.Store.YES, Field.Index.ANALYZED));
-                doc.add(new Field(UserQuery.UNIV_PREF + UserQuery.FIELD_CAMPUS, u.getCampus(),
-                        Field.Store.YES, Field.Index.ANALYZED));
+                if (!rs.getString("description").equals("null")) {
+                    UnivDescription u = gson.fromJson(rs.getString("description"), UnivDescription.class);
+                    doc.add(new Field(UserQuery.UNIV_PREF + UserQuery.FIELD_TYPE, u.getType(),
+                            Field.Store.YES, Field.Index.ANALYZED));
+                    doc.add(new Field(UserQuery.UNIV_PREF + UserQuery.FIELD_CAMPUS, u.getCampus(),
+                            Field.Store.YES, Field.Index.ANALYZED));
 
-                System.out.println(rs.getString("about"));
+                }
                 writer.addDocument(doc);
             }
-        } else if (tableName == UserQuery.QTYPE_FACULTY) {
+        } else if (tableName.equals(UserQuery.QTYPE_FACULTY)) {
             while (rs.next()) {
                 Document doc = new Document();
                 doc.add(new Field("id", rs.getString("id"), Field.Store.YES, Field.Index.NO));

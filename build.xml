@@ -9,7 +9,7 @@
     
     <property name="src.dir" location="${project.dir}/src"/>
     <property name="src.java.dir" location="${src.dir}/java"/>
-    <property name="src.view.dir" location="${src.dir}/web"/>
+    <property name="src.web.dir" location="${src.dir}/web"/>
     <property name="src.script.dir" location="${src.dir}/script"/>
     
     <property name="dist.dir.name" value="dist"/>
@@ -17,7 +17,7 @@
 
     <property name="build.dir" location="${project.dir}/build"/>
     <property name="build.classes.dir" location="${build.dir}/classes"/>
-    <property name="build.view.dir" location="${build.dir}/view"/>
+    <property name="build.web.dir" location="${build.dir}/web"/>
     <property name="build.lib.dir" location="${build.dir}/lib"/>
     
     <property name="index.dir" location="${build.dir}/index"/>
@@ -44,10 +44,13 @@
         <fileset dir="${xfresh-core.dir}" includes="*.jar"/>
         <fileset dir="libs" includes="lucene/*.jar"/>
         <fileset dir="libs" includes="mysql*.jar"/>
+        <fileset dir="libs" includes="log4j*.jar"/>
+        <fileset dir="libs" includes="spring/*.jar"/>
+        <fileset dir="libs" includes="jakarta-commons/*.jar"/>
     </path>
 
     <property name="all_libs" refid="libs.all"/>
-    <property name="gui_libs" refid="libs.gui"/>
+    <property name="gui_libs" refid="libs.all"/>
 
     <pathconvert pathsep=" " property="all_libs_manifest" refid="libs.all"/>
     <pathconvert pathsep=" " property="miner_libs_manifest" refid="libs.miner"/>
@@ -65,7 +68,7 @@
         <!--это куда класть все что мы уже сбилдили?-->
         <mkdir dir="${build.dir}"/>
         <mkdir dir="${build.classes.dir}"/>
-        <mkdir dir="${build.view.dir}"/>
+        <mkdir dir="${build.web.dir}"/>
         <mkdir dir="${build.lib.dir}"/>
         <mkdir dir="${index.dir}"/>
     </target>
@@ -111,6 +114,15 @@
                 <attribute name="Class-Path" value="${indexer_libs_manifest} ${build.classes.dir}/"/>
             </manifest>
         </jar>
+
+        <jar jarfile="${dist.dir}/frontend.jar" basedir="${build.classes.dir}">
+            <include name="ru/compscicenter/schoolinfo/gui/**/*.*"/>
+            <manifest>
+                <attribute name="Built-By" value="Agregator's build.xml"/>
+                <attribute name="Class-Path" value="${all_libs_manifest} ${build.classes.dir}/"/>
+            </manifest>
+        </jar>
+
         <!--<jar jarfile="${dist.dir}/clusterizer.jar" basedir="${build.classes.dir}"-->
              <!--includes="ru/compscicenter/schoolinfo/quality/**/*.*">-->
             <!--<manifest>-->
@@ -133,31 +145,34 @@
         <chmod dir="${dist.dir}" perm="744" includes="**/*.jar"/>
     </target>
 
-    <!--<target name="gui" depends="compile"-->
-            <!--description="install gui">-->
+    <target name="frontend" depends="compile,dist"
+            description="install frontend">
 
-        <!--&lt;!&ndash; Copy view &ndash;&gt;-->
+        <!-- Copy view -->
 
-        <!--<copy todir="${build.view.dir}" overwrite="true">-->
-            <!--<fileset dir="${src.view.dir}"/> -->
-        <!--</copy>-->
+        <copy todir="${build.web.dir}" overwrite="true">
+            <fileset dir="${src.web.dir}"/>
+        </copy>
 
 
-        <!--&lt;!&ndash; Copy config &ndash;&gt;-->
+        <!-- Copy config -->
 
-        <!--<copy todir="${build.dir}" overwrite="true">-->
-            <!--<fileset dir="${src.script.dir}"/>-->
-        <!--</copy>-->
-        <!--<chmod file="${build.dir}/start.sh" perm="+x"/>-->
+        <copy todir="${build.dir}" overwrite="true">
+            <fileset dir="${src.script.dir}"/>
+        </copy>
+        <chmod file="${build.dir}/start.sh" perm="+x"/>
 
-        <!--&lt;!&ndash; Copy gui libs &ndash;&gt;-->
-        <!--<copy todir="${build.lib.dir}" flatten="true">-->
-            <!--<path>-->
-                <!--<pathelement path="${gui_libs}" />-->
-            <!--</path>-->
-        <!--</copy>-->
-        <!---->
-    <!--</target>-->
+        <!-- Copy gui libs -->
+        <copy todir="${build.lib.dir}" flatten="true">
+            <path>
+                <pathelement path="${gui_libs}" />
+            </path>
+        </copy>
+
+        <copy todir="${build.dir}" overwrite="true">
+            <fileset dir="${dist.dir}"/>
+        </copy>
+    </target>
 
     <target name="install" depends="dist"
             description="install project">
@@ -201,10 +216,10 @@
     <!--</target>-->
     <!---->
 
-    <!--<target name="run_gui" depends="gui"-->
-        <!--description="run gui server on port 8080">-->
-        <!--<exec dir="${build.dir}" executable="${build.dir}/start.sh" />-->
-    <!--</target>-->
+    <target name="run_gui" depends="frontend"
+        description="run gui server on port 8080">
+        <exec dir="${build.dir}" executable="${build.dir}/start.sh" />
+    </target>
 
     <target name="clean"
             description="clean up">
