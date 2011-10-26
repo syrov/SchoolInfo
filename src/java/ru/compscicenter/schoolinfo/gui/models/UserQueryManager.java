@@ -29,10 +29,7 @@ public class UserQueryManager {
 
      //   String IndexDir = "/home/index"; // подлежит корректировке
 
-        UserQuery q = new UserQuery("university");
-        q.setDirection(dir);
-        q.setCity(city);
-        q.setUniversityName(uni);
+        UserQuery q = new UserQuery("university", dir, spec, city, uni);
 
         result = Searcher.search(q);
 

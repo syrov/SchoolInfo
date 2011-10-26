@@ -11,6 +11,9 @@ package ru.compscicenter.schoolinfo.util;
  * Класс, представляющий пользовательские запросы,
  * как простые, так и сложные.
  */
+
+/* @todo: переместить в модуль Searcher */
+
 public class UserQuery {
 
     // Названия полей в индексе
@@ -31,28 +34,41 @@ public class UserQuery {
     public static final String UNIV_PREF = "univ";
     public static final String FAC_PREF = "fac";
 
-    private String queryType;
-    private String query = "";
+    /* @todo: сделать эти поля final */
+
+// строка, по которой идет обращение к Searcher'у
+//    private final String query;
+
+// параметры поиска
+    private final String queryType;
+
+//    private final String name;
+    private final String direction;
+    private final String speciality;
+    private final String city;
+    private final String universityName;
+
+    private final UnivDescription univDesc;
+    private final FacultyDescription facultyDesc;
 
     private int id;
-    private String name;
-    private String city;
     private int universityId;
-    private UnivDescription univDesc;
-    private FacultyDescription facultyDesc;
-    private String direction;
-    private String speciality;
-    private String universityName;
 
-    /**
-     * Простейший конструктор
-     */
-    public UserQuery(String qType) {
+//  простой конструктор
+    public UserQuery(String qType, String direction, String speciality, String city, String universityName) {
+        this.id = 0;
+
         this.queryType = qType;
-        id = 0;
-        name = city = "";
+
+        this.direction = direction;
+        this.speciality = speciality;
+        this.city = city;
+        this.universityName = universityName;
+
         univDesc = null;
         facultyDesc = null;
+
+//        this.query = getQuery();
     }
 
     public String getQueryType() {
@@ -63,35 +79,9 @@ public class UserQuery {
         this.id = id;
     }
 
-    public void setDirection(String direction) {
-        this.direction = direction;
-    }
 
-    public void setSpeciality(String speciality) {
-        this.speciality = speciality;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setCity(String city) {
-        this.city = city;
-    }
-
-    public void setUniversityName(String univName) {
-        this.universityName = univName;
-    }
-
-    public void setUnivDesc(UnivDescription desc) {
-        this.univDesc = desc;
-    }
-
-    public void setFacultyDesc(FacultyDescription desc) {
-        this.facultyDesc = desc;
-    }
-
-    public void clear() {
+    /*
+public void clear() {
         query = "";
     }
 
@@ -104,10 +94,7 @@ public class UserQuery {
         }
     }
 
-    /**
-     * Конструирует и возвращает строку запроса
-     * @todo: добавить в строку запроса universityName, speciality и direction
-     */
+
     public String getQuery() {
         if (queryType == QTYPE_UNIV) {
             clear();
@@ -126,5 +113,31 @@ public class UserQuery {
         }
         return query;
 
+    }  */
+
+
+    /**
+     * Конструирует и возвращает строку запроса
+     * @todo: добавить в строку запроса universityName, speciality и direction, доделать строку запроса
+     */
+    public String getQuery() {
+        final StringBuffer stringBuffer = new StringBuffer();
+
+        if (queryType.equals(QTYPE_UNIV)) {
+            stringBuffer.append(FIELD_NAME).append(universityName);
+            stringBuffer.append(FIELD_CITY).append(city);
+            stringBuffer.append(UNIV_PREF + FIELD_TYPE).append(univDesc.getType());
+            stringBuffer.append(UNIV_PREF + FIELD_CAMPUS).append(univDesc.getCampus());
+        } else if (queryType.equals(QTYPE_FACULTY)) {
+ /*
+            add(FIELD_UNIV_ID, String.valueOf(universityId));
+            add(FIELD_NAME, name);
+            add(FAC_PREF + FIELD_FORM, facultyDesc.getForm());
+            add(FAC_PREF + FIELD_PHD, facultyDesc.getPhd());
+            add(FAC_PREF + FIELD_DIP_TYPE, facultyDesc.getDiplomaType());
+            add(FAC_PREF + FIELD_MILITARY, facultyDesc.getMilitary());   */
+        }
+
+        return stringBuffer.toString();
     }
 }

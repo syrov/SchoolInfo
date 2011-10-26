@@ -1,6 +1,6 @@
 package ru.compscicenter.schoolinfo.storage;
 
-import org.springframework.jdbc.core.simple.SimpleJdbcTemplate;
+// import org.springframework.jdbc.core.simple.SimpleJdbcTemplate;
 
 import java.sql.*;
 

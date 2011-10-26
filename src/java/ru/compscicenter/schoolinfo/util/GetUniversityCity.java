@@ -7,6 +7,9 @@ package ru.compscicenter.schoolinfo.util;
  * Time: 17:45
  * To change this template use File | Settings | File Templates.
  */
+
+/* @todo: убрать это отсюда и сделать внутренним классом в топкодере */
+
 public class GetUniversityCity {
     public String getCity(String universityName) {
         String cityName = null;
