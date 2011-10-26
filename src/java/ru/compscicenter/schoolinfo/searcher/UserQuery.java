@@ -15,8 +15,6 @@ import ru.compscicenter.schoolinfo.util.UnivDescription;
  * как простые, так и сложные.
  */
 
-/* @todo: переместить в модуль Searcher */
-
 public class UserQuery {
 
     // Названия полей в индексе
