@@ -14,9 +14,7 @@ import java.util.Collections;
 
 /**
  * Created by IntelliJ IDEA.
- * User: alex
- * Date: 09.10.11
- * Time: 20:13
+ * User: Alexandra Mikhaylova
  */
 
 public class UserQueryYalet implements Yalet {
@@ -45,13 +43,14 @@ public class UserQueryYalet implements Yalet {
         if (result.size() == 0) {
             DBResponse rec = new DBResponse(0, "Error", "No information found");
             result.add(rec);
+//      в случае, когда университет не указан, пользователю выдается рейтинг
         } else if (uni == null) {
             ArrayList<DBResponse> rec = new ArrayList<DBResponse>(5);
 
-            Collections.sort(result, new DBResponseComparator());
+ /*           Collections.sort(result, new DBResponseComparator());
 
             for (int i = 0; i < 5; i++)
-                rec.add(result.get(i));
+                rec.add(result.get(i));      */
 
             result = rec;
         }
