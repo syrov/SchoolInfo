@@ -9,8 +9,8 @@ package ru.compscicenter.schoolinfo.gui.models;
 
 import org.apache.lucene.queryParser.ParseException;
 import ru.compscicenter.schoolinfo.searcher.Searcher;
+import ru.compscicenter.schoolinfo.searcher.UserQuery;
 import ru.compscicenter.schoolinfo.util.DBResponse;
-import ru.compscicenter.schoolinfo.util.UserQuery;
 
 import java.io.IOException;
 import java.util.ArrayList;

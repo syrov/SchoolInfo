@@ -1,11 +1,5 @@
 package ru.compscicenter.schoolinfo.indexer;
 
-import ru.compscicenter.schoolinfo.searcher.Searcher;
-import ru.compscicenter.schoolinfo.util.DBResponse;
-import ru.compscicenter.schoolinfo.util.UserQuery;
-
-import java.util.ArrayList;
-
 /**
  * Created by IntelliJ IDEA.
  * User: Evgeniy

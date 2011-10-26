@@ -20,9 +20,7 @@ import org.apache.lucene.search.TopDocs;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 import org.apache.lucene.util.Version;
-import ru.compscicenter.schoolinfo.indexer.Indexer;
 import ru.compscicenter.schoolinfo.util.DBResponse;
-import ru.compscicenter.schoolinfo.util.UserQuery;
 
 import java.io.File;
 import java.io.IOException;

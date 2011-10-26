@@ -8,9 +8,9 @@ import org.apache.lucene.index.IndexWriter;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 import org.apache.lucene.util.Version;
+import ru.compscicenter.schoolinfo.searcher.UserQuery;
 import ru.compscicenter.schoolinfo.util.FacultyDescription;
 import ru.compscicenter.schoolinfo.util.UnivDescription;
-import ru.compscicenter.schoolinfo.util.UserQuery;
 
 import java.io.File;
 import java.io.IOException;

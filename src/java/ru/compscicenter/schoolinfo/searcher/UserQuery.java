@@ -1,4 +1,4 @@
-package ru.compscicenter.schoolinfo.util;
+package ru.compscicenter.schoolinfo.searcher;
 
 /**
  * Created by IntelliJ IDEA.
@@ -6,6 +6,9 @@ package ru.compscicenter.schoolinfo.util;
  * Date: 10.10.11
  * Time: 10:51
  */
+
+import ru.compscicenter.schoolinfo.util.FacultyDescription;
+import ru.compscicenter.schoolinfo.util.UnivDescription;
 
 /**
  * Класс, представляющий пользовательские запросы,
@@ -33,8 +36,6 @@ public class UserQuery {
     public static final String FIELD_MILITARY = "military";
     public static final String UNIV_PREF = "univ";
     public static final String FAC_PREF = "fac";
-
-    /* @todo: сделать эти поля final */
 
 // строка, по которой идет обращение к Searcher'у
 //    private final String query;
