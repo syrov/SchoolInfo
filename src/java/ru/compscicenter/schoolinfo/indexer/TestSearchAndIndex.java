@@ -1,19 +1,24 @@
 package ru.compscicenter.schoolinfo.indexer;
 
+import ru.compscicenter.schoolinfo.searcher.Searcher;
+import ru.compscicenter.schoolinfo.searcher.UserQuery;
+import ru.compscicenter.schoolinfo.util.DBResponse;
+
+import java.util.ArrayList;
+
 /**
  * Created by IntelliJ IDEA.
  * User: Evgeniy
  * Date: 08.10.11
  * Time: 21:20
- * To change this template use File | Settings | File Templates.
  */
 public class TestSearchAndIndex {
-    // Параметры базы и индекса. Необходимо изменить
+    //параметры базы и индекса
     public static String DBName = "UNIINFO";
     public static String user = "root";
     public static String pass = "Mat-mex2012";
     public static String tableName = "university";
-    public static String INDEX_DIR = "/home/natasha/index";
+    public static String INDEX_DIR = "/home/dzeta/index";
 
     public static void main(String[] args) throws Exception {
         Indexer ind = new Indexer(INDEX_DIR, DBName, user, pass, tableName);
@@ -26,11 +31,13 @@ public class TestSearchAndIndex {
             ind.close();
         }
 //
-//        ArrayList<DBResponse> res = Searcher.search(INDEX_DIR, new UserQuery("университет"));
-//        for (int i = 0; i < res.size(); i++) {
-//            DBResponse univ = res.get(i);
-//            System.out.println("id=" + univ.getId() + "; Name=" + univ.getName() + "; About:\n" + univ.getInfo() + "\n");
-//        }
+        UserQuery query = new UserQuery(UserQuery.QTYPE_UNIV, "", "", "", "IIT");
+        System.out.println(query.getQuery());
+        ArrayList<DBResponse> res = Searcher.search(INDEX_DIR, query);
+        for (int i = 0; i < res.size(); i++) {
+            DBResponse univ = res.get(i);
+            System.out.println("id=" + univ.getId() + "; Name=" + univ.getName());
+        }
 
 
     }

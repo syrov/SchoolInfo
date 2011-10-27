@@ -5,21 +5,21 @@ package ru.compscicenter.schoolinfo.searcher;
  * User: Evgeniy
  * Date: 02.10.11
  * Time: 22:19
- * To change this template use File | Settings | File Templates.
  */
 
 
 import org.apache.lucene.analysis.ru.RussianAnalyzer;
 import org.apache.lucene.document.Document;
+import org.apache.lucene.index.IndexReader;
+import org.apache.lucene.index.Term;
+import org.apache.lucene.index.TermEnum;
 import org.apache.lucene.queryParser.ParseException;
 import org.apache.lucene.queryParser.QueryParser;
-import org.apache.lucene.search.IndexSearcher;
-import org.apache.lucene.search.Query;
-import org.apache.lucene.search.ScoreDoc;
-import org.apache.lucene.search.TopDocs;
+import org.apache.lucene.search.*;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 import org.apache.lucene.util.Version;
+import ru.compscicenter.schoolinfo.indexer.Indexer;
 import ru.compscicenter.schoolinfo.util.DBResponse;
 
 import java.io.File;
@@ -44,21 +44,22 @@ public class Searcher {
             throws IOException, ParseException {
         // первичная подготовка
         Directory dir = FSDirectory.open(new File(directory));
+        //IndexReader dir = IndexReader.open(FSDirectory.open(new File(directory)));
         IndexSearcher is = new IndexSearcher(dir);
 
         QueryParser parser = new QueryParser(Version.LUCENE_34,
-                "about", new RussianAnalyzer(Version.LUCENE_34));
+                UserQuery.FIELD_NAME, new RussianAnalyzer(Version.LUCENE_34));
 
         // первоначальный вариант, только простые запросы.
-        // Для получения текста используется метод getQueryExpression()
-        Query query = parser.parse(q.getQuery());
+        // Для получения текста используется метод getQuery()
+        Query query = parser.parse(q.getLuceneQuery().toString());
 
         long start = System.currentTimeMillis();
         TopDocs hits = is.search(query, 10);
         long end = System.currentTimeMillis();
 
         System.err.println("Found " + hits.totalHits + " document(s) (in " +
-                (end - start) + " milliseconds) that matched query '" + q + "':");
+                (end - start) + " milliseconds) that matched query '" + q.getLuceneQuery() + "':");
 
         ArrayList<DBResponse> res = new ArrayList<DBResponse>();
         if (q.getQueryType().equals(UserQuery.QTYPE_UNIV)) {

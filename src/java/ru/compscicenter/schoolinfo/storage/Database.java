@@ -25,6 +25,15 @@ public class Database {
         }
     }
 
+    public void performQuery(String q) {
+        try {
+            Statement st = connection.createStatement();
+            ResultSet rs = st.executeQuery(q);
+        } catch (Exception e) {
+
+        }
+    }
+
     public void addUniversity(University university) throws SQLException {
         try {
             Statement st = connection.createStatement();

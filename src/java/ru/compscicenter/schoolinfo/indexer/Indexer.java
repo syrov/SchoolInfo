@@ -1,10 +1,12 @@
 package ru.compscicenter.schoolinfo.indexer;
 
 import com.google.gson.Gson;
+import org.apache.commons.io.FileUtils;
 import org.apache.lucene.analysis.ru.RussianAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
 import org.apache.lucene.index.IndexWriter;
+import org.apache.lucene.index.IndexWriterConfig;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 import org.apache.lucene.util.Version;
@@ -54,12 +56,14 @@ public class Indexer {
     }  */
 
     private IndexWriter writer;
+    //public static Directory dir;
 
     public Indexer(String indexDir, String DBName, String user, String pass, String tableName) throws IOException {
+        FileUtils.deleteDirectory(new File(indexDir));
         Directory dir = FSDirectory.open(new File(indexDir));
-        writer = new IndexWriter(dir, new RussianAnalyzer(Version.LUCENE_34),
-                true, IndexWriter.MaxFieldLength.UNLIMITED);
-        writer.commit();          //do we really need this?
+        IndexWriterConfig conf = new IndexWriterConfig(Version.LUCENE_34, new RussianAnalyzer(Version.LUCENE_34));
+        writer = new IndexWriter(dir, conf);
+        //writer.commit();
         // инициализация необходимых полей
         this.DBName = DBName;
         this.user = user;
@@ -88,11 +92,12 @@ public class Indexer {
 
         // добавление данных из базы в индекс, в зависимости от типа индексируемой таблицы
         // одинакового кода много, наверное можно это сократить. Просто пока всё предельно понятно
+        //todo: узнать, какими запросами из базы доставать специальность, направление
         if (tableName.equals(UserQuery.QTYPE_UNIV)) {
             while (rs.next()) {
                 Document doc = new Document();
-                doc.add(new Field("id", rs.getString("id"), Field.Store.YES, Field.Index.NO));
-                doc.add(new Field(UserQuery.FIELD_NAME, rs.getString("name"), Field.Store.YES, Field.Index.NOT_ANALYZED));
+                doc.add(new Field("id", rs.getString("id"), Field.Store.YES, Field.Index.ANALYZED));
+                doc.add(new Field(UserQuery.FIELD_NAME, rs.getString("name"), Field.Store.YES, Field.Index.ANALYZED));
                 doc.add(new Field(UserQuery.FIELD_CITY, rs.getString("city"), Field.Store.YES, Field.Index.ANALYZED));
 
                 Gson gson = new Gson();
@@ -110,7 +115,7 @@ public class Indexer {
             while (rs.next()) {
                 Document doc = new Document();
                 doc.add(new Field("id", rs.getString("id"), Field.Store.YES, Field.Index.NO));
-                doc.add(new Field(UserQuery.FIELD_NAME, rs.getString("name"), Field.Store.YES, Field.Index.NOT_ANALYZED));
+                doc.add(new Field(UserQuery.FIELD_NAME, rs.getString("name"), Field.Store.YES, Field.Index.ANALYZED));
                 doc.add(new Field(UserQuery.FIELD_CITY, rs.getString("city"), Field.Store.YES, Field.Index.ANALYZED));
 
                 Gson gson = new Gson();
@@ -131,6 +136,9 @@ public class Indexer {
             }
         }
         stmt.close();
+        //writer.commit();
+        close();
+        //dir.close();
         return writer.numDocs();
     }
 }

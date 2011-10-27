@@ -7,6 +7,8 @@ package ru.compscicenter.schoolinfo.searcher;
  * Time: 10:51
  */
 
+import org.apache.lucene.index.Term;
+import org.apache.lucene.search.*;
 import ru.compscicenter.schoolinfo.util.FacultyDescription;
 import ru.compscicenter.schoolinfo.util.UnivDescription;
 
@@ -117,16 +119,23 @@ public void clear() {
 
     /**
      * Конструирует и возвращает строку запроса
-     * @todo: добавить в строку запроса universityName, speciality и direction, доделать строку запроса
+     * @done: добавить в строку запроса universityName, speciality и direction, доделать строку запроса
      */
     public String getQuery() {
         final StringBuffer stringBuffer = new StringBuffer();
 
         if (queryType.equals(QTYPE_UNIV)) {
-            stringBuffer.append(FIELD_NAME).append(universityName);
-            stringBuffer.append(FIELD_CITY).append(city);
-            stringBuffer.append(UNIV_PREF + FIELD_TYPE).append(univDesc.getType());
-            stringBuffer.append(UNIV_PREF + FIELD_CAMPUS).append(univDesc.getCampus());
+            if (!universityName.equals("")) {
+                stringBuffer.append(FIELD_NAME + ":").append(universityName);
+                //stringBuffer.append(universityName);
+            }
+            /*stringBuffer.append(FIELD_CITY + ":").append(city + " ");
+            stringBuffer.append(FIELD_SPECIALITY + ":").append(speciality + " ");
+            stringBuffer.append(FIELD_DIRECTION + ":").append(direction + " ");  */
+            if (univDesc != null) {
+                stringBuffer.append(UNIV_PREF + FIELD_TYPE + ":").append(univDesc.getType() + " ");
+                stringBuffer.append(UNIV_PREF + FIELD_CAMPUS + ":").append(univDesc.getCampus() + " ");
+            }
         } else if (queryType.equals(QTYPE_FACULTY)) {
  /*
             add(FIELD_UNIV_ID, String.valueOf(universityId));
@@ -138,5 +147,41 @@ public void clear() {
         }
 
         return stringBuffer.toString();
+    }
+
+    public BooleanQuery getLuceneQuery() {
+        BooleanQuery q = new BooleanQuery();
+        if (queryType.equals(QTYPE_UNIV)) {
+            if (!universityName.equals("")) {
+                q.add(new TermQuery(new Term(FIELD_NAME, universityName)), BooleanClause.Occur.MUST);
+            }
+            if (!city.equals("")) {
+                q.add(new TermQuery(new Term(FIELD_CITY, city)), BooleanClause.Occur.MUST);
+            }
+            if (univDesc != null) {
+                if (!univDesc.getType().equals("")) {
+                    q.add(new TermQuery(new Term(UNIV_PREF + FIELD_TYPE)), BooleanClause.Occur.MUST);
+                }
+                if (!univDesc.getCampus().equals("")) {
+                    q.add(new TermQuery(new Term(UNIV_PREF + FIELD_CAMPUS)), BooleanClause.Occur.MUST);
+                }
+            }
+        } else if (queryType.equals(QTYPE_FACULTY)) {
+            if (facultyDesc != null) {
+                if (!facultyDesc.getForm().equals("")) {
+                    q.add(new TermQuery(new Term(UNIV_PREF + FIELD_FORM)), BooleanClause.Occur.MUST);
+                }
+                if (!facultyDesc.getPhd().equals("")) {
+                    q.add(new TermQuery(new Term(UNIV_PREF + FIELD_PHD)), BooleanClause.Occur.MUST);
+                }
+                if (!facultyDesc.getDiplomaType().equals("")) {
+                    q.add(new TermQuery(new Term(UNIV_PREF + FIELD_DIP_TYPE)), BooleanClause.Occur.MUST);
+                }
+                if (!facultyDesc.getMilitary().equals("")) {
+                    q.add(new TermQuery(new Term(UNIV_PREF + FIELD_MILITARY)), BooleanClause.Occur.MUST);
+                }
+            }
+        }
+        return q;
     }
 }
