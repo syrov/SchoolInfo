@@ -96,7 +96,7 @@ public class Indexer {
         if (tableName.equals(UserQuery.QTYPE_UNIV)) {
             while (rs.next()) {
                 Document doc = new Document();
-                doc.add(new Field("id", rs.getString("id"), Field.Store.YES, Field.Index.ANALYZED));
+                doc.add(new Field("id", rs.getString("id"), Field.Store.YES, Field.Index.NOT_ANALYZED));
                 doc.add(new Field(UserQuery.FIELD_NAME, rs.getString("name"), Field.Store.YES, Field.Index.ANALYZED));
                 doc.add(new Field(UserQuery.FIELD_CITY, rs.getString("city"), Field.Store.YES, Field.Index.ANALYZED));
 
@@ -136,7 +136,7 @@ public class Indexer {
         } else if (tableName.equals(UserQuery.QTYPE_FACULTY)) {
             while (rs.next()) {
                 Document doc = new Document();
-                doc.add(new Field("id", rs.getString("id"), Field.Store.YES, Field.Index.ANALYZED));
+                doc.add(new Field("id", rs.getString("id"), Field.Store.YES, Field.Index.NOT_ANALYZED));
                 doc.add(new Field(UserQuery.FIELD_NAME, rs.getString("name"), Field.Store.YES, Field.Index.ANALYZED));
 
                  //достаем список направлений на данном факультете

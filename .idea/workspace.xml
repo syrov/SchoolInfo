@@ -4,12 +4,6 @@
     <list default="true" id="e4b76eae-a61a-46cc-8854-7426a3e706f2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/Indexer.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/Indexer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/TestSearchAndIndex.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/TestSearchAndIndex.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/Searcher.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/Searcher.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/UserQuery.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/UserQuery.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/util/DBResponse.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/util/DBResponse.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/util/FacultyDescription.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/util/FacultyDescription.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/util/UnivDescription.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/util/UnivDescription.java" />
     </list>
     <ignored path="SchoolInfo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -82,10 +76,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestSearchAndIndex.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TestSearchAndIndex.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/TestSearchAndIndex.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="111" selection-start="1446" selection-end="1446" vertical-scroll-proportion="0.74870914">
+            <state line="39" column="112" selection-start="1446" selection-end="1446" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -136,10 +130,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Indexer.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Indexer.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/Indexer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="138" column="97" selection-start="5960" selection-end="5960" vertical-scroll-proportion="0.0">
+            <state line="97" column="84" selection-start="3376" selection-end="3376" vertical-scroll-proportion="0.2940141">
               <folding />
             </state>
           </provider>
@@ -169,12 +163,12 @@
         <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/util/GetUniversityCity.java" />
         <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/util/UserQuery.java" />
         <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/UserQuery.java" />
-        <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/Indexer.java" />
         <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/util/DBResponse.java" />
-        <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/TestSearchAndIndex.java" />
         <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/util/UnivDescription.java" />
         <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/util/FacultyDescription.java" />
         <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/Searcher.java" />
+        <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/TestSearchAndIndex.java" />
+        <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/Indexer.java" />
       </list>
     </option>
   </component>
@@ -624,7 +618,7 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Изменен способ построения строки запроса.&#10;Добавлен класс для тестирования поиска" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлены, но не протестированы индексирование и поиск по направлению/специальности" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -641,6 +635,7 @@
     <MESSAGE value="Storage classes added, Database class modified" />
     <MESSAGE value="UserQuery class modified. Please note: to-do tags added" />
     <MESSAGE value="Изменен способ построения строки запроса.&#10;Добавлен класс для тестирования поиска" />
+    <MESSAGE value="Добавлены, но не протестированы индексирование и поиск по направлению/специальности" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -727,13 +722,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/Indexer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="138" column="97" selection-start="5960" selection-end="5960" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/util/FacultyDescription.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="50" column="24" selection-start="1325" selection-end="1325" vertical-scroll-proportion="0.0">
@@ -750,7 +738,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/TestSearchAndIndex.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="111" selection-start="1446" selection-end="1446" vertical-scroll-proportion="0.74870914">
+        <state line="39" column="112" selection-start="1446" selection-end="1446" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/Indexer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="97" column="84" selection-start="3376" selection-end="3376" vertical-scroll-proportion="0.2940141">
           <folding />
         </state>
       </provider>
