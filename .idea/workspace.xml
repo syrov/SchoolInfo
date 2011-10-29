@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4b76eae-a61a-46cc-8854-7426a3e706f2" name="Default" comment="Изменен способ построения строки запроса.&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/commons-io-2.1.jar" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/jetty2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/testDB.sql" afterPath="" />
+    <list default="true" id="e4b76eae-a61a-46cc-8854-7426a3e706f2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SchoolInfo.iml" afterPath="$PROJECT_DIR$/src/SchoolInfo.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/Indexer.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/Indexer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/TestSearchAndIndex.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/TestSearchAndIndex.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/Searcher.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/Searcher.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/UserQuery.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/UserQuery.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/storage/Database.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/storage/Database.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/util/DBResponse.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/util/DBResponse.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/util/FacultyDescription.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/util/FacultyDescription.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/util/UnivDescription.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/util/UnivDescription.java" />
     </list>
     <ignored path="SchoolInfo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -78,25 +76,43 @@
       <file leaf-file-name="UserQuery.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/UserQuery.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="168" column="60" selection-start="5828" selection-end="5828" vertical-scroll-proportion="0.0">
+            <state line="155" column="67" selection-start="5118" selection-end="5118" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestSearchAndIndex.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="TestSearchAndIndex.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/TestSearchAndIndex.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="30" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0">
+            <state line="39" column="111" selection-start="1446" selection-end="1446" vertical-scroll-proportion="0.74870914">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Database.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="UnivDescription.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/util/UnivDescription.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="22" selection-start="720" selection-end="720" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DBResponse.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/util/DBResponse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="25" selection-start="645" selection-end="645" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Database.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/storage/Database.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="3" selection-start="49" selection-end="49" vertical-scroll-proportion="0.051107325">
+            <state line="2" column="3" selection-start="49" selection-end="49" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -105,10 +121,17 @@
       <file leaf-file-name="Searcher.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/Searcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="38" selection-start="1944" selection-end="1944" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="78" column="66" selection-start="3371" selection-end="3371" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FacultyDescription.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/util/FacultyDescription.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="50" column="24" selection-start="1325" selection-end="1325" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -116,7 +139,7 @@
       <file leaf-file-name="Indexer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/Indexer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="120" column="17" selection-start="4882" selection-end="4882" vertical-scroll-proportion="0.0">
+            <state line="138" column="97" selection-start="5960" selection-end="5960" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -136,9 +159,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/TopCoderListener.java" />
-        <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/storage/Database.java" />
-        <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/util/UnivDescription.java" />
         <option value="$PROJECT_DIR$/build.xml" />
         <option value="$PROJECT_DIR$/src/script/start.sh" />
         <option value="$PROJECT_DIR$/src/script/beans.xml" />
@@ -148,10 +168,13 @@
         <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/yalets/UserQueryYalet.java" />
         <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/util/GetUniversityCity.java" />
         <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/util/UserQuery.java" />
-        <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/Searcher.java" />
-        <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/Indexer.java" />
         <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/UserQuery.java" />
+        <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/Indexer.java" />
+        <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/util/DBResponse.java" />
         <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/TestSearchAndIndex.java" />
+        <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/util/UnivDescription.java" />
+        <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/util/FacultyDescription.java" />
+        <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/Searcher.java" />
       </list>
     </option>
   </component>
@@ -191,6 +214,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -242,6 +267,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="schoolinfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -318,34 +347,28 @@
               <option name="myItemId" value="schoolinfo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="indexer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Favorites" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Libraries" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="57" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="139" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="151" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="69" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
-    <property name="MemberChooser.sorted" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="156" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="74" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="74" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="734" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="749" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="73" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="68" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="156" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="830" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="815" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="155" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="150" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
@@ -360,8 +383,8 @@
     <property name="options.lastSelected" value="fileTemplates" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -553,14 +576,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1376" height="716" extended-state="6" />
+    <frame x="0" y="-5" width="1366" height="773" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3280255" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34280938" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.08868999" sideWeight="0.679868" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3960396" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29677418" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29617834" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31687897" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32643312" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953683" sideWeight="0.21496816" order="1" side_tool="true" content_ui="tabs" />
@@ -579,7 +602,7 @@
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <option name="myTodoPanelSettings">
       <value>
         <are-packages-shown value="false" />
@@ -601,7 +624,7 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="UserQuery class modified. Please note: to-do tags added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Изменен способ построения строки запроса.&#10;Добавлен класс для тестирования поиска" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -617,6 +640,7 @@
     <MESSAGE value="classes UserQueryManager and UserQuery modified" />
     <MESSAGE value="Storage classes added, Database class modified" />
     <MESSAGE value="UserQuery class modified. Please note: to-do tags added" />
+    <MESSAGE value="Изменен способ построения строки запроса.&#10;Добавлен класс для тестирования поиска" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -635,16 +659,6 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/storage/Ranking_method.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="111" selection-end="111" vertical-scroll-proportion="0.26119402" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/util/FacultyDescription.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="144" selection-end="144" vertical-scroll-proportion="-0.69541776" />
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/libs/xfresh/xfresh-core.jar!/net/sf/xfresh/core/Yalet.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="17" selection-start="160" selection-end="160" vertical-scroll-proportion="0.20604396" />
@@ -670,30 +684,9 @@
         <state line="10" column="68" selection-start="261" selection-end="261" vertical-scroll-proportion="0.34246576" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/util/UnivDescription.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="144" selection-end="144" vertical-scroll-proportion="0.30821916" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/models/UserQueryManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="1" selection-start="1088" selection-end="1088" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/Searcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="38" selection-start="1944" selection-end="1944" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/Indexer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="17" selection-start="4882" selection-end="4882" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/101_0227.JPG">
@@ -706,23 +699,58 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/storage/Database.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="3" selection-start="49" selection-end="49" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/UserQuery.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="168" column="60" selection-start="5828" selection-end="5828" vertical-scroll-proportion="0.0">
+        <state line="155" column="67" selection-start="5118" selection-end="5118" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/util/DBResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="25" selection-start="645" selection-end="645" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/util/UnivDescription.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="22" selection-start="720" selection-end="720" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/Indexer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="138" column="97" selection-start="5960" selection-end="5960" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/util/FacultyDescription.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="24" selection-start="1325" selection-end="1325" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/Searcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="66" selection-start="3371" selection-end="3371" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/TestSearchAndIndex.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="30" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/storage/Database.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="3" selection-start="49" selection-end="49" vertical-scroll-proportion="0.051107325">
+        <state line="39" column="111" selection-start="1446" selection-end="1446" vertical-scroll-proportion="0.74870914">
           <folding />
         </state>
       </provider>

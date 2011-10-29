@@ -40,10 +40,10 @@ public class UserQuery {
 // строка, по которой идет обращение к Searcher'у
 //    private final String query;
 
-// параметры поиска
+    // параметры поиска
     private final String queryType;
 
-//    private final String name;
+    //    private final String name;
     private final String direction;
     private final String speciality;
     private final String city;
@@ -55,7 +55,7 @@ public class UserQuery {
     private int id;
     private int universityId;
 
-//  простой конструктор
+    //  простой конструктор
     public UserQuery(String qType, String direction, String speciality, String city, String universityName) {
         this.id = 0;
 
@@ -119,6 +119,7 @@ public void clear() {
 
     /**
      * Конструирует и возвращает строку запроса
+     *
      * @done: добавить в строку запроса universityName, speciality и direction, доделать строку запроса
      */
     public String getQuery() {
@@ -137,13 +138,13 @@ public void clear() {
                 stringBuffer.append(UNIV_PREF + FIELD_CAMPUS + ":").append(univDesc.getCampus() + " ");
             }
         } else if (queryType.equals(QTYPE_FACULTY)) {
- /*
-            add(FIELD_UNIV_ID, String.valueOf(universityId));
-            add(FIELD_NAME, name);
-            add(FAC_PREF + FIELD_FORM, facultyDesc.getForm());
-            add(FAC_PREF + FIELD_PHD, facultyDesc.getPhd());
-            add(FAC_PREF + FIELD_DIP_TYPE, facultyDesc.getDiplomaType());
-            add(FAC_PREF + FIELD_MILITARY, facultyDesc.getMilitary());   */
+            /*
+      add(FIELD_UNIV_ID, String.valueOf(universityId));
+      add(FIELD_NAME, name);
+      add(FAC_PREF + FIELD_FORM, facultyDesc.getForm());
+      add(FAC_PREF + FIELD_PHD, facultyDesc.getPhd());
+      add(FAC_PREF + FIELD_DIP_TYPE, facultyDesc.getDiplomaType());
+      add(FAC_PREF + FIELD_MILITARY, facultyDesc.getMilitary());   */
         }
 
         return stringBuffer.toString();
@@ -151,6 +152,12 @@ public void clear() {
 
     public BooleanQuery getLuceneQuery() {
         BooleanQuery q = new BooleanQuery();
+        if (!city.equals("")) {
+            q.add(new TermQuery(new Term(FIELD_DIRECTION, direction)), BooleanClause.Occur.MUST);
+        }
+        if (!city.equals("")) {
+            q.add(new TermQuery(new Term(FIELD_SPECIALITY, speciality)), BooleanClause.Occur.MUST);
+        }
         if (queryType.equals(QTYPE_UNIV)) {
             if (!universityName.equals("")) {
                 q.add(new TermQuery(new Term(FIELD_NAME, universityName)), BooleanClause.Occur.MUST);

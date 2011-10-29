@@ -3,6 +3,7 @@ package ru.compscicenter.schoolinfo.indexer;
 import ru.compscicenter.schoolinfo.searcher.Searcher;
 import ru.compscicenter.schoolinfo.searcher.UserQuery;
 import ru.compscicenter.schoolinfo.util.DBResponse;
+import ru.compscicenter.schoolinfo.util.UnivDescription;
 
 import java.util.ArrayList;
 
@@ -36,7 +37,7 @@ public class TestSearchAndIndex {
         ArrayList<DBResponse> res = Searcher.search(INDEX_DIR, query);
         for (int i = 0; i < res.size(); i++) {
             DBResponse univ = res.get(i);
-            System.out.println("id=" + univ.getId() + "; Name=" + univ.getName());
+            System.out.println("id=" + univ.getId() + "; Name=" + univ.getName() + "; City=" + univ.getCity());
         }
 
 

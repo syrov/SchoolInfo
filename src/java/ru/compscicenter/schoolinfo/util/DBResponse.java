@@ -7,6 +7,8 @@ package ru.compscicenter.schoolinfo.util;
  * Time: 21:32
  */
 
+import ru.compscicenter.schoolinfo.storage.Faculty;
+
 /**
  * Класс, представляющий запись в базе.
  */
@@ -22,10 +24,18 @@ public class DBResponse {
 
     private UnivDescription desc;
 
-    public DBResponse(int id, String name, String about) {
+    public DBResponse(int id, String name, String city) {
         this.id = id;
         this.name = name;
-        this.about = about;
+        this.city = city;
+    }
+
+    public void setUniv(UnivDescription univ) {
+        this.univ = univ;
+    }
+
+    public void setFac(FacultyDescription fac) {
+        this.fac = fac;
     }
 
     public int getId() {
@@ -36,11 +46,12 @@ public class DBResponse {
         return name;
     }
 
-    public String getInfo() {
-        return about;
-    }
-
     public int getRating() {
         return rating;
     }
+
+    public String getCity() {
+        return city;
+    }
+
 }

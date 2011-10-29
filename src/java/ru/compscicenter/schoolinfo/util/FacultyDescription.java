@@ -8,27 +8,27 @@ package ru.compscicenter.schoolinfo.util;
  */
 
 public class FacultyDescription {
-    public static final byte FORM_DAY = 1;
-    public static final byte FORM_Z = 2;
-    public static final byte FORM_EVENING = 3;
-    public static final byte HAS_PHD = 1;
-    public static final byte NO_PHD = 2;
-    public static final byte DIP_BACHELOR = 1;
-    public static final byte DIP_SPECIALIST = 2;
-    public static final byte DIP_MASTER = 3;
-    public static final byte HAS_MILITARY = 1;
-    public static final byte NO_MILITARY = 2;
+    public static final String FORM_DAY = "1";
+    public static final String FORM_Z = "2";
+    public static final String FORM_EVENING = "3";
+    public static final String HAS_PHD = "1";
+    public static final String NO_PHD = "2";
+    public static final String DIP_BACHELOR = "1";
+    public static final String DIP_SPECIALIST = "2";
+    public static final String DIP_MASTER = "3";
+    public static final String HAS_MILITARY = "1";
+    public static final String NO_MILITARY = "2";
 
-    private byte form;
-    private byte phd;
-    private byte diplomaType;
-    private byte military;
+    private String form;
+    private String phd;
+    private String diplomaType;
+    private String military;
 
     public FacultyDescription() {
-        form = phd = diplomaType = military = 0;
+        form = phd = diplomaType = military = "";
     }
 
-    public FacultyDescription(byte form, byte phd, byte diplomaType, byte military) {
+    public FacultyDescription(String form, String phd, String diplomaType, String military) {
         this.form = form;
         this.phd = phd;
         this.diplomaType = diplomaType;
@@ -36,19 +36,19 @@ public class FacultyDescription {
     }
 
     public String getForm() {
-        return Byte.toString(form);
+        return form;
     }
 
     public String getPhd() {
-        return Byte.toString(phd);
+        return phd;
     }
 
     public String getDiplomaType() {
-        return Byte.toString(diplomaType);
+        return diplomaType;
     }
 
     public String getMilitary() {
-        return Byte.toString(military);
+        return military;
     }
 
 }

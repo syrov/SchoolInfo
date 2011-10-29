@@ -92,13 +92,35 @@ public class Indexer {
 
         // добавление данных из базы в индекс, в зависимости от типа индексируемой таблицы
         // одинакового кода много, наверное можно это сократить. Просто пока всё предельно понятно
-        //todo: узнать, какими запросами из базы доставать специальность, направление
+        // todo: упростить запросы
         if (tableName.equals(UserQuery.QTYPE_UNIV)) {
             while (rs.next()) {
                 Document doc = new Document();
                 doc.add(new Field("id", rs.getString("id"), Field.Store.YES, Field.Index.ANALYZED));
                 doc.add(new Field(UserQuery.FIELD_NAME, rs.getString("name"), Field.Store.YES, Field.Index.ANALYZED));
                 doc.add(new Field(UserQuery.FIELD_CITY, rs.getString("city"), Field.Store.YES, Field.Index.ANALYZED));
+
+                //достаем список направлений в данном университете
+                Statement tempStatement = conn.createStatement();
+                ResultSet tmp = tempStatement.executeQuery("SELECT * FROM direction WHERE id IN " +
+                        "(SELECT id FROM speciality WHERE id IN " +
+                        "(SELECT speciality_id FROM speciality_faculty WHERE faculty_id IN " +
+                        "(SELECT id FROM faculty WHERE university_id=" + rs.getString("id") + ")))");
+                String direction = "";
+                while (tmp.next()) {
+                    direction += tmp.getString("name") + "; ";
+                }
+                doc.add(new Field(UserQuery.FIELD_DIRECTION, direction, Field.Store.YES, Field.Index.ANALYZED));
+
+                //достаем список специальностей в данном университете
+                tmp = tempStatement.executeQuery("SELECT * FROM speciality WHERE id IN " +
+                        "(SELECT speciality_id FROM speciality_faculty WHERE faculty_id IN " +
+                        "(SELECT id FROM faculty WHERE university_id=" + rs.getString("id") + "))");
+                String spec = "";
+                while (tmp.next()) {
+                    spec += tmp.getString("name") + "; ";
+                }
+                doc.add(new Field(UserQuery.FIELD_SPECIALITY, spec, Field.Store.YES, Field.Index.ANALYZED));
 
                 Gson gson = new Gson();
                 if (!rs.getString("description").equals("null")) {
@@ -114,9 +136,28 @@ public class Indexer {
         } else if (tableName.equals(UserQuery.QTYPE_FACULTY)) {
             while (rs.next()) {
                 Document doc = new Document();
-                doc.add(new Field("id", rs.getString("id"), Field.Store.YES, Field.Index.NO));
+                doc.add(new Field("id", rs.getString("id"), Field.Store.YES, Field.Index.ANALYZED));
                 doc.add(new Field(UserQuery.FIELD_NAME, rs.getString("name"), Field.Store.YES, Field.Index.ANALYZED));
-                doc.add(new Field(UserQuery.FIELD_CITY, rs.getString("city"), Field.Store.YES, Field.Index.ANALYZED));
+
+                 //достаем список направлений на данном факультете
+                Statement tempStatement = conn.createStatement();
+                ResultSet tmp = tempStatement.executeQuery("SELECT * FROM direction WHERE id IN " +
+                        "(SELECT id FROM speciality WHERE id IN " +
+                        "(SELECT speciality_id FROM speciality_faculty WHERE faculty_id=" + rs.getString("id") + "))");
+                String direction = "";
+                while (tmp.next()) {
+                    direction += tmp.getString("name") + "; ";
+                }
+                doc.add(new Field(UserQuery.FIELD_DIRECTION, direction, Field.Store.YES, Field.Index.ANALYZED));
+
+                //достаем список специальностей на данном факультете
+                tmp = tempStatement.executeQuery("SELECT * FROM speciality WHERE id IN " +
+                        "(SELECT speciality_id FROM speciality_faculty WHERE faculty_id=" + rs.getString("id") + "))");
+                String spec = "";
+                while (tmp.next()) {
+                    spec += tmp.getString("name") + "; ";
+                }
+                doc.add(new Field(UserQuery.FIELD_SPECIALITY, spec, Field.Store.YES, Field.Index.ANALYZED));
 
                 Gson gson = new Gson();
                 FacultyDescription u = gson.fromJson(rs.getString("description"), FacultyDescription.class);
