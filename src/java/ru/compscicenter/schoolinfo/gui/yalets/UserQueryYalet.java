@@ -31,30 +31,35 @@ public class UserQueryYalet implements Yalet {
         final String city = req.getParameter("city");
         final String uni = req.getParameter("uni");
 
-        ArrayList<DBResponse> result = null;
-        try {
-            result = manager.getSearchResult(dir, spec, city, uni);
-        } catch (IOException e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
-        } catch (ParseException e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
-        }
-//      log.error(result + "RESULT");
-        if (result.size() == 0) {
-            DBResponse rec = new DBResponse(0, "Error", "No information found");
-            result.add(rec);
-//      в случае, когда университет не указан, пользователю выдается рейтинг
-        } else if (uni == null) {
-            ArrayList<DBResponse> rec = new ArrayList<DBResponse>(5);
-
- /*           Collections.sort(result, new DBResponseComparator());
-
-            for (int i = 0; i < 5; i++)
-                rec.add(result.get(i));      */
-
-            result = rec;
-        }
-
+        System.out.println("arrived at yalet");
+     //   ArrayList<DBResponse> result = null;
+//        try {
+//            result = manager.getSearchResult(dir, spec, city, uni);
+//        } catch (IOException e) {
+//            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+//        } catch (ParseException e) {
+//            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+//        }
+////      log.error(result + "RESULT");
+////        if (result == null || result.size() == 0) {
+//            DBResponse rec = new DBResponse(0, "Error", "No information found");
+//            result.add(rec);
+////      в случае, когда университет не указан, пользователю выдается рейтинг
+  //      }
+// else if (uni == null) {
+//            ArrayList<DBResponse> rec = new ArrayList<DBResponse>(5);
+//
+// /*           Collections.sort(result, new DBResponseComparator());
+//
+//            for (int i = 0; i < 5; i++)
+//                rec.add(result.get(i));      */
+//
+//            result = rec;
+//        }
+        DBResponse result = new DBResponse(0, "fuck", "oioioi");
+         System.out.println("get ready");
+  //      System.out.println(result.get(0).getName());
         res.add(result);
+        System.out.println("finished");
     }
 }
