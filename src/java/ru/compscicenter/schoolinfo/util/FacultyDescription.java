@@ -1,5 +1,7 @@
 package ru.compscicenter.schoolinfo.util;
 
+import com.google.gson.Gson;
+
 /**
  * Created by IntelliJ IDEA.
  * User: Evgeniy
@@ -49,6 +51,12 @@ public class FacultyDescription {
 
     public String getMilitary() {
         return military;
+    }
+
+    public String toJson() {
+        Gson gson = new Gson();
+        String s = gson.toJson(this);
+        return s;
     }
 
 }

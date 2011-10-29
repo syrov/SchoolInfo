@@ -100,27 +100,32 @@ public class Indexer {
                 doc.add(new Field(UserQuery.FIELD_NAME, rs.getString("name"), Field.Store.YES, Field.Index.ANALYZED));
                 doc.add(new Field(UserQuery.FIELD_CITY, rs.getString("city"), Field.Store.YES, Field.Index.ANALYZED));
 
-                //достаем список направлений в данном университете
                 Statement tempStatement = conn.createStatement();
-                ResultSet tmp = tempStatement.executeQuery("SELECT * FROM direction WHERE id IN " +
-                        "(SELECT id FROM speciality WHERE id IN " +
-                        "(SELECT speciality_id FROM speciality_faculty WHERE faculty_id IN " +
-                        "(SELECT id FROM faculty WHERE university_id=" + rs.getString("id") + ")))");
-                String direction = "";
-                while (tmp.next()) {
-                    direction += tmp.getString("name") + "; ";
-                }
-                doc.add(new Field(UserQuery.FIELD_DIRECTION, direction, Field.Store.YES, Field.Index.ANALYZED));
 
                 //достаем список специальностей в данном университете
-                tmp = tempStatement.executeQuery("SELECT * FROM speciality WHERE id IN " +
+                ResultSet tmp = tempStatement.executeQuery("SELECT * FROM speciality WHERE id IN " +
                         "(SELECT speciality_id FROM speciality_faculty WHERE faculty_id IN " +
                         "(SELECT id FROM faculty WHERE university_id=" + rs.getString("id") + "))");
                 String spec = "";
+                String ids = "";
                 while (tmp.next()) {
                     spec += tmp.getString("name") + "; ";
+                    ids += "," + tmp.getString("id");
                 }
                 doc.add(new Field(UserQuery.FIELD_SPECIALITY, spec, Field.Store.YES, Field.Index.ANALYZED));
+
+                if (!ids.equals("")) {
+                    //достаем список направлений в данном университете
+                    tmp = tempStatement.executeQuery("SELECT * FROM direction WHERE id IN " +
+                            "(SELECT id FROM speciality WHERE id IN (" + ids.substring(1) + "))");
+                    //"(SELECT speciality_id FROM speciality_faculty WHERE faculty_id IN " +
+                    //"(SELECT id FROM faculty WHERE university_id=" + rs.getString("id") + ")))");
+                    String direction = "";
+                    while (tmp.next()) {
+                        direction += tmp.getString("name") + "; ";
+                    }
+                    doc.add(new Field(UserQuery.FIELD_DIRECTION, direction, Field.Store.YES, Field.Index.ANALYZED));
+                }
 
                 Gson gson = new Gson();
                 if (!rs.getString("description").equals("null")) {
@@ -139,40 +144,46 @@ public class Indexer {
                 doc.add(new Field("id", rs.getString("id"), Field.Store.YES, Field.Index.NOT_ANALYZED));
                 doc.add(new Field(UserQuery.FIELD_NAME, rs.getString("name"), Field.Store.YES, Field.Index.ANALYZED));
 
-                 //достаем список направлений на данном факультете
                 Statement tempStatement = conn.createStatement();
-                ResultSet tmp = tempStatement.executeQuery("SELECT * FROM direction WHERE id IN " +
-                        "(SELECT id FROM speciality WHERE id IN " +
-                        "(SELECT speciality_id FROM speciality_faculty WHERE faculty_id=" + rs.getString("id") + "))");
-                String direction = "";
-                while (tmp.next()) {
-                    direction += tmp.getString("name") + "; ";
-                }
-                doc.add(new Field(UserQuery.FIELD_DIRECTION, direction, Field.Store.YES, Field.Index.ANALYZED));
 
                 //достаем список специальностей на данном факультете
-                tmp = tempStatement.executeQuery("SELECT * FROM speciality WHERE id IN " +
-                        "(SELECT speciality_id FROM speciality_faculty WHERE faculty_id=" + rs.getString("id") + "))");
+                ResultSet tmp = tempStatement.executeQuery("SELECT * FROM speciality WHERE id IN " +
+                        "(SELECT speciality_id FROM speciality_faculty WHERE faculty_id=" + rs.getString("id") + ")");
                 String spec = "";
+                String ids = "";
                 while (tmp.next()) {
                     spec += tmp.getString("name") + "; ";
+                    ids += "," + tmp.getString("id");
                 }
                 doc.add(new Field(UserQuery.FIELD_SPECIALITY, spec, Field.Store.YES, Field.Index.ANALYZED));
 
+                if (!ids.equals("")) {
+                    //достаем список направлений на данном факультете
+                    tmp = tempStatement.executeQuery("SELECT * FROM direction WHERE id IN " +
+                            "(SELECT id FROM speciality WHERE id IN (" + ids.substring(1) + "))");
+                    //"(SELECT speciality_id FROM speciality_faculty WHERE faculty_id=" + rs.getString("id") + "))");
+                    String direction = "";
+                    while (tmp.next()) {
+                        direction += tmp.getString("name") + "; ";
+                    }
+                    doc.add(new Field(UserQuery.FIELD_DIRECTION, direction, Field.Store.YES, Field.Index.ANALYZED));
+                }
+
                 Gson gson = new Gson();
-                FacultyDescription u = gson.fromJson(rs.getString("description"), FacultyDescription.class);
-                doc.add(new Field(UserQuery.FAC_PREF + UserQuery.FIELD_FORM, u.getForm(), Field.Store.YES,
-                        Field.Index.ANALYZED));
+                if (!rs.getString("description").equals("null")) {
+                    FacultyDescription u = gson.fromJson(rs.getString("description"), FacultyDescription.class);
+                    doc.add(new Field(UserQuery.FAC_PREF + UserQuery.FIELD_FORM, u.getForm(), Field.Store.YES,
+                            Field.Index.ANALYZED));
 
-                doc.add(new Field(UserQuery.FAC_PREF + UserQuery.FIELD_PHD, u.getPhd(), Field.Store.YES,
-                        Field.Index.ANALYZED));
+                    doc.add(new Field(UserQuery.FAC_PREF + UserQuery.FIELD_PHD, u.getPhd(), Field.Store.YES,
+                            Field.Index.ANALYZED));
 
-                doc.add(new Field(UserQuery.FAC_PREF + UserQuery.FIELD_DIP_TYPE, u.getDiplomaType(),
-                        Field.Store.YES, Field.Index.ANALYZED));
+                    doc.add(new Field(UserQuery.FAC_PREF + UserQuery.FIELD_DIP_TYPE, u.getDiplomaType(),
+                            Field.Store.YES, Field.Index.ANALYZED));
 
-                doc.add(new Field(UserQuery.FAC_PREF + UserQuery.FIELD_MILITARY, u.getMilitary(),
-                        Field.Store.YES, Field.Index.ANALYZED));
-
+                    doc.add(new Field(UserQuery.FAC_PREF + UserQuery.FIELD_MILITARY, u.getMilitary(),
+                            Field.Store.YES, Field.Index.ANALYZED));
+                }
                 writer.addDocument(doc);
             }
         }

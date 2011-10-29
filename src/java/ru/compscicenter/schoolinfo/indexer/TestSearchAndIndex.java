@@ -3,6 +3,7 @@ package ru.compscicenter.schoolinfo.indexer;
 import ru.compscicenter.schoolinfo.searcher.Searcher;
 import ru.compscicenter.schoolinfo.searcher.UserQuery;
 import ru.compscicenter.schoolinfo.util.DBResponse;
+import ru.compscicenter.schoolinfo.util.FacultyDescription;
 import ru.compscicenter.schoolinfo.util.UnivDescription;
 
 import java.util.ArrayList;
@@ -32,7 +33,7 @@ public class TestSearchAndIndex {
             ind.close();
         }
 //
-        UserQuery query = new UserQuery(UserQuery.QTYPE_UNIV, "", "", "", "IIT");
+        UserQuery query = new UserQuery(UserQuery.QTYPE_UNIV, "010000", "", "", "");
         System.out.println(query.getQuery());
         ArrayList<DBResponse> res = Searcher.search(INDEX_DIR, query);
         for (int i = 0; i < res.size(); i++) {

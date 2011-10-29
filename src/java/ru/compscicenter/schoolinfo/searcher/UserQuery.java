@@ -152,10 +152,10 @@ public void clear() {
 
     public BooleanQuery getLuceneQuery() {
         BooleanQuery q = new BooleanQuery();
-        if (!city.equals("")) {
+        if (!direction.equals("")) {
             q.add(new TermQuery(new Term(FIELD_DIRECTION, direction)), BooleanClause.Occur.MUST);
         }
-        if (!city.equals("")) {
+        if (!speciality.equals("")) {
             q.add(new TermQuery(new Term(FIELD_SPECIALITY, speciality)), BooleanClause.Occur.MUST);
         }
         if (queryType.equals(QTYPE_UNIV)) {

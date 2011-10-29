@@ -1,5 +1,7 @@
 package ru.compscicenter.schoolinfo.util;
 
+import com.google.gson.Gson;
+
 /**
  * Created by IntelliJ IDEA.
  * User: Evgeniy
@@ -33,6 +35,12 @@ public class UnivDescription {
 
     public String getCampus() {
         return campus;
+    }
+
+    public String toJson() {
+        Gson gson = new Gson();
+        String s = gson.toJson(this);
+        return s;
     }
 
 }
