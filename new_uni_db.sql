@@ -1,4 +1,9 @@
 CREATE DATABASE UNIINFO CHARACTER SET utf8 COLLATE utf8_bin;
+SET character_set_server=utf8;
+SET character_set_database=utf8;
+SET character_set_client=utf8;
+SET character_set_connection=utf8;
+
 
 USE UNIINFO;
 
