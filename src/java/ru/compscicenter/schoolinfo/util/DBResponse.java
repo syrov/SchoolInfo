@@ -28,15 +28,17 @@ public class DBResponse {
         this.id = id;
         this.name = name;
         this.city = city;
+
+        this.rating = 666;
     }
 
-    public void setUniv(UnivDescription univ) {
-        this.univ = univ;
-    }
-
-    public void setFac(FacultyDescription fac) {
-        this.fac = fac;
-    }
+//    public void setUniv(UnivDescription univ) {
+//        this.univ = univ;
+//    }
+//
+//    public void setFac(FacultyDescription fac) {
+//        this.fac = fac;
+//    }
 
     public int getId() {
         return id;
