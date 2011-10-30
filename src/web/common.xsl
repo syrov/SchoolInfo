@@ -26,7 +26,7 @@
                             <xsl:call-template name="leftPane"/>
                         </div>
                         <div id="rightPane">
-                            <form action="search.xml" method="post">
+                            <form action="search.xml" method="get">
                                 <br/>Направление
                                 <br/>
                                 <xsl:call-template name="dir"/>
@@ -36,7 +36,7 @@
                                 <br/>
                                 <xsl:call-template name="spec"/>
                                 <br/>
-                                <br/>Город
+                                <br/>Страна
                                 <br/>
                                 <xsl:call-template name="city"/>
 
@@ -81,8 +81,13 @@
 
     <xsl:template name="city">
         <select name="_city">
-                <option value="Москва">Москва</option>
-                <option value="СПб">Санкт-Петербург</option>
+                <option value="Russian Federation">Russian Federation</option>
+                <option value="China">China</option>
+                <option value="United States">United States</option>
+                <option value="Japan">Japan</option>
+                <option value="Poland">Poland</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="Canada">Canada</option>
         </select>
     </xsl:template>
 

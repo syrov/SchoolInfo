@@ -32,25 +32,29 @@
         <xsl:apply-templates select="page/data[@id='userQuery']" mode="show"/>
     </xsl:template>
 
-    <xsl:template match="page/data[@id='userQuery']" mode="show">
-        <h2 style="text-align:center;">Рейтинг c topcoder'a</h2>
-        <p align="center">
-        <!-- пока так  -->
+    <!--<xsl:template match="page/data[@id='userQuery']/*" mode="show">-->
+        <!--<h2 style="text-align:center;">Рейтинг c topcoder'a</h2>-->
+        <!--<p align="center">-->
+        <!--&lt;!&ndash; пока так  &ndash;&gt;-->
 
-            <table>
-                <!--DBResponse - нужный класс, rating и city - его поля-->
-            <xsl:for-each select="d-b-response">
-                <tr>
-                    <td>
-                        <xsl:value-of select="rating"/>
-                    </td>
-                    <td>
-                        <xsl:value-of select="city"/>
-                    </td>
-                </tr>
-            </xsl:for-each>
-            </table>
-        </p>
+            <!--<table>-->
+                <!--&lt;!&ndash;DBResponse - нужный класс, rating и city - его поля&ndash;&gt;-->
+            <!--<xsl:for-each select="d-b-response">-->
+                <!--<tr>-->
+                    <!--<td>-->
+                        <!--<xsl:value-of select="rating"/>-->
+                    <!--</td>-->
+                    <!--<td>-->
+                        <!--<xsl:value-of select="city"/>-->
+                    <!--</td>-->
+                <!--</tr>-->
+            <!--</xsl:for-each>-->
+            <!--</table>-->
+        <!--</p>-->
+    <!--</xsl:template>-->
+
+    <xsl:template match ="/">
+            <xsl:value-of select="."/>
     </xsl:template>
 
 </xsl:stylesheet>

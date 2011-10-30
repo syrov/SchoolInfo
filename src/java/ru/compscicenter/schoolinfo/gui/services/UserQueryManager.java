@@ -9,6 +9,7 @@ package ru.compscicenter.schoolinfo.gui.services;
 
 import org.apache.lucene.queryParser.ParseException;
 import ru.compscicenter.schoolinfo.gui.models.DBResponse;
+import ru.compscicenter.schoolinfo.searcher.Searcher;
 import ru.compscicenter.schoolinfo.searcher.UserQuery;
 
 import java.io.IOException;
@@ -27,11 +28,11 @@ public class UserQueryManager {
 
         //     Searcher.setIndexDir(new File("index"));
 
-     //   String IndexDir = "/home/index"; // подлежит корректировке
+        String IndexDir = "/home/index"; // подлежит корректировке
 
         UserQuery q = new UserQuery("university", dir, spec, city, uni);
 
- //       result = Searcher.search(q);
+        result = Searcher.search(IndexDir, q);
 
         if (result.size() == 0) {
             DBResponse rec = new DBResponse(0, "Error", "No information found");

@@ -29,7 +29,8 @@ public class UserQueryYalet implements Yalet {
         final String dir = req.getParameter("_dir");   // названия текстовых полей в скобках, см. хсл
         final String spec = req.getParameter("_spec");
         final String city = req.getParameter("_city");
-        final String uni = req.getParameter("_uni");
+//        final String uni = req.getParameter("_uni");
+        final String uni = null; // temp for alpha
 
 //        System.out.println("arrived at yalet");
 //        System.out.println(uni);
@@ -53,10 +54,8 @@ public class UserQueryYalet implements Yalet {
 //        if(uni.equals("3"))   a = result.get(0).getCity();
 //        else a = result.get(0).getName();
 //          System.out.println(result.get(0).getId());
-        List<DBResponse> resultN = new ArrayList<DBResponse>();
-        resultN.add(new DBResponse(1, "MSU", "Moscow"));
-        resultN.add(new DBResponse(2, "SPbSU", "SPb"));
-          res.add(resultN);
+
+          res.add(result);
 //        res.add(result.toString() + " sorry for such an output, later it will be transformed");
 //        System.out.println("finished");
     }
