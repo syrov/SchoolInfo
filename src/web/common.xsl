@@ -26,7 +26,7 @@
                             <xsl:call-template name="leftPane"/>
                         </div>
                         <div id="rightPane">
-                            <form action="search.xml" method="get">
+                            <form action="/search.xml" method="get">
                                 <br/>Направление
                                 <br/>
                                 <xsl:call-template name="dir"/>
