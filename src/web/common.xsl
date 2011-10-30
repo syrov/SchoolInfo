@@ -26,7 +26,7 @@
                             <xsl:call-template name="leftPane"/>
                         </div>
                         <div id="rightPane">
-                            <form action="search.xml" method="get">
+                            <form action="search.xml" method="post">
                                 <br/>Направление
                                 <br/>
                                 <xsl:call-template name="dir"/>
@@ -40,16 +40,16 @@
                                 <br/>
                                 <xsl:call-template name="city"/>
 
-                                <br/>
-                                <br/>Университет
-                                <br/>
-                                <xsl:call-template name="uni"/>
+                                <!--<br/>-->
+                                <!--<br/>Университет-->
+                                <!--<br/>-->
+                                <!--<xsl:call-template name="uni"/>-->
 
                                 <br/>
                                 <br/>
-                                <p style="text-align:center;">
+                                <!--<p style="text-align:center;">-->
                                     <input type="submit" value="Найти"/>
-                                </p>
+                                <!--</p>-->
                             </form>
                         </div>
                     </div>
@@ -71,13 +71,13 @@
         </select>
     </xsl:template>
 
-    <xsl:template name="uni">
-        <select name="_uni">
-                <option value="1">one</option>
-                <option value="2">two</option>
-                <option value="3">three</option>
-        </select>
-    </xsl:template>
+    <!--<xsl:template name="uni">-->
+        <!--<select name="_uni">-->
+                <!--<option value="1">one</option>-->
+                <!--<option value="2">two</option>-->
+                <!--<option value="3">three</option>-->
+        <!--</select>-->
+    <!--</xsl:template>-->
 
     <xsl:template name="city">
         <select name="_city">

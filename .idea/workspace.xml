@@ -2,16 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4b76eae-a61a-46cc-8854-7426a3e706f2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/models/UserQueryManager.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/services/UserQueryManager.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/util/DBResponse.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/models/DBResponse.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/httpclient.xml" afterPath="$PROJECT_DIR$/.idea/libraries/httpclient.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/httpclient2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/httpclient2.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/new_uni_db.sql" afterPath="$PROJECT_DIR$/new_uni_db.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/Indexer.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/Indexer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/yalets/UserQueryYalet.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/yalets/UserQueryYalet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/TestSearchAndIndex.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/TestSearchAndIndex.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/TopCoderListener.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/TopCoderListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/TopCoderWrapper.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/TopCoderWrapper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/Searcher.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/Searcher.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/topcoder.xml" afterPath="$PROJECT_DIR$/src/topcoder.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/updatedb.sql" afterPath="$PROJECT_DIR$/updatedb.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/script/beans.xml" afterPath="$PROJECT_DIR$/src/script/beans.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/web/common.xsl" afterPath="$PROJECT_DIR$/src/web/common.xsl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/web/index.xml" afterPath="$PROJECT_DIR$/src/web/index.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/web/search.xsl" afterPath="$PROJECT_DIR$/src/web/search.xsl" />
     </list>
     <ignored path="SchoolInfo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -75,37 +77,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="updatedb.sql" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/updatedb.sql">
+      <file leaf-file-name="search.xsl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/web/search.xsl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="61" selection-start="462" selection-end="462" vertical-scroll-proportion="0.0">
+            <state line="46" column="1" selection-start="1362" selection-end="1362" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="topcoder.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/topcoder.xml">
+      <file leaf-file-name="DBResponse.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/models/DBResponse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="9" selection-start="1979" selection-end="1979" vertical-scroll-proportion="0.04398148">
-              <folding />
+            <state line="19" column="11" selection-start="409" selection-end="409" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TopCoderWrapper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/TopCoderWrapper.java">
+      <file leaf-file-name="UserQueryYalet.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/yalets/UserQueryYalet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="56" selection-start="1127" selection-end="1127" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="53" column="24" selection-start="1913" selection-end="1913" vertical-scroll-proportion="0.83554375">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserQuery.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/UserQuery.java">
+      <file leaf-file-name="build.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="13" selection-start="2306" selection-end="2306" vertical-scroll-proportion="0.0">
+            <state line="118" column="60" selection-start="4899" selection-end="4899" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -114,35 +120,19 @@
       <file leaf-file-name="Searcher.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/Searcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="18" selection-start="2099" selection-end="2099" vertical-scroll-proportion="0.0">
+            <state line="61" column="7" selection-start="2339" selection-end="2339" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyUniversalListener.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/MyUniversalListener.java">
+      <file leaf-file-name="UserQueryManager.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/services/UserQueryManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="5" selection-start="1183" selection-end="1183" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TopCoderListener.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/TopCoderListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="48" selection-start="1624" selection-end="1624" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="75" selection-start="1051" selection-end="1051" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="23" column="25" selection-start="752" selection-end="752" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -161,22 +151,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/web/search.xml" />
-        <option value="$PROJECT_DIR$/src/web/search.xsl" />
-        <option value="$PROJECT_DIR$/src/web/common.xsl" />
-        <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/yalets/UserQueryYalet.java" />
-        <option value="$PROJECT_DIR$/src/web/index.xml" />
-        <option value="$PROJECT_DIR$/src/script/beans.xml" />
-        <option value="$PROJECT_DIR$/src/topcoder/TopCoderParser.xml" />
-        <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/Indexer.java" />
         <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/TestSearchAndIndex.java" />
-        <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/Searcher.java" />
         <option value="$PROJECT_DIR$/new_uni_db.sql" />
         <option value="$PROJECT_DIR$/updatedb.sql" />
         <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/TopCoderWrapper.java" />
         <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/TopCoderListener.java" />
         <option value="$PROJECT_DIR$/src//TopCoderSchool.html" />
         <option value="$PROJECT_DIR$/src/topcoder.xml" />
+        <option value="$PROJECT_DIR$/src/web/index.xml" />
+        <option value="$PROJECT_DIR$/src/web/common.xsl" />
+        <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/util/DBResponse.java" />
+        <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/models/UserQueryManager.java" />
+        <option value="$PROJECT_DIR$/build.xml" />
+        <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/Searcher.java" />
+        <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/models/DBResponse.java" />
+        <option value="$PROJECT_DIR$/src/web/search.xsl" />
+        <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/yalets/UserQueryYalet.java" />
       </list>
     </option>
   </component>
@@ -216,11 +206,98 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Favorites" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SchoolInfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xfresh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xfresh-db.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SchoolInfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xfresh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xfresh-db.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SchoolInfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xfresh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xfresh-core.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xfresh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SchoolInfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xfresh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xfresh-core.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SchoolInfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="SchoolInfo" />
@@ -234,6 +311,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SchoolInfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -252,6 +343,50 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="schoolinfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SchoolInfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="schoolinfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SchoolInfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="schoolinfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="searcher" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -277,23 +412,104 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SchoolInfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="schoolinfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yalets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SchoolInfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="schoolinfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SchoolInfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="schoolinfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="copyright.profiles" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="options.lastSelected" value="copyright.profiles" />
+    <property name="recentsLimit" value="5" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="dynamic.classpath" value="false" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -304,6 +520,7 @@
       <recent name="$PROJECT_DIR$/lib" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ru.compscicenter.schoolinfo.gui.model" />
       <recent name="ru.compscicenter.schoolinfo.searcher" />
       <recent name="ru.compscicenter.schoolinfo.gui.models" />
       <recent name="ru.compscicenter.schoolinfo.gui" />
@@ -502,25 +719,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="28" y="24" width="1280" height="752" extended-state="0" />
+    <frame x="8" y="24" width="1022" height="575" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34280938" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.08787632" sideWeight="0.6848185" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3960396" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29537955" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31518152" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32643312" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.08717949" sideWeight="0.7057471" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953683" sideWeight="0.21496816" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3265097" sideWeight="0.66392094" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39863327" sideWeight="0.6971831" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32221317" sideWeight="0.79042906" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3265097" sideWeight="0.66392094" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20957096" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3220513" sideWeight="0.7057471" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3960396" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20787746" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29425287" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32343236" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31518152" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -582,9 +799,65 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/web/search.xsl">
+    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="36" column="75" selection-start="1051" selection-end="1051" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/topcoder.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="9" selection-start="1979" selection-end="1979" vertical-scroll-proportion="-0.26790452">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/updatedb.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="61" selection-start="462" selection-end="462" vertical-scroll-proportion="0.4774536">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/TopCoderWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="56" selection-start="1127" selection-end="1127" vertical-scroll-proportion="0.32360741">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/UserQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="13" selection-start="2306" selection-end="2306" vertical-scroll-proportion="0.0397878">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/web/index.xsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/libs/xfresh/xfresh-db.jar!/net/sf/xfresh/db/AbstractDbYalet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="22" selection-start="163" selection-end="163" vertical-scroll-proportion="0.17045455">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/web/index.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="32" selection-start="106" selection-end="130" vertical-scroll-proportion="0.115384616">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/web/common.xsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="32" selection-start="813" selection-end="847" vertical-scroll-proportion="-0.3721519">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/web/search.xml">
@@ -592,67 +865,51 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/DataCleaner.java">
+    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/services/UserQueryManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/Indexer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="0" selection-start="2296" selection-end="2296" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/TestSearchAndIndex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="56" selection-start="1165" selection-end="1165" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/new_uni_db.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="128" column="0" selection-start="3273" selection-end="3273" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/updatedb.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="61" selection-start="462" selection-end="462" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/UserQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="13" selection-start="2306" selection-end="2306" vertical-scroll-proportion="0.0" />
+        <state line="23" column="25" selection-start="752" selection-end="752" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/Searcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="18" selection-start="2099" selection-end="2099" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/MyUniversalListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="5" selection-start="1183" selection-end="1183" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/TopCoderListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="48" selection-start="1624" selection-end="1624" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="75" selection-start="1051" selection-end="1051" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/TopCoderWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="56" selection-start="1127" selection-end="1127" vertical-scroll-proportion="0.0">
+        <state line="61" column="7" selection-start="2339" selection-end="2339" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/topcoder.xml">
+    <entry file="file://$PROJECT_DIR$/build.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="9" selection-start="1979" selection-end="1979" vertical-scroll-proportion="0.04398148">
+        <state line="118" column="60" selection-start="4899" selection-end="4899" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/models/DBResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="11" selection-start="409" selection-end="409" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/web/search.xsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="1" selection-start="1362" selection-end="1362" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/yalets/UserQueryYalet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="24" selection-start="1913" selection-end="1913" vertical-scroll-proportion="0.83554375">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

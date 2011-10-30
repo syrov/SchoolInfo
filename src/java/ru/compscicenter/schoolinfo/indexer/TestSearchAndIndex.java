@@ -1,10 +1,8 @@
 package ru.compscicenter.schoolinfo.indexer;
 
+import ru.compscicenter.schoolinfo.gui.models.DBResponse;
 import ru.compscicenter.schoolinfo.searcher.Searcher;
 import ru.compscicenter.schoolinfo.searcher.UserQuery;
-import ru.compscicenter.schoolinfo.util.DBResponse;
-import ru.compscicenter.schoolinfo.util.FacultyDescription;
-import ru.compscicenter.schoolinfo.util.UnivDescription;
 
 import java.util.ArrayList;
 

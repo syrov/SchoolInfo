@@ -4,11 +4,11 @@ import net.sf.xfresh.core.InternalRequest;
 import net.sf.xfresh.core.InternalResponse;
 import net.sf.xfresh.core.Yalet;
 import org.apache.lucene.queryParser.ParseException;
-import ru.compscicenter.schoolinfo.gui.models.UserQueryManager;
-import ru.compscicenter.schoolinfo.util.DBResponse;
+import ru.compscicenter.schoolinfo.gui.models.DBResponse;
+import ru.compscicenter.schoolinfo.gui.services.UserQueryManager;
 
 import java.io.IOException;
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by IntelliJ IDEA.
@@ -32,7 +32,7 @@ public class UserQueryYalet implements Yalet {
 //        System.out.println("arrived at yalet");
 //        System.out.println(uni);
 
-        ArrayList<DBResponse> result = null;
+        List<DBResponse> result = null;
         try {
             result = manager.getSearchResult(dir, spec, city, uni);
         } catch (IOException e) {
@@ -50,8 +50,9 @@ public class UserQueryYalet implements Yalet {
 //        String a;
 //        if(uni.equals("3"))   a = result.get(0).getCity();
 //        else a = result.get(0).getName();
-
-        res.add(result.toString() + " sorry for such an output, later it will be transformed");
+//          System.out.println(result.get(0).getId());
+          res.add(result);
+//        res.add(result.toString() + " sorry for such an output, later it will be transformed");
 //        System.out.println("finished");
     }
 }

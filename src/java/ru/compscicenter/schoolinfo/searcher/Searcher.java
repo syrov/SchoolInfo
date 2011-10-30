@@ -10,17 +10,13 @@ package ru.compscicenter.schoolinfo.searcher;
 
 import org.apache.lucene.analysis.ru.RussianAnalyzer;
 import org.apache.lucene.document.Document;
-import org.apache.lucene.index.IndexReader;
-import org.apache.lucene.index.Term;
-import org.apache.lucene.index.TermEnum;
 import org.apache.lucene.queryParser.ParseException;
 import org.apache.lucene.queryParser.QueryParser;
 import org.apache.lucene.search.*;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 import org.apache.lucene.util.Version;
-import ru.compscicenter.schoolinfo.indexer.Indexer;
-import ru.compscicenter.schoolinfo.util.DBResponse;
+import ru.compscicenter.schoolinfo.gui.models.DBResponse;
 import ru.compscicenter.schoolinfo.util.FacultyDescription;
 import ru.compscicenter.schoolinfo.util.UnivDescription;
 
@@ -65,19 +61,19 @@ public class Searcher {
             //System.out.println(doc.get("name") + " " + doc.get("about"));
             DBResponse univ = new DBResponse(Integer.parseInt(doc.get("id")), doc.get(UserQuery.FIELD_NAME),
                     doc.get(UserQuery.FIELD_CITY));
-            if (q.getQueryType().equals(UserQuery.QTYPE_UNIV)) {
-                UnivDescription u = new UnivDescription(
-                        doc.get(UserQuery.UNIV_PREF + UserQuery.FIELD_TYPE),
-                        doc.get(UserQuery.UNIV_PREF + UserQuery.FIELD_CAMPUS));
-                univ.setUniv(u);
-            } else if (q.getQueryType().equals(UserQuery.QTYPE_FACULTY)) {
-                FacultyDescription f = new FacultyDescription(
-                        doc.get(UserQuery.FAC_PREF + UserQuery.FIELD_FORM),
-                        doc.get(UserQuery.FAC_PREF + UserQuery.FIELD_PHD),
-                        doc.get(UserQuery.FAC_PREF + UserQuery.FIELD_DIP_TYPE),
-                        doc.get(UserQuery.FAC_PREF + UserQuery.FIELD_MILITARY));
-                univ.setFac(f);
-            }
+//            if (q.getQueryType().equals(UserQuery.QTYPE_UNIV)) {
+//                UnivDescription u = new UnivDescription(
+//                        doc.get(UserQuery.UNIV_PREF + UserQuery.FIELD_TYPE),
+//                        doc.get(UserQuery.UNIV_PREF + UserQuery.FIELD_CAMPUS));
+//                univ.setUniv(u);
+//            } else if (q.getQueryType().equals(UserQuery.QTYPE_FACULTY)) {
+//                FacultyDescription f = new FacultyDescription(
+//                        doc.get(UserQuery.FAC_PREF + UserQuery.FIELD_FORM),
+//                        doc.get(UserQuery.FAC_PREF + UserQuery.FIELD_PHD),
+//                        doc.get(UserQuery.FAC_PREF + UserQuery.FIELD_DIP_TYPE),
+//                        doc.get(UserQuery.FAC_PREF + UserQuery.FIELD_MILITARY));
+//                univ.setFac(f);
+//            }
             res.add(univ);
         }
 

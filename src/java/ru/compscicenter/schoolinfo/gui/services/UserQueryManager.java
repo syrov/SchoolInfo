@@ -1,4 +1,4 @@
-package ru.compscicenter.schoolinfo.gui.models;
+package ru.compscicenter.schoolinfo.gui.services;
 
 /**
  * Created by IntelliJ IDEA.
@@ -8,19 +8,19 @@ package ru.compscicenter.schoolinfo.gui.models;
  */
 
 import org.apache.lucene.queryParser.ParseException;
-import ru.compscicenter.schoolinfo.searcher.Searcher;
+import ru.compscicenter.schoolinfo.gui.models.DBResponse;
 import ru.compscicenter.schoolinfo.searcher.UserQuery;
-import ru.compscicenter.schoolinfo.util.DBResponse;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 
 public class UserQueryManager {
 //    Logger log = Logger.getLogger(UserQueryManager.class);
 
     //Получение данных из базы (обращение к searcher'у)
-    public ArrayList<DBResponse> getSearchResult(String dir, String spec, String city, String uni) throws IOException, ParseException {
-        ArrayList<DBResponse> result = new ArrayList<DBResponse>();
+    public List<DBResponse> getSearchResult(String dir, String spec, String city, String uni) throws IOException, ParseException {
+        List<DBResponse> result = new ArrayList<DBResponse>();
 // обращение к searcher'у
         if (dir == null && city == null && uni == null && spec == null)
             return result;
