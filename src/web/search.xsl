@@ -10,12 +10,24 @@
 
     <xsl:template match="page/data[@id='userQuery']" mode="show">
         <h2 style="text-align:center;">Рейтинг</h2>
-        <hr/>
+        <p align="center">
         <!-- пока так  -->
-        <xsl:for-each select=".">
-            <xsl:value-of select="."/>
-            <hr/>
-        </xsl:for-each>
+            <table>
+            <xsl:for-each select=".">
+                <tr>
+                    <td>
+                        <xsl:value-of select="."/>
+                    </td>
+                    <td>
+                        <xsl:value-of select="."/>
+                    </td>
+                    <td>
+                        <xsl:value-of select="."/>
+                    </td>
+                </tr>
+            </xsl:for-each>
+            </table>
+        </p>
     </xsl:template>
 
 </xsl:stylesheet>

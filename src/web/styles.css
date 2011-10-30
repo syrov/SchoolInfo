@@ -37,6 +37,10 @@ img {
 	padding-left:30px;
 	font-weight: bold;
 }
+.menu a {
+    color: #0486CC;
+    text-decoration: none;
+}
 
 .content {
 	position:relative;
@@ -79,6 +83,11 @@ input[type="submit"] {
 
 table {
     border: 1px dotted gray;
-    width: 450px;
+    max-width: 525px;
     text-align: center;
+    margin: 0 auto;
+}
+
+td {
+    max-width: 160px;
 }

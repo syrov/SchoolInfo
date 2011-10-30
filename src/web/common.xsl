@@ -17,7 +17,7 @@
                         <div class="menu">
                             <div style="height: inherit;display:table-cell; vertical-align:middle;">
                                 <img src="SI_cap.gif" height="20px"/>
-                                SchoolInfo
+                                <a href="index.xml">SchoolInfo</a>
                             </div>
                         </div>
                     </div>
