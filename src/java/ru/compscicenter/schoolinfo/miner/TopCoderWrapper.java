@@ -8,9 +8,7 @@ import org.webharvest.runtime.Scraper;
 
 public class TopCoderWrapper {
     private final static String url = "http://community.topcoder.com/stat?c=school_avg_rating";
-    private final static String workingDir = "d:/work/";
-    private final static String wrapPageConfigPath = "d:/TopCoderParser.xml";
-    private final static String tempPath = "d:\\data";
+    private final static String tempPath = "src/";
 
 
     public static void downloadOneLink(String urlStr, String filePath) throws Exception {
@@ -28,19 +26,10 @@ public class TopCoderWrapper {
         fw.close();
     }
 
-    /*
-    public static void wrapPage() throws FileNotFoundException {
-        ScraperConfiguration config = new ScraperConfiguration(wrapPageConfigPath);
-        Scraper scraper = new Scraper(config, workingDir);
-        scraper.addVariableToContext("path", tempPath);
-
-        scraper.execute();
-    }  */
 
     public void wrap() {
         try {
             downloadOneLink(url, tempPath);
-            // wrapPage();
         } catch (Exception exp) {
             exp.printStackTrace();
         }
