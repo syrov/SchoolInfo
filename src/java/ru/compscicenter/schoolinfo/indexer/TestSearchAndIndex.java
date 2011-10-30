@@ -20,7 +20,7 @@ public class TestSearchAndIndex {
     public static String user = "root";
     public static String pass = "Mat-mex2012";
     public static String tableName = "university";
-    public static String INDEX_DIR = "/home/dzeta/index";
+    public static String INDEX_DIR = "/home/natasha/index";
 
     public static void main(String[] args) throws Exception {
         Indexer ind = new Indexer(INDEX_DIR, DBName, user, pass, tableName);
@@ -33,7 +33,7 @@ public class TestSearchAndIndex {
             ind.close();
         }
 //
-        UserQuery query = new UserQuery(UserQuery.QTYPE_UNIV, "010000", "", "", "");
+        UserQuery query = new UserQuery(UserQuery.QTYPE_UNIV, "010000", "", "Russian", "");
         System.out.println(query.getQuery());
         ArrayList<DBResponse> res = Searcher.search(INDEX_DIR, query);
         for (int i = 0; i < res.size(); i++) {
