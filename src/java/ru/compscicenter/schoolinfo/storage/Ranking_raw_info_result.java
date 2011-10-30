@@ -12,10 +12,10 @@ public class Ranking_raw_info_result
     private int  ranking_raw_info_description_id;
     private double value;
 
-    public Ranking_raw_info_result (int faculty_id, int ranking_raw_info_description_id, double value)
+    public Ranking_raw_info_result (double value)
     {
-        this.faculty_id = faculty_id;
-        this.ranking_raw_info_description_id = ranking_raw_info_description_id;
+        //this.faculty_id = faculty_id;
+        //this.ranking_raw_info_description_id = ranking_raw_info_description_id;
         this.value = value;
     }
     public int getFaculty_id()

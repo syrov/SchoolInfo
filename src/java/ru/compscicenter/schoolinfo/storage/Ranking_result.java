@@ -11,10 +11,10 @@ public class Ranking_result
     private int faculty_id;
     private int rank;
 
-    public Ranking_result(int method_id, int faculty_id, int rank)
+    public Ranking_result(int rank)
     {
-        this.method_id = method_id;
-        this.faculty_id = faculty_id;
+        //this.method_id = method_id;
+        //this.faculty_id = faculty_id;
         this.rank = rank;
     }
     public int getMethod_id()
