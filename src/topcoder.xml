@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-	
+
     <!--
 	@param filePath - URL of wrapping page
 	-->
@@ -13,17 +13,17 @@
                     <html-to-xml>
                         <file action="read" path="${filePath}"/>
                     </html-to-xml>
-                </var-def>                
-                 
-                 
+                </var-def>
+
+
                <var-def name="universityList">
        			    <xpath expression="//table[1]/tbody/tr/td[3]/table[2]/tbody/tr[1]/td/table/tbody/tr[*]">
            				<var name="content"/>
       			    </xpath>
    			   </var-def>
-   		
-   		
-   		<!-- target: build all cities with their coordinates and description -->	   
+
+
+   		<!-- target: build all cities with their coordinates and description -->
        <loop item="university" index="i" empty="yes" filter="7-">
         <list>
             <var name="universityList"/>
@@ -62,19 +62,19 @@
             </empty>
         </body>
     </loop>
-    <!-- target: build all cities with their coordinates and description -->             
-                
+    <!-- target: build all cities with their coordinates and description -->
+
             </empty>
         </return>
     </function>
 
-    
+
     <var-def name="files">
-        <file action="list" path="src" listdirs="no" listfilter="*.html"/>
+        <file action="list" path="./src" listdirs="no" listfilter="*.html"/>
     </var-def>
-    
-    
-    <!-- parsing of pages from the list --> 
+
+
+    <!-- parsing of pages from the list -->
     <loop item="file" index="i">
         <list>
             <var name="files"/>
@@ -89,7 +89,7 @@
             </empty>
         </body>
     </loop>
-    <!-- parsing of pages from the list -->  
+    <!-- parsing of pages from the list -->
 
 
 </config>

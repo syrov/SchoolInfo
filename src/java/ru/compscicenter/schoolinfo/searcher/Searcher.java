@@ -38,10 +38,6 @@ public class Searcher {
     }
     */
 
-    public static ArrayList<DBResponse> search(UserQuery q) throws IOException, ParseException {
-        return search("/home/natasha/index", q);
-    }
-
     public static ArrayList<DBResponse> search(String directory, UserQuery q)
             throws IOException, ParseException {
         // первичная подготовка
@@ -60,7 +56,7 @@ public class Searcher {
         TopDocs hits = is.search(query, 100);
         long end = System.currentTimeMillis();
 
-        System.err.println("Found " + hits.totalHits + " document(s) (in " +
+        System.out.println("Found " + hits.totalHits + " document(s) (in " +
                 (end - start) + " milliseconds) that matched query '" + q.getLuceneQuery() + "':");
 
         ArrayList<DBResponse> res = new ArrayList<DBResponse>();

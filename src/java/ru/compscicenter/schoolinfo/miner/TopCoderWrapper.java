@@ -1,3 +1,4 @@
+package ru.compscicenter.schoolinfo.miner;
 
 import java.net.URL;
 import java.io.*;
@@ -8,7 +9,7 @@ import org.webharvest.runtime.Scraper;
 
 public class TopCoderWrapper {
     private final static String url = "http://community.topcoder.com/stat?c=school_avg_rating";
-    private final static String tempPath = "src/";
+    private final static String tempPath = "src";
 
 
     public static void downloadOneLink(String urlStr, String filePath) throws Exception {
@@ -16,7 +17,7 @@ public class TopCoderWrapper {
         URL url = new URL(urlStr);
         InputStream response = url.openStream();
         BufferedReader reader = new BufferedReader(new InputStreamReader(response));
-        FileWriter fw = new FileWriter(new File(filePath + "\\TopCoderSchool.html"));
+        FileWriter fw = new FileWriter(new File(filePath + "/TopCoderSchool.html"));
         String line = reader.readLine();
         while (line != null) {
             fw.write(line);

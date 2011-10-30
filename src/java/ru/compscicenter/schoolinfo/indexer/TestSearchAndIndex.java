@@ -20,7 +20,7 @@ public class TestSearchAndIndex {
     public static String user = "root";
     public static String pass = "Mat-mex2012";
     public static String tableName = "university";
-    public static String INDEX_DIR = "/home/dzeta/index";
+    public static String INDEX_DIR = "/home/natasha/index";
 
     public static void main(String[] args) throws Exception {
         Indexer ind = new Indexer(INDEX_DIR, DBName, user, pass, tableName);

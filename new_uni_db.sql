@@ -1,4 +1,5 @@
 CREATE DATABASE UNIINFO CHARACTER SET utf8 COLLATE utf8_bin;
+
 SET character_set_server=utf8;
 SET character_set_database=utf8;
 SET character_set_client=utf8;
@@ -25,7 +26,7 @@ CREATE TABLE faculty (
 	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	university_id INT NOT NULL,
  	name VARCHAR(100) NOT NULL,
-  description VARCHAR(3000)
+    description VARCHAR(3000)
 ); 
 
 DROP TABLE IF EXISTS speciality_faculty;
@@ -125,13 +126,3 @@ REFERENCES ranking_method(id);
 ALTER TABLE ranking_result ADD CONSTRAINT for_ranking_result_faculty
 FOREIGN KEY (faculty_id)
 REFERENCES faculty(id);
-
-INSERT INTO direction (name) VALUES ('010000 физико-математические науки');
-
-insert into speciality (direction_id, name) VALUES ('1','математика');
-
-insert into ranking_method (direction_id, coeff, implement_class) VALUES ('1', '1', 'topcoder.xml');
-
-insert into ranking_raw_info_description (method_id, description) VALUES ('1', 'topcoder ranking formulae');
-
-

@@ -93,6 +93,7 @@ public class Indexer {
         // добавление данных из базы в индекс, в зависимости от типа индексируемой таблицы
         // одинакового кода много, наверное можно это сократить. Просто пока всё предельно понятно
         // todo: упростить запросы
+
         if (tableName.equals(UserQuery.QTYPE_UNIV)) {
             while (rs.next()) {
                 Document doc = new Document();

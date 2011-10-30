@@ -42,6 +42,7 @@ public class TopCoderListener implements ScraperRuntimeListener {
         if ("empty".equalsIgnoreCase(scraper.getRunningProcessor().getElementDef().getShortElementName())) {
              Variable universityName = (Variable) scraper.getContext().get("universityName");
 
+            System.out.println(universityName);
             if (universityName != null) {
                 University uni = new University(universityName.toString());
                 try {

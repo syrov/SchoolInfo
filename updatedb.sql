@@ -1,7 +1,13 @@
-SET character_set_server=utf8;
-SET character_set_database=utf8;
-SET character_set_client=utf8;
-SET character_set_connection=utf8;
+INSERT INTO direction (name) VALUES ('010000 физико-математические науки');
 
-INSERT INTO faculty VALUES(1, 4, "Математико-Механический факультет", "");
+insert into speciality (direction_id, name) VALUES ('1','математика');
+
+insert into ranking_method (direction_id, coeff, implement_class) VALUES ('1', '1', 'topcoder.xml');
+
+insert into ranking_raw_info_description (method_id, description) VALUES ('1', 'topcoder ranking formulae');
+
+
+
+INSERT INTO faculty VALUES(1, 4, "Math faculty", "");
+
 INSERT INTO speciality_faculty VALUES(1, 1);
