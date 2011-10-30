@@ -26,26 +26,29 @@ public class UserQueryYalet implements Yalet {
     }
 
     public void process(InternalRequest req, InternalResponse res) {
-        final String dir = req.getParameter("dir");   // названия текстовых полей в скобках, см. хсл
-        final String spec = req.getParameter("spec");
-        final String city = req.getParameter("city");
-        final String uni = req.getParameter("uni");
+        final String dir = req.getParameter("_dir");   // названия текстовых полей в скобках, см. хсл
+        final String spec = req.getParameter("_spec");
+        final String city = req.getParameter("_city");
+        final String uni = req.getParameter("_uni");
 
-        System.out.println("arrived at yalet");
-     //   ArrayList<DBResponse> result = null;
-//        try {
-//            result = manager.getSearchResult(dir, spec, city, uni);
-//        } catch (IOException e) {
-//            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
-//        } catch (ParseException e) {
-//            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
-//        }
-////      log.error(result + "RESULT");
-////        if (result == null || result.size() == 0) {
-//            DBResponse rec = new DBResponse(0, "Error", "No information found");
-//            result.add(rec);
-////      в случае, когда университет не указан, пользователю выдается рейтинг
-  //      }
+//        System.out.println("arrived at yalet");
+//        System.out.println(uni);
+
+        ArrayList<DBResponse> result = null;
+        try {
+            result = manager.getSearchResult(dir, spec, city, uni);
+        } catch (IOException e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        } catch (ParseException e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        }
+//      log.error(result + "RESULT");
+
+        if (result.size() == 0) {
+            DBResponse rec = new DBResponse(0, "Error", "No information found");
+            result.add(rec);
+        }
+//      в случае, когда университет не указан, пользователю выдается рейтинг
 // else if (uni == null) {
 //            ArrayList<DBResponse> rec = new ArrayList<DBResponse>(5);
 //
@@ -56,10 +59,12 @@ public class UserQueryYalet implements Yalet {
 //
 //            result = rec;
 //        }
-        DBResponse result = new DBResponse(0, "fuck", "oioioi");
-         System.out.println("get ready");
-  //      System.out.println(result.get(0).getName());
-        res.add(result);
-        System.out.println("finished");
+
+//        String a;
+//        if(uni.equals("3"))   a = result.get(0).getCity();
+//        else a = result.get(0).getName();
+
+        res.add(result.toString() + " sorry for such an output, later it will be transformed");
+//        System.out.println("finished");
     }
 }

@@ -46,32 +46,30 @@
                             <!--Поступление - это экзамен -->
                         </div>
                         <div id="rightPane">
-                            <form method="post">
-                                <!--<br/>Направление-->
-                                <!--<br/>-->
-                                <!--<xsl:call-template name="_dir"/>-->
+                            <form action="/search.xml" method="get">
+                                <br/>Направление
+                                <br/>
+                                <xsl:call-template name="dir"/>
 
-                                <!--<br/>-->
-                                <!--<br/>Специальность-->
-                                <!--<br/>-->
-                                <!--&lt;!&ndash;-->
-                                <!--<xsl:call-template name="dir"/>-->
-                                <!--&ndash;&gt;-->
-                                <!--<br/>-->
-                                <!--<br/>Город-->
-                                <!--<br/>-->
-                                <!--<xsl:call-template name="_city"/>-->
+                                <br/>
+                                <br/>Специальность
+                                <br/>
+                                <xsl:call-template name="spec"/>
+                                <br/>
+                                <br/>Город
+                                <br/>
+                                <xsl:call-template name="city"/>
 
                                 <br/>
                                 <br/>Университет
                                 <br/>
-                                <xsl:call-template name="_uni"/>
+                                <xsl:call-template name="uni"/>
 
-                                <!--<br/>-->
-                                <!--<br/>-->
-                                <!--<p style="text-align:center;">-->
-                                    <!--<input type="button" value="Найти"/>-->
-                                <!--</p>-->
+                                <br/>
+                                <br/>
+                                <p style="text-align:center;">
+                                    <input type="submit" value="Найти"/>
+                                </p>
                             </form>
                         </div>
                     </div>
@@ -81,44 +79,37 @@
 
     </xsl:template>
 
-    <!--<xsl:template name="_dir">-->
-        <!--<select name="ComboBox">-->
-            <!--<option>-->
-                <!--<xsl:apply-template name="dir"/>-->
-            <!--</option>-->
-        <!--</select>-->
-    <!--</xsl:template>-->
-
-    <!--<xsl:template name="_spec">-->
-        <!--<select name="ComboBox">-->
-            <!--<option>-->
-                <!--<xsl:apply-template name="spec"/>-->
-            <!--</option>-->
-        <!--</select>-->
-    <!--</xsl:template>-->
-
-    <xsl:template name="_uni">
-        <!--<form method="get" action="/index.xml" align="center">-->
-                    <!--<input class="xlarge" type="text" name="_uni" size="50"/>-->
-                    <!--<input class="btn primary" type="submit" value="поиск"/>-->
-                <!--</form>-->
-        <select name="ComboBox">
-            <xsl:apply-template name="_uni"/>
+    <xsl:template name="dir">
+        <select name="_dir">
+                <option value="1">one</option>
+                <option value="2">two</option>
+                <option value="3">three</option>
         </select>
     </xsl:template>
 
-    <!--<xsl:template name="_city">-->
-        <!--<select name="ComboBox">-->
-            <!--<xsl:apply-template name="city"/>-->
-        <!--</select>-->
-    <!--</xsl:template>-->
-
-    <!--
-    <xsl:template name="find">
-         <select name="ComboBox" >
-            <option value="0"></option>
-         </select>
+    <xsl:template name="spec">
+        <select name="_spec">
+                <option value="1">one</option>
+                <option value="2">two</option>
+                <option value="3">three</option>
+        </select>
     </xsl:template>
-    -->
+
+    <xsl:template name="uni">
+        <select name="_uni">
+                <option value="1">one</option>
+                <option value="2">two</option>
+                <option value="3">three</option>
+        </select>
+    </xsl:template>
+
+    <xsl:template name="city">
+        <select name="_city">
+                <option value="1">one</option>
+                <option value="2">two</option>
+                <option value="3">three</option>
+        </select>
+    </xsl:template>
+
 
 </xsl:stylesheet>
