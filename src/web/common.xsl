@@ -40,10 +40,10 @@
                                 <br/>
                                 <xsl:call-template name="city"/>
 
-                                <!--<br/>-->
-                                <!--<br/>Университет-->
-                                <!--<br/>-->
-                                <!--<xsl:call-template name="uni"/>-->
+                                <br/>
+                                <br/>Университет
+                                <br/>
+                                <xsl:call-template name="uni"/>
 
                                 <br/>
                                 <br/>
@@ -71,13 +71,13 @@
         </select>
     </xsl:template>
 
-    <!--<xsl:template name="uni">-->
-        <!--<select name="_uni">-->
-                <!--<option value="1">one</option>-->
-                <!--<option value="2">two</option>-->
-                <!--<option value="3">three</option>-->
-        <!--</select>-->
-    <!--</xsl:template>-->
+    <xsl:template name="uni">
+        <select name="_uni">
+                <option value="1">one</option>
+                <option value="2">two</option>
+                <option value="3">three</option>
+        </select>
+    </xsl:template>
 
     <xsl:template name="city">
         <select name="_city">
