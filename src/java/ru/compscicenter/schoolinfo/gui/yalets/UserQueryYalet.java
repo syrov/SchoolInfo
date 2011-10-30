@@ -7,7 +7,9 @@ import org.apache.lucene.queryParser.ParseException;
 import ru.compscicenter.schoolinfo.gui.models.DBResponse;
 import ru.compscicenter.schoolinfo.gui.services.UserQueryManager;
 
+import java.awt.image.DataBuffer;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -51,7 +53,10 @@ public class UserQueryYalet implements Yalet {
 //        if(uni.equals("3"))   a = result.get(0).getCity();
 //        else a = result.get(0).getName();
 //          System.out.println(result.get(0).getId());
-          res.add(result);
+        List<DBResponse> resultN = new ArrayList<DBResponse>();
+        resultN.add(new DBResponse(1, "MSU", "Moscow"));
+        resultN.add(new DBResponse(2, "SPbSU", "SPb"));
+          res.add(resultN);
 //        res.add(result.toString() + " sorry for such an output, later it will be transformed");
 //        System.out.println("finished");
     }

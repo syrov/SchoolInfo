@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4b76eae-a61a-46cc-8854-7426a3e706f2" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/models/UserQueryManager.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/services/UserQueryManager.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/util/DBResponse.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/models/DBResponse.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/httpclient.xml" afterPath="$PROJECT_DIR$/.idea/libraries/httpclient.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/httpclient2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/httpclient2.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/yalets/UserQueryYalet.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/yalets/UserQueryYalet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/TestSearchAndIndex.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/TestSearchAndIndex.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/Searcher.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/Searcher.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/script/beans.xml" afterPath="$PROJECT_DIR$/src/script/beans.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/web/common.xsl" afterPath="$PROJECT_DIR$/src/web/common.xsl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/web/index.xml" afterPath="$PROJECT_DIR$/src/web/index.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/web/search.xsl" afterPath="$PROJECT_DIR$/src/web/search.xsl" />
     </list>
     <ignored path="SchoolInfo.iws" />
@@ -77,10 +70,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="search.xsl" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="search.xsl" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/web/search.xsl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="1" selection-start="1362" selection-end="1362" vertical-scroll-proportion="0.0">
+            <state line="40" column="60" selection-start="1235" selection-end="1235" vertical-scroll-proportion="0.2857143">
               <folding />
             </state>
           </provider>
@@ -97,13 +90,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserQueryYalet.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="UserQueryYalet.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/yalets/UserQueryYalet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="24" selection-start="1913" selection-end="1913" vertical-scroll-proportion="0.83554375">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="56" column="42" selection-start="2057" selection-end="2057" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -130,9 +121,7 @@
         <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/services/UserQueryManager.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="23" column="25" selection-start="752" selection-end="752" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -151,7 +140,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/indexer/TestSearchAndIndex.java" />
         <option value="$PROJECT_DIR$/new_uni_db.sql" />
         <option value="$PROJECT_DIR$/updatedb.sql" />
         <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/TopCoderWrapper.java" />
@@ -165,8 +153,9 @@
         <option value="$PROJECT_DIR$/build.xml" />
         <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/Searcher.java" />
         <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/models/DBResponse.java" />
-        <option value="$PROJECT_DIR$/src/web/search.xsl" />
+        <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/models/e.java" />
         <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/yalets/UserQueryYalet.java" />
+        <option value="$PROJECT_DIR$/src/web/search.xsl" />
       </list>
     </option>
   </component>
@@ -492,24 +481,24 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="Favorites" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="copyright.profiles" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="copyright.profiles" />
+    <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -719,18 +708,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="8" y="24" width="1022" height="575" extended-state="0" />
+    <frame x="0" y="-5" width="1024" height="605" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34280938" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32643312" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.08717949" sideWeight="0.7057471" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.08717949" sideWeight="0.7057471" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953683" sideWeight="0.21496816" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39863327" sideWeight="0.6971831" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3265097" sideWeight="0.66392094" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3220513" sideWeight="0.7057471" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32139203" sideWeight="0.7057471" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3960396" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20787746" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29425287" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -767,7 +756,7 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="GUI modified, mistakes corrected. Please note: you can run the project on your localhost. (The whole thing works now!!)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working on GUI" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -781,6 +770,7 @@
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="GUI modified, mistakes corrected. Please note: you can run the project on your localhost. (The whole thing works now!!)" />
+    <MESSAGE value="Working on GUI" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -799,93 +789,49 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="75" selection-start="1051" selection-end="1051" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/topcoder.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="9" selection-start="1979" selection-end="1979" vertical-scroll-proportion="-0.26790452">
-          <folding />
-        </state>
+        <state line="64" column="9" selection-start="1979" selection-end="1979" vertical-scroll-proportion="-0.26790452" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/updatedb.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="61" selection-start="462" selection-end="462" vertical-scroll-proportion="0.4774536">
-          <folding />
-        </state>
+        <state line="12" column="61" selection-start="462" selection-end="462" vertical-scroll-proportion="0.4774536" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/TopCoderWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="56" selection-start="1127" selection-end="1127" vertical-scroll-proportion="0.32360741">
-          <folding />
-        </state>
+        <state line="34" column="56" selection-start="1127" selection-end="1127" vertical-scroll-proportion="0.32360741" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/UserQuery.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="13" selection-start="2306" selection-end="2306" vertical-scroll-proportion="0.0397878">
-          <folding />
-        </state>
+        <state line="74" column="13" selection-start="2306" selection-end="2306" vertical-scroll-proportion="0.0397878" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/web/index.xsl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/libs/xfresh/xfresh-db.jar!/net/sf/xfresh/db/AbstractDbYalet.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="22" selection-start="163" selection-end="163" vertical-scroll-proportion="0.17045455">
-          <folding />
-        </state>
+        <state line="5" column="22" selection-start="163" selection-end="163" vertical-scroll-proportion="0.17045455" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/web/index.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="32" selection-start="106" selection-end="130" vertical-scroll-proportion="0.115384616">
-          <folding />
-        </state>
+        <state line="3" column="32" selection-start="106" selection-end="130" vertical-scroll-proportion="0.115384616" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/web/common.xsl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="32" selection-start="813" selection-end="847" vertical-scroll-proportion="-0.3721519">
-          <folding />
-        </state>
+        <state line="19" column="32" selection-start="813" selection-end="847" vertical-scroll-proportion="-0.3721519" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/web/search.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/services/UserQueryManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="25" selection-start="752" selection-end="752" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/Searcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="7" selection-start="2339" selection-end="2339" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="60" selection-start="4899" selection-end="4899" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/models/DBResponse.java">
@@ -897,19 +843,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/web/search.xsl">
+    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/yalets/UserQueryYalet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="1" selection-start="1362" selection-end="1362" vertical-scroll-proportion="0.0">
+        <state line="56" column="42" selection-start="2057" selection-end="2057" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/yalets/UserQueryYalet.java">
+    <entry file="file://$PROJECT_DIR$/build.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="24" selection-start="1913" selection-end="1913" vertical-scroll-proportion="0.83554375">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="118" column="60" selection-start="4899" selection-end="4899" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/searcher/Searcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="7" selection-start="2339" selection-end="2339" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/services/UserQueryManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="25" selection-start="752" selection-end="752" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/web/search.xsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="60" selection-start="1235" selection-end="1235" vertical-scroll-proportion="0.2857143">
+          <folding />
         </state>
       </provider>
     </entry>

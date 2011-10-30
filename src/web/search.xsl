@@ -38,10 +38,11 @@
         <!-- пока так  -->
 
             <table>
-            <xsl:for-each select=".">
+                <!--DBResponse - нужный класс, rating и city - его поля-->
+            <xsl:for-each select="d-b-response">
                 <tr>
                     <td>
-                        <xsl:value-of select="."/>
+                        <xsl:value-of select="rating"/>
                     </td>
                     <td>
                         <xsl:value-of select="city"/>
