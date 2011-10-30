@@ -40,10 +40,10 @@
                                 <br/>
                                 <xsl:call-template name="city"/>
 
-                                <br/>
-                                <br/>Университет
-                                <br/>
-                                <xsl:call-template name="uni"/>
+                                <!--<br/>-->
+                                <!--<br/>Университет-->
+                                <!--<br/>-->
+                                <!--<xsl:call-template name="uni"/>-->
 
                                 <br/>
                                 <br/>
@@ -61,33 +61,28 @@
 
     <xsl:template name="dir">
         <select name="_dir">
-                <option value="1">one</option>
-                <option value="2">two</option>
-                <option value="3">three</option>
+                <option value="010000">010000 Физико-математические науки</option>
         </select>
     </xsl:template>
 
     <xsl:template name="spec">
         <select name="_spec">
-                <option value="1">one</option>
-                <option value="2">two</option>
-                <option value="3">three</option>
+                <option value="010100">010100 Математика</option>
         </select>
     </xsl:template>
 
-    <xsl:template name="uni">
-        <select name="_uni">
-                <option value="1">one</option>
-                <option value="2">two</option>
-                <option value="3">three</option>
-        </select>
-    </xsl:template>
+    <!--<xsl:template name="uni">-->
+        <!--<select name="_uni">-->
+                <!--<option value="1">one</option>-->
+                <!--<option value="2">two</option>-->
+                <!--<option value="3">three</option>-->
+        <!--</select>-->
+    <!--</xsl:template>-->
 
     <xsl:template name="city">
         <select name="_city">
-                <option value="1">one</option>
-                <option value="2">two</option>
-                <option value="3">three</option>
+                <option value="Москва">Москва</option>
+                <option value="СПб">Санкт-Петербург</option>
         </select>
     </xsl:template>
 

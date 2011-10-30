@@ -5,12 +5,10 @@ import net.sf.xfresh.core.InternalResponse;
 import net.sf.xfresh.core.Yalet;
 import org.apache.lucene.queryParser.ParseException;
 import ru.compscicenter.schoolinfo.gui.models.UserQueryManager;
-import ru.compscicenter.schoolinfo.util.DBResponseComparator;
 import ru.compscicenter.schoolinfo.util.DBResponse;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collections;
 
 /**
  * Created by IntelliJ IDEA.
@@ -48,17 +46,6 @@ public class UserQueryYalet implements Yalet {
             DBResponse rec = new DBResponse(0, "Error", "No information found");
             result.add(rec);
         }
-//      в случае, когда университет не указан, пользователю выдается рейтинг
-// else if (uni == null) {
-//            ArrayList<DBResponse> rec = new ArrayList<DBResponse>(5);
-//
-// /*           Collections.sort(result, new DBResponseComparator());
-//
-//            for (int i = 0; i < 5; i++)
-//                rec.add(result.get(i));      */
-//
-//            result = rec;
-//        }
 
 //        String a;
 //        if(uni.equals("3"))   a = result.get(0).getCity();
