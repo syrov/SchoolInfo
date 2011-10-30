@@ -50,7 +50,7 @@ select {
 	width: 300px;
 }
 
-input[type="button"] {
+input[type="submit"] {
 	width: 100px;
 	height: 30px;
 	text-align:center;
@@ -75,4 +75,10 @@ input[type="button"] {
 	float: right;
 	padding:30px;
 	padding-top:100px;
+}
+
+table {
+    border: 1px dotted gray;
+    width: 450px;
+    text-align: center;
 }

@@ -16,37 +16,17 @@
                     <div class="header">
                         <div class="menu">
                             <div style="height: inherit;display:table-cell; vertical-align:middle;">
-                                <img src="images/SI_cap.gif" height="20px"/>
+                                <img src="SI_cap.gif" height="20px"/>
                                 SchoolInfo
                             </div>
                         </div>
                     </div>
                     <div class="content">
                         <div id="leftPane">
-                            <h2 style="text-align:center;">Поступление в России - это игра</h2>
-                            по правилам ВУЗов и Министерства Образования.
-                            <br/>
-                            <br/>
-                            <b>Цель:</b>
-                            <br/>
-                            взять на прицел лучший по твоему мнению ВУЗ и поступить в него.
-                            <br/>
-                            <b>Средство:</b>
-                            <br/>данные о конкурсах прошлых лет, проходных баллах, заслугаах и трудоустроенности
-                            выпускников и прочее.
-                            <br/>
-                            <br/>
-                            Всё это мы поможем тебе найти и оценить.
-                            <br/>
-                            Ставка - твоё будущее.
-                            <br/>
-                            <b>Дерзай!</b>
-                            <br/>
-                            <!--Поступление - это бой -->
-                            <!--Поступление - это экзамен -->
+                            <xsl:call-template name="leftPane"/>
                         </div>
                         <div id="rightPane">
-                            <form action="/search.xml" method="get">
+                            <form action="search.xml" method="get">
                                 <br/>Направление
                                 <br/>
                                 <xsl:call-template name="dir"/>
