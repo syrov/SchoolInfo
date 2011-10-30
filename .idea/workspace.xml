@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4b76eae-a61a-46cc-8854-7426a3e706f2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/storage/Database.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/storage/Database.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/storage/Faculty.java" afterPath="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/storage/Faculty.java" />
     </list>
     <ignored path="SchoolInfo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,15 +66,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="UserQueryYalet.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/yalets/UserQueryYalet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="0" selection-start="2004" selection-end="2004" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="TopCoderListener.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/TopCoderListener.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -84,10 +75,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Database.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Database.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/storage/Database.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="216" column="1" selection-start="7568" selection-end="7568" vertical-scroll-proportion="0.96892136">
+            <state line="216" column="1" selection-start="7568" selection-end="7568" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Faculty.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/storage/Faculty.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="0" selection-start="638" selection-end="638" vertical-scroll-proportion="0.9464286">
               <folding />
             </state>
           </provider>
@@ -170,7 +170,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/TopCoderWrapper.java" />
         <option value="$PROJECT_DIR$/src//TopCoderSchool.html" />
         <option value="$PROJECT_DIR$/src/topcoder.xml" />
         <option value="$PROJECT_DIR$/src/web/index.xml" />
@@ -186,6 +185,7 @@
         <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/gui/services/UserQueryManager.java" />
         <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/TopCoderListener.java" />
         <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/storage/Database.java" />
+        <option value="$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/storage/Faculty.java" />
       </list>
     </option>
   </component>
@@ -841,11 +841,6 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/updatedb.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="61" selection-start="462" selection-end="462" vertical-scroll-proportion="0.4774536" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/miner/TopCoderWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="56" selection-start="1127" selection-end="1127" vertical-scroll-proportion="0.32360741" />
@@ -924,7 +919,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/storage/Database.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="216" column="1" selection-start="7568" selection-end="7568" vertical-scroll-proportion="0.96892136">
+        <state line="216" column="1" selection-start="7568" selection-end="7568" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/ru/compscicenter/schoolinfo/storage/Faculty.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="0" selection-start="638" selection-end="638" vertical-scroll-proportion="0.9464286">
           <folding />
         </state>
       </provider>
