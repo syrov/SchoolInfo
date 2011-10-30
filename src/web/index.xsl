@@ -19,7 +19,7 @@
         <br/>
         Ставка - твоё будущее.
         <br/>
-        <b>Дерзай!</b>
+        <b>Дерзай! </b>
         <br/>
     </xsl:template>
 </xsl:stylesheet>

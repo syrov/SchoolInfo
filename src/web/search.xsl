@@ -11,7 +11,7 @@
     <xsl:template match="page/data[@id='userQuery']" mode="show">
         <h2 style="text-align:center;">Рейтинг</h2>
         <hr/>
-        <!-- пока так -->
+        <!-- пока так  -->
         <xsl:for-each select=".">
             <xsl:value-of select="."/>
             <hr/>
