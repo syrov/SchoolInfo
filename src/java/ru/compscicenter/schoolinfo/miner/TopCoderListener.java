@@ -4,8 +4,7 @@ import org.webharvest.runtime.Scraper;
 import org.webharvest.runtime.ScraperRuntimeListener;
 import org.webharvest.runtime.processors.BaseProcessor;
 import org.webharvest.runtime.variables.Variable;
-import ru.compscicenter.schoolinfo.storage.Database;
-import ru.compscicenter.schoolinfo.storage.University;
+import ru.compscicenter.schoolinfo.storage.*;
 import ru.compscicenter.schoolinfo.util.GetUniversityCity;
 
 import java.sql.SQLException;
@@ -42,32 +41,65 @@ public class TopCoderListener implements ScraperRuntimeListener {
         if ("empty".equalsIgnoreCase(scraper.getRunningProcessor().getElementDef().getShortElementName())) {
              Variable universityName = (Variable) scraper.getContext().get("universityName");
 
-            if (universityName != null) {
-                University uni = new University(universityName.toString());
+            if ( universityName != null && !universityName.toString().equals("") ) {
+
+//                String uni_city = universityName.toString();
+//                if (uni_city.indexOf(" ") != -1) {
+//                    uni_city = uni_city.substring(0, uni_city.indexOf(" "));
+//                }
+
+                Variable universityCountry = (Variable) scraper.getContext().get("universityCountry");
+
+                University uni = new University(universityName.toString(), universityCountry.toString(), "");
+
                 try {
                     database.addUniversity(uni);
                 } catch (SQLException e) {
                     e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
                 }
-            }
-            /*   String sUniversityName = clearString(universityName);
-  System.out.println(sUniversityName);          */
 
-          /*
-            String countryName = (String) scraper.getContext().get("universityCountry");
-            if (countryName.equals("Russian Federation")) {
+                Faculty faculty = new Faculty("mathematics", "");
+
                 try {
-                    String universityName = (String) scraper.getContext().get("universityName");
-                    database.addUniversity(new University(
-                            universityName,
-                            new GetUniversityCity().getCity(universityName),
-                            "No description"
-                    ));
+                    database.addFaculty(faculty);
                 } catch (SQLException e) {
                     e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
                 }
+
+               Speciality_faculty spec_fac = new Speciality_faculty(1,0);
+
+                try {
+                    database.addSpeciality_faculty(spec_fac);
+                } catch (SQLException e) {
+                    e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+                }
+
+                Variable universityRank = (Variable) scraper.getContext().get("universityRank");
+                int uniRank = universityRank.toInt();
+
+                //System.out.println(uniRank);
+                Ranking_result ranking_result = new Ranking_result(uniRank);
+
+                try {
+                    database.addRanking_result(ranking_result);
+                } catch (SQLException e) {
+                    e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+                }
+
+                Variable universityRawInfo = (Variable) scraper.getContext().get("universityRating");
+                double uniRawInfo = universityRawInfo.toDouble();
+
+                //System.out.println(uniRawInfo);
+                Ranking_raw_info_result ranking_raw_info_result = new Ranking_raw_info_result(uniRawInfo);
+
+                try {
+                    database.addRanking_raw_info_result(ranking_raw_info_result);
+                } catch (SQLException e) {
+                    e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+                }
+
             }
-            */
+
         }
     }
 

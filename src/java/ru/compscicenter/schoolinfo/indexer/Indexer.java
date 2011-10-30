@@ -130,7 +130,7 @@ public class Indexer {
                 Gson gson = new Gson();
                 if (!rs.getString("description").equals("null")) {
                     UnivDescription u = gson.fromJson(rs.getString("description"), UnivDescription.class);
-                    if(u == null) {
+                    if(u != null) {
                     doc.add(new Field(UserQuery.UNIV_PREF + UserQuery.FIELD_TYPE, u.getType(),
                             Field.Store.YES, Field.Index.ANALYZED));
                     doc.add(new Field(UserQuery.UNIV_PREF + UserQuery.FIELD_CAMPUS, u.getCampus(),

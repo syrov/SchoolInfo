@@ -13,10 +13,10 @@ public class Faculty {
     private String name;
     private String description;
 
-    public Faculty(int university_id, String name, String description)
+    public Faculty(String name, String description)
     {
 
-        this.university_id = university_id;
+        //this.university_id = university_id;
         this.name = name;
         this.description = description;
     }

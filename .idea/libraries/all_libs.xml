@@ -1,0 +1,35 @@
+<component name="libraryTable">
+  <library name="all_libs">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/libs/xalan" />
+      <root url="file://$PROJECT_DIR$/libs/xfresh" />
+      <root url="file://$PROJECT_DIR$/libs/lucene" />
+      <root url="file://$PROJECT_DIR$/libs/jakarta-commons" />
+      <root url="file://$PROJECT_DIR$/libs/spring" />
+      <root url="file://$PROJECT_DIR$/libs/saxon" />
+      <root url="file://$PROJECT_DIR$/libs/jetbrains" />
+      <root url="file://$PROJECT_DIR$/libs/httpclient" />
+      <root url="file://$PROJECT_DIR$/libs/jetty" />
+      <root url="file://$PROJECT_DIR$/libs/webharvester" />
+      <root url="file://$PROJECT_DIR$/libs/rhino" />
+      <root url="jar://$PROJECT_DIR$/libs/junit-4.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/log4j-1.2.15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/commons-io-2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/gson-1.7.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/mysql-connector-java-5.1.17-bin.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/libs/httpclient" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/libs/jakarta-commons" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/libs/jetbrains" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/libs/jetty" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/libs/lucene" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/libs/rhino" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/libs/saxon" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/libs/spring" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/libs/webharvester" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/libs/xalan" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/libs/xfresh" recursive="false" />
+  </library>
+</component>

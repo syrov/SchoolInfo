@@ -13,12 +13,12 @@ public class University {
     private String city;
     private String description;
 
-    public University(String name)
+    public University(String name, String city, String description)
     {
 
         this.name = name;
-      //  this.city = city;
-       // this.description = description;
+        this.city = city;
+        this.description = description;
     }
     public String getName()
     {
