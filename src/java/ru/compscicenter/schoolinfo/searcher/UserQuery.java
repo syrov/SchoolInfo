@@ -152,14 +152,14 @@ public void clear() {
 
     public BooleanQuery getLuceneQuery() {
         BooleanQuery q = new BooleanQuery();
-        if (!direction.equals("")) {
-            q.add(new TermQuery(new Term(FIELD_DIRECTION, direction)), BooleanClause.Occur.MUST);
-        }
-        if (!speciality.equals("")) {
-            q.add(new TermQuery(new Term(FIELD_SPECIALITY, speciality)), BooleanClause.Occur.MUST);
-        }
+//        if (!direction.equals("")) {
+//            q.add(new TermQuery(new Term(FIELD_DIRECTION, direction)), BooleanClause.Occur.MUST);
+//        }
+//        if (!speciality.equals("")) {
+//            q.add(new TermQuery(new Term(FIELD_SPECIALITY, speciality)), BooleanClause.Occur.MUST);
+//        }
         if (queryType.equals(QTYPE_UNIV)) {
-            if (!universityName.equals("")) {
+            if (universityName != null && !universityName.equals("")) {
                 q.add(new TermQuery(new Term(FIELD_NAME, universityName)), BooleanClause.Occur.MUST);
             }
             if (!city.equals("")) {

@@ -17,12 +17,12 @@ public class DBResponse {
     private int rating;
     private String name;
     private String city;
-    private int universityId;
-    private String about;
-    private UnivDescription univ;
-    private FacultyDescription fac;
-
-    private UnivDescription desc;
+//    private int universityId;
+//    private String about;
+//    private UnivDescription univ;
+//    private FacultyDescription fac;
+//
+//    private UnivDescription desc;
 
     public DBResponse(int id, String name, String city) {
         this.id = id;

@@ -16,6 +16,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import static ru.compscicenter.schoolinfo.searcher.Searcher.startSearch;
+
 public class UserQueryManager {
 //    Logger log = Logger.getLogger(UserQueryManager.class);
 
@@ -28,17 +30,23 @@ public class UserQueryManager {
 
         //     Searcher.setIndexDir(new File("index"));
 
-        String IndexDir = "/home/index"; // подлежит корректировке
+        // String IndexDir = "/home/natasha/index"; // подлежит корректировке
 
         UserQuery q = new UserQuery("university", dir, spec, city, uni);
 
-        result = Searcher.search(IndexDir, q);
+
+        System.out.println("olololo1");
+        result = startSearch(q);
+
+        System.out.println(result.size());
+        //result = Searcher.search(IndexDir, q);
 
         if (result.size() == 0) {
             DBResponse rec = new DBResponse(0, "Error", "No information found");
             result.add(rec);
         }
 
+        System.out.println(result.get(0).getName());
         return result;
     }
 }

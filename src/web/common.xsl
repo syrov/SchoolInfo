@@ -61,13 +61,13 @@
 
     <xsl:template name="dir">
         <select name="_dir">
-                <option value="010000">010000 Физико-математические науки</option>
+                <option value="010000 math-phis science">010000 Физико-математические науки</option>
         </select>
     </xsl:template>
 
     <xsl:template name="spec">
         <select name="_spec">
-                <option value="010100">010100 Математика</option>
+                <option value="mathematics">010100 Математика</option>
         </select>
     </xsl:template>
 

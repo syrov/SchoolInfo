@@ -33,7 +33,7 @@ public class TestSearchAndIndex {
             ind.close();
         }
 //
-        UserQuery query = new UserQuery(UserQuery.QTYPE_UNIV, "010000", "", "Russian", "");
+        UserQuery query = new UserQuery(UserQuery.QTYPE_UNIV, "", "", "Russian", "");
         System.out.println(query.getQuery());
         ArrayList<DBResponse> res = Searcher.search(INDEX_DIR, query);
         for (int i = 0; i < res.size(); i++) {

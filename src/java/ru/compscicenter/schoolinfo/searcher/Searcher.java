@@ -27,6 +27,7 @@ import ru.compscicenter.schoolinfo.util.UnivDescription;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 
 public class Searcher {
 
@@ -38,7 +39,7 @@ public class Searcher {
     }
     */
 
-    public static ArrayList<DBResponse> search(UserQuery q) throws IOException, ParseException {
+    public static ArrayList<DBResponse> startSearch(UserQuery q) throws IOException, ParseException {
         return search("/home/natasha/index", q);
     }
 
@@ -49,12 +50,20 @@ public class Searcher {
         //IndexReader dir = IndexReader.open(FSDirectory.open(new File(directory)));
         IndexSearcher is = new IndexSearcher(dir);
 
+
+        System.out.println("olololo2");
+
         QueryParser parser = new QueryParser(Version.LUCENE_34,
                 UserQuery.FIELD_NAME, new RussianAnalyzer(Version.LUCENE_34));
+
+        System.out.println("olololo3");
 
         // первоначальный вариант, только простые запросы.
         // Для получения текста используется метод getQuery()
         Query query = parser.parse(q.getLuceneQuery().toString());
+
+        System.out.println("olololo4");
+
 
         long start = System.currentTimeMillis();
         TopDocs hits = is.search(query, 100);
@@ -64,6 +73,8 @@ public class Searcher {
                 (end - start) + " milliseconds) that matched query '" + q.getLuceneQuery() + "':");
 
         ArrayList<DBResponse> res = new ArrayList<DBResponse>();
+
+        System.out.println("olololo");
         for (ScoreDoc scoreDoc : hits.scoreDocs) {
             Document doc = is.doc(scoreDoc.doc);
             //System.out.println(doc.get("name") + " " + doc.get("about"));
