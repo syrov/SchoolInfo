@@ -2,15 +2,12 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
     <xsl:output method="html" indent="yes" encoding="UTF-8"/>
 
-    <!--<xsl:include href="common.xsl"/>-->
-
+    <xsl:include href="common.xsl"/>
+             <!--
 
 <xsl:template  match="/">
 
 
-        <!--<textarea>-->
-             <!--<xsl:copy-of select="*"/>-->
-        <!--</textarea>-->
         <html>
             <head>
                 <title>Рейтинг</title>
@@ -32,26 +29,27 @@
 
     </xsl:template>
 
+        -->
     <xsl:template name="leftPane">
         <xsl:apply-templates select="page/data[@id='userQuery']" mode="show"/>
     </xsl:template>
 
     <xsl:template match="collection" mode="show">
-        <h2 style="text-align:center;">Рейтинг c topcoder'a</h2>
+        <h2 style="text-align:center;">Рейтинг по итогам TopCoder.</h2>
         <p align="center">
-        <!-- пока так  -->
-
-            <table>
+           <table>
                 <!--DBResponse - нужный класс, rating и city - его поля-->
            <xsl:for-each select="dbresponse">
-              <tr>
+               <!--TODO: заменить таблицу на div'ы, чтобы потом сделать их кликабельными -->
+               <!--TODO: средствами xsl или javascript сделать чередование цвета строк -->
+               <tr>
                   <!--<td>-->
                       <!--<xsl:value-of select="@rating"/>-->
                   <!--</td>-->
                   <td>
                       <xsl:copy-of select="name/text()"/>
                   </td>
-                  <td>
+                  <td style="border-right:0px solid black;">
                       <xsl:copy-of select="city/text()"/>
                   </td>
               </tr>

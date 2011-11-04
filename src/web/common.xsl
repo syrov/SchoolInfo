@@ -16,8 +16,9 @@
                     <div class="header">
                         <div class="menu">
                             <div style="height: inherit;display:table-cell; vertical-align:middle;">
+                                <a href="index.xml">
                                 <img src="SI_cap.gif" height="20px"/>
-                                <a href="index.xml">SchoolInfo</a>
+                                School Info</a>
                             </div>
                         </div>
                     </div>
@@ -47,9 +48,10 @@
 
                                 <br/>
                                 <br/>
-                                <!--<p style="text-align:center;">-->
+                                <p style="text-align:center;">
+                                    <!-- todo: навести javascript'ом интерактивность-->
                                     <input type="submit" value="Найти"/>
-                                <!--</p>-->
+                                </p>
                             </form>
                         </div>
                     </div>

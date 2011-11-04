@@ -8,6 +8,7 @@ body, html {
 img {
 	margin-right:10px;
 	vertical-align: bottom;
+	border: 0px;
 }
 
 .main {
@@ -26,6 +27,22 @@ img {
 	border-bottom: 1px solid #cfcfcf;
 	width: 100%;
 	height: 30px;
+}
+
+.menu a:hover {
+    color: #00000C;
+    /*text-decoration: none;*/
+}
+
+.menu a:visited {
+    color: #0486CC;
+    text-decoration: none;
+}
+
+
+.menu a:link {
+    color: #0486CC;
+    text-decoration: none;
 }
 
 .menu {
@@ -50,12 +67,12 @@ select {
 	width: 300px;
 }
 
-input[type="button"] {
+input[type="submit"] {
 	width: 100px;
 	height: 30px;
 	text-align:center;
 	background-color:#0492DE;
-	border:1px solid #0486CC;
+	border:1px solid #1496dC;
 	color: #ffffff;
 	font-weight:bold;
 }
@@ -65,14 +82,31 @@ input[type="button"] {
 	width:450px;
 	padding: 20px;
 	float: left;
-	padding-top:70px;
+	padding-top:50px;
 	text-align:justify;
 }
 
+#leftPane table {
+    border-top: 1px solid #0486CC;
+    border-bottom: 1px solid #0486CC;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#leftPane table td {
+    padding: 5px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#leftPane table tr {
+    background-color: #f5f5f5;
+    border: 0px;
+}
 
 #rightPane {
 	position:relative;
 	float: right;
 	padding:30px;
-	padding-top:100px;
+	padding-top:80px;
 }
