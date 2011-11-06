@@ -110,3 +110,23 @@ input[type="submit"] {
 	padding:30px;
 	padding-top:80px;
 }
+
+/* table emulation */
+
+div-table {
+    border-top: 1px solid #0486CC;
+    border-bottom: 1px solid #0486CC;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+div-tr {
+    background-color: #f5f5f5;
+    border: 0px;
+}
+
+div-td {
+    max-height: 40px;
+    padding: 5px;
+    border: 0px;
+}

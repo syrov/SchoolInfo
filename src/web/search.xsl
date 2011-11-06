@@ -47,6 +47,11 @@
                       <!--<xsl:value-of select="@rating"/>-->
                   <!--</td>-->
                   <td>
+                      <xsl:element name="{name()}">
+                        <xsl:value-of select="position()"/>
+                      </xsl:element>.
+                  </td>
+                  <td>
                       <xsl:copy-of select="name/text()"/>
                   </td>
                   <td style="border-right:0px solid black;">
