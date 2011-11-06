@@ -10,6 +10,7 @@
                 <title>School Info.</title>
                 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
                 <link rel="stylesheet" type="text/css" href="styles.css"/>
+                <script src="scripts.js"></script>
             </head>
             <body>
                 <div class="main">

@@ -34,33 +34,40 @@
         <xsl:apply-templates select="page/data[@id='userQuery']" mode="show"/>
     </xsl:template>
 
+
+
     <xsl:template match="collection" mode="show">
         <h2 style="text-align:center;">Рейтинг по итогам TopCoder.</h2>
         <p align="center">
-           <table>
-                <!--DBResponse - нужный класс, rating и city - его поля-->
-           <xsl:for-each select="dbresponse">
-               <!--TODO: заменить таблицу на div'ы, чтобы потом сделать их кликабельными -->
-               <!--TODO: средствами xsl или javascript сделать чередование цвета строк -->
-               <tr>
-                  <!--<td>-->
-                      <!--<xsl:value-of select="@rating"/>-->
-                  <!--</td>-->
-                  <td>
-                      <xsl:element name="{name()}">
-                        <xsl:value-of select="position()"/>
-                      </xsl:element>.
-                  </td>
-                  <td>
-                      <xsl:copy-of select="name/text()"/>
-                  </td>
-                  <td style="border-right:0px solid black;">
-                      <xsl:copy-of select="city/text()"/>
-                  </td>
-              </tr>
-          </xsl:for-each>
-            </table>
+
         </p>
+
+        <p align="center">
+           <div class="div-table" id="rtable">
+                <!--DBResponse - нужный класс, rating и city - его поля-->
+               <xsl:for-each select="dbresponse">
+                   <!--TODO: средствами xsl или javascript сделать чередование цвета строк -->
+                   <div class="div-tr">
+                      <!--<td>-->
+                          <!--<xsl:value-of select="@rating"/>-->
+                      <!--</td>-->
+                      <div class="div-td">
+                          <xsl:element name="{name()}">
+                            <xsl:value-of select="position()"/>
+                          </xsl:element>.
+                      </div>
+                      <div class="div-td">
+                          <xsl:copy-of select="name/text()"/>
+                      </div>
+                      <div class="div-td" style="border-right:0px solid black;">
+                          <xsl:copy-of select="city/text()"/>
+                      </div>
+                    </div>
+              </xsl:for-each>
+            </div>
+        </p>
+
     </xsl:template>
 
 </xsl:stylesheet>
+

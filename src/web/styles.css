@@ -85,7 +85,7 @@ input[type="submit"] {
 	padding-top:50px;
 	text-align:justify;
 }
-
+                       /*
 #leftPane table {
     border-top: 1px solid #0486CC;
     border-bottom: 1px solid #0486CC;
@@ -103,7 +103,7 @@ input[type="submit"] {
     background-color: #f5f5f5;
     border: 0px;
 }
-
+                         */
 #rightPane {
 	position:relative;
 	float: right;
@@ -113,20 +113,34 @@ input[type="submit"] {
 
 /* table emulation */
 
-div-table {
+.div-table {
+    position: relative;
+    display: table;
     border-top: 1px solid #0486CC;
     border-bottom: 1px solid #0486CC;
     border-left: 0px;
     border-right: 0px;
+    padding:2px;
+    margin: 0 auto;
 }
 
-div-tr {
+.div-tr {
+    padding: 3px;
+    position: relative;
+    display: table-row;
     background-color: #f5f5f5;
-    border: 0px;
 }
 
-div-td {
+.div-td {
+    overflow: auto;
+    height: inherit;
+    position: relative;
+    display: table-cell;
     max-height: 40px;
     padding: 5px;
-    border: 0px;
+    float: left;
+}
+
+.div-tr:hover {
+    background-color:#e5e5e5;
 }
