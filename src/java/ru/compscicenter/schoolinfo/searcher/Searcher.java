@@ -10,24 +10,17 @@ package ru.compscicenter.schoolinfo.searcher;
 
 import org.apache.lucene.analysis.ru.RussianAnalyzer;
 import org.apache.lucene.document.Document;
-import org.apache.lucene.index.IndexReader;
-import org.apache.lucene.index.Term;
-import org.apache.lucene.index.TermEnum;
 import org.apache.lucene.queryParser.ParseException;
 import org.apache.lucene.queryParser.QueryParser;
 import org.apache.lucene.search.*;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 import org.apache.lucene.util.Version;
-import ru.compscicenter.schoolinfo.indexer.Indexer;
 import ru.compscicenter.schoolinfo.util.DBResponse;
-import ru.compscicenter.schoolinfo.util.FacultyDescription;
-import ru.compscicenter.schoolinfo.util.UnivDescription;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
 
 public class Searcher {
 
@@ -54,7 +47,7 @@ public class Searcher {
         System.out.println("olololo2");
 
         QueryParser parser = new QueryParser(Version.LUCENE_34,
-                UserQuery.FIELD_NAME, new RussianAnalyzer(Version.LUCENE_34));
+                UserQuery.F_NAME, new RussianAnalyzer(Version.LUCENE_34));
 
         System.out.println("olololo3");
 
@@ -77,20 +70,19 @@ public class Searcher {
         System.out.println("olololo");
         for (ScoreDoc scoreDoc : hits.scoreDocs) {
             Document doc = is.doc(scoreDoc.doc);
-            //System.out.println(doc.get("name") + " " + doc.get("about"));
-            DBResponse univ = new DBResponse(Integer.parseInt(doc.get("id")), doc.get(UserQuery.FIELD_NAME),
-                    doc.get(UserQuery.FIELD_CITY));
-//            if (q.getQueryType().equals(UserQuery.QTYPE_UNIV)) {
+            DBResponse univ = new DBResponse(Integer.parseInt(doc.get("id")), doc.get(UserQuery.F_NAME),
+                    doc.get(UserQuery.F_CITY));
+//            if (q.getQueryType().equals(UserQuery.Q_FACTS)) {
 //                UnivDescription u = new UnivDescription(
-//                        doc.get(UserQuery.UNIV_PREF + UserQuery.FIELD_TYPE),
-//                        doc.get(UserQuery.UNIV_PREF + UserQuery.FIELD_CAMPUS));
+//                        doc.get(UserQuery.UNIV_PREF + UserQuery.F_TYPE),
+//                        doc.get(UserQuery.UNIV_PREF + UserQuery.F_CAMPUS));
 //                univ.setUniv(u);
-//            } else if (q.getQueryType().equals(UserQuery.QTYPE_FACULTY)) {
+//            } else if (q.getQueryType().equals(UserQuery.Q_FACULTY)) {
 //                FacultyDescription f = new FacultyDescription(
-//                        doc.get(UserQuery.FAC_PREF + UserQuery.FIELD_FORM),
-//                        doc.get(UserQuery.FAC_PREF + UserQuery.FIELD_PHD),
-//                        doc.get(UserQuery.FAC_PREF + UserQuery.FIELD_DIP_TYPE),
-//                        doc.get(UserQuery.FAC_PREF + UserQuery.FIELD_MILITARY));
+//                        doc.get(UserQuery.FAC_PREF + UserQuery.F_FORM),
+//                        doc.get(UserQuery.FAC_PREF + UserQuery.F_PHD),
+//                        doc.get(UserQuery.FAC_PREF + UserQuery.F_DIP_TYPE),
+//                        doc.get(UserQuery.FAC_PREF + UserQuery.F_MILITARY));
 //                univ.setFac(f);
 //            }
             res.add(univ);

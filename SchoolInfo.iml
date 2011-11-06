@@ -8,9 +8,17 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="WebHarvester" level="project" />
-    <orderEntry type="library" name="lib" level="project" />
+    <orderEntry type="library" name="all_libs" level="project" />
+    <orderEntry type="library" name="httpclient" level="project" />
+    <orderEntry type="library" name="jetty" level="project" />
+    <orderEntry type="library" name="libs" level="project" />
     <orderEntry type="library" name="lucene" level="project" />
+    <orderEntry type="library" name="rhino" level="project" />
+    <orderEntry type="library" name="saxon" level="project" />
+    <orderEntry type="library" name="spring" level="project" />
+    <orderEntry type="library" name="webharvester" level="project" />
+    <orderEntry type="library" name="xalan" level="project" />
+    <orderEntry type="library" name="xfresh" level="project" />
   </component>
 </module>
 

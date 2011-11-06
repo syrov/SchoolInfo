@@ -19,11 +19,6 @@ public class UnivDescription {
     private String type;
     private String campus;
 
-    public UnivDescription() {
-        type = "";
-        campus = "";
-    }
-
     public UnivDescription(String type, String campus) {
         this.type = type;
         this.campus = campus;

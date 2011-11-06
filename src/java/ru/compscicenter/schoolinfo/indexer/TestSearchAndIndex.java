@@ -3,16 +3,16 @@ package ru.compscicenter.schoolinfo.indexer;
 import ru.compscicenter.schoolinfo.searcher.Searcher;
 import ru.compscicenter.schoolinfo.searcher.UserQuery;
 import ru.compscicenter.schoolinfo.util.DBResponse;
-import ru.compscicenter.schoolinfo.util.FacultyDescription;
-import ru.compscicenter.schoolinfo.util.UnivDescription;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
 import java.util.ArrayList;
 
 /**
  * Created by IntelliJ IDEA.
  * User: Evgeniy
- * Date: 08.10.11
- * Time: 21:20
  */
 public class TestSearchAndIndex {
     //параметры базы и индекса
@@ -20,7 +20,7 @@ public class TestSearchAndIndex {
     public static String user = "root";
     public static String pass = "Mat-mex2012";
     public static String tableName = "university";
-    public static String INDEX_DIR = "/home/natasha/index";
+    public static String INDEX_DIR = "/home/dzeta/index";
 
     public static void main(String[] args) throws Exception {
         Indexer ind = new Indexer(INDEX_DIR, DBName, user, pass, tableName);
@@ -32,8 +32,8 @@ public class TestSearchAndIndex {
         } finally {
             ind.close();
         }
-//
-        UserQuery query = new UserQuery(UserQuery.QTYPE_UNIV, "", "", "Russian", "");
+
+        UserQuery query = new UserQuery(UserQuery.Q_FACTS, "", "", "Russian", "");
         System.out.println(query.getQuery());
         ArrayList<DBResponse> res = Searcher.search(INDEX_DIR, query);
         for (int i = 0; i < res.size(); i++) {
