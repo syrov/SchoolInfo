@@ -9,7 +9,6 @@ USE UNIINFO;
 CREATE  TABLE IF NOT EXISTS `UNIINFO`.`University` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `name` VARCHAR(100) NOT NULL ,
-  `city` VARCHAR(100) NOT NULL ,
   `description` VARCHAR(3000) NULL DEFAULT NULL ,
   PRIMARY KEY (`id`) )
 ENGINE = InnoDB
@@ -127,6 +126,7 @@ CREATE  TABLE IF NOT EXISTS `UNIINFO`.`TableOfFacts` (
   `spec_id` INT NOT NULL ,
   `facult_id` INT NOT NULL ,
   `uni_id` INT NOT NULL ,
+  `city` VARCHAR(100) NOT NULL ,
   `method_id` INT NOT NULL ,
   `rank_id` INT NOT NULL ,
   `format_id` INT NOT NULL ,
